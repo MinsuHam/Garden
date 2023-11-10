@@ -16,7 +16,7 @@ a, a:link {
     text-decoration: none;
 }
 
-/** ################# 홈 ################# */
+/** ################# 홈화면 시작 ################# */
 
 img {
     vertical-align: top;
@@ -247,6 +247,7 @@ a, a:link {
 #section .info img {
     width: 100%;
     height: 100%;
+
 }
 #section .info img:hover {
     transform: scale(1.1);
@@ -260,6 +261,7 @@ a, a:link {
     background: rgb(162, 209, 91);
     color: #fff;
     padding: 15px 55px;
+    z-index: 11;
 }
 #section .banner {
     width: 33.3333%;
@@ -287,7 +289,7 @@ a, a:link {
     background-color: #d9d9d9;
 }
 
-/** ################# //홈 ################# */
+/** ################# 홈화면 끝 ################# */
 
 
 
@@ -301,14 +303,47 @@ a, a:link {
     margin-top: 200px;
 }
 
+/* 로그인 버튼 */
+.login_btn {
+    height: 50px;
+    line-height: 40px;
+    border: 1px solid;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    font-size: 20px;
+}
+
+.sub_login_btn > ul {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+}
+.sub_login_btn2 > div {
+    width: 130px;
+    border-bottom: 1px solid #333;
+}
+.sub_login_btn2 p {
+    margin: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 3px;
+    padding: 0;
+}
 
 
-/** ################# //로그인 ################# */
+
+
+
+/** ################# 로그인 끝 ################# */
+
+
 
 
 
 /** ################# 회원가입 ################# */
-
 #wrap_create {
     width: 1000px;
     font-size: 14px;
@@ -316,12 +351,14 @@ a, a:link {
     margin: 0 auto;
     margin-top: 0;
 }
-/** 카카오 버튼  */
+
+/** 카카오   */
 .kakao {
     margin: 0;
     padding: 0;
 }
-/** 카카오 버튼 create_btn */
+
+/** 카카오 버튼 */
 .create_btn {
     height: 50px;
     border: 1px solid;
@@ -332,6 +369,8 @@ a, a:link {
     -o-border-radius: 30px;
     font-size: 25px;
 }
+
+/** 폼 구분선 */
 .form_hr {
     border-bottom: 2px solid #333;
 }
@@ -426,6 +465,13 @@ a, a:link {
     top: 15%;
     left: 25%;
     
+}
+
+/** 아이디 저장 */
+.savedId {
+    font-size: 16px;
+    padding: 0;
+    margin: 0 0 0 3px;
 }
 
 /** ################# //회원가입 ################# */

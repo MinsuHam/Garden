@@ -13,7 +13,8 @@
 <body>
   <div id="wrap_login">
     <div class="cotainer">
-        <hr>
+        <h2>로그인</h2>
+        <hr class="row col-md-12">
         <form class="row" name="login_form" method="post">
             <div class="row col-md-12  align-items-center my-3">
                 <div class="col-md-12">
@@ -29,28 +30,54 @@
             </div>
 
             <hr>
-            <div>
-              <input type="checkbox">
+            
+            <div class="checkbox row col-md-12  align-items-center my-3">
+              <input type="checkbox" class="ml-3" checked>
+              <label for="checkbox" class="savedId">아이디 저장</label>
             </div>
+
             <div class="row col-md-12  align-items-center my-3">
-              <a href="#" class="create_btn btn btn-info col-12">로그인</a>
+              <a href="#" class="login_btn btn btn-info col-12">로그인</a>
+            </div>
+
+            <div class="sub_login_btn row col-md-12  align-items-center my-1">
+              <ul class="col-md-4">
+                <li><a href="#">아이디 찾기</a></li>
+              </ul>
+              <ul class="col-md-4">
+                <li><a href="#">비밀번호 찾기</a></li>
+              </ul>
+              <ul class="col-md-4">
+                <li><a href="#">회원가입</a></li>
+              </ul>
+            </div>
+            <div class="sub_login_btn2 row col-md-12 align-items-center my-3 mt-2">
+              <div></div>
+              <p>다른 서비스 계정으로 로그인</p>
+              <div></div>
+            </div>
+            <div class="sub_login_img row col-md-12 align-items-center justify-content-md-center my-3 mt-2">
+              <div>
+                <a href="#"><img src="../images/kakao_circle.png" alt="kakao"></a>
+              </div>
+              <div>
+                <a href="#"><img src="../images/naver_circle.png" alt="naver"></a>
+              </div>
+              <div>
+                <a href="#"><img src="../images/google_circle.png" alt="google"></a>
+              </div>
             </div>
             <input type="hidden" name="userid" value={{userid}} />
             <input type="hidden" name="imnum" id="imnum" />
       </form>
+      <!-- //form -->
     </div>
   </div>
   <!-- //wrap -->
 </body>
- 
-    
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <script>
 
-
-
-  
-    
     </script>
 </body>
 </html>
