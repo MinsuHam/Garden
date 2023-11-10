@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>garden</title>
+    <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/remixicon.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            color: #333;
+            box-sizing: border-box;
+            font-family: 'GmarketSans';
+        }
+        img {
+            vertical-align: top;
+        }
+        li {
+            list-style: none;
+        }
+        a, a:link {
+            text-decoration: none;
+        }
+        #wrap {
+            width: 1200px;
+            margin: 0 auto;
+            
+        }
+                
+        /** ################# headerpop ################# */
+        .headerpop {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(162, 209, 91);
+            text-align: center;
+            justify-content: flex-end;
+        }
+        .headerpop p {
+            padding-top: 15px;
+
+        }
+        .headerpop p > a > i{
+            font-size: 15px;
+        }
+        #header {
+            width: 100%;
+            height: 100px;
+            display: inline-block;
+            margin-bottom: 120px;
+        }
+        #header .logo {
+            width: 100%;
+            height: 100px;
+            background-color: #fff;
+        }
+        #header .logo h1 {
+            margin: 30px 70px;
+        }
+        #header .nav {
+            width: 100%;
+            height: 100px;
+            background-color: #fff;
+        }
+        #header .nav > ul {
+            display: flex;
+            justify-content: right;
+            margin-top: 30px;
+            margin-right: 250px;
+        }
+        #header .nav > ul > li {
+            position: relative;
+        }
+        #header .nav > ul > li > a {
+            display: inline-block;
+            padding: 15px 50px;
+            background-color: #fff;
+        }
+        #header .nav > ul > li > a:hover {
+            background-color: #d9d9d9;
+        }
+        #header .nav > ul > li > ul {
+            position: absolute;
+            left: 0;
+            top: 49px;
+            width: 100%;
+            text-align: center;
+            display: none;
+            z-index: 12;
+        }
+        #header .nav > ul > li > ul > li > a {
+            display: inline-block;
+            width: 100%;
+            background-color: #9e9a9a;
+            padding: 10px;
+        }
+        #header .nav > ul > li > ul > li > a:hover {
+            background-color: #ebe5e5;
+        }
+        #header .nav_login {
+            width: 20%;
+            height: 100px;
+            background-color: #fff;
+        }
+        .longin_txt a {
+            display: inline-block;
+            padding: 45px 30px; 
+            color: #333;
+        }
+        #main {
+            width: 100%;
+            height: 300px;
+            background-color: #dcdcdc;
+            overflow: hidden;
+        }
+        .slider {
+            width: 100%;
+        }
+        .sliderWrap {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .sliderWrap .slider {
+            position: relative;
+        }
+        .sliderWrap a {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            padding: 20px;
+            border-radius: 35px;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        .sliderWrap a:hover {
+            background: rgba(0, 0, 0, 0.4);
+        }
+        #contents {
+            width: 100%;
+            height: 300px;
+            background-color: #c9c9c9;
+            display: flex;
+        }
+        /** category */
+        .category_items {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .category_box {
+            width: 170px;
+            height: 220px;
+            background-color: #db6b6b;
+            position: relative;
+        }
+        .category_box > span {
+            position: absolute;
+            left: 30px;
+            top: 10px;
+            z-index: 1;
+        }
+        .category_box img {
+            width: 70%;
+            height: 150px;
+            position: absolute;
+            top: 40px;
+            left: 20px;
+        }
+        .category_box img:hover {
+            transform: scale(1.05);
+            transition: all 0.4s;
+        }
+        .new_menu {
+            margin-top: 35px;
+            margin-left: 15px;
+        }
+        .new_menu > ul > li > a {
+            display: inline-block;
+            padding-top: 25px;
+        }
+        .new_menu > ul > li > a:hover {
+            text-decoration: underline;
+        }
+        .mark_h {
+            display: inline-block;
+            margin-left: 65px;
+            margin-top: 15px;
+        }
+        .new_about {
+            position: relative;
+        }
+        .new_about .mark {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #d9d9d9;
+            border-radius: 50%;
+            background-color: #d9d9d9;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            margin: 10px 5px 5px;
+        }
+        .new_about .mark span {
+            display: inline-block;
+            padding: 15px 5px;
+        }
+
+        #section {
+            width: 100%;
+            display: flex;
+        }
+        #section .info {
+            width: 33.3333%;
+            height: 300px;
+            background-color: #c1c1c1;
+            position: relative;
+        }
+        #section .info img {
+            width: 100%;
+            height: 100%;
+        }
+        #section .info img:hover {
+            transform: scale(1.1);
+            transition: all 500ms;
+
+        }
+        #section .info span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgb(162, 209, 91);
+            color: #fff;
+            padding: 15px 55px;
+        }
+        #section .banner {
+            width: 33.3333%;
+            height: 300px;
+            background-color: #9f9393;
+        }
+        #section .banner img {
+            width: 100%;
+            height: 100%;
+        }
+        #section .link {
+            width: 33.3333%;
+            height: 300px;
+            background-color: #938e8e;
+        }
+
+        #section .link img {
+            width: 100%;
+            height: 100%;
+        }
+        #footer {
+            width: 100%;
+            height: 100px;
+            background-color: #d9d9d9;
+        }
+    </style>
+</head>
+<body>
+    <div class="headerpop">
+        <p href="#">회원가입시 2,000원 바로 지급!! <a href="#"><i class="ri-close-line"></i></a></p>
+    </div>
+    <div id="wrap">
+        <header id="header">
+            <div class="logo">
+                <h1>정원들</h1>
+                <div class="nav_login">
+                    <div class="longin_txt">
+                        <a href="#">Login</a>
+                        <a href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav">
+                <ul>
+
+                    <li><a href="#">꽃선물</a>
+                        <ul class="submenu">
+                            <li><a href="#">예약하기</a></li>
+                            <li><a href="#">예약현황</a></li>
+                            <li><a href="#">예약절차</a></li>
+                            <li><a href="#">예약문의</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">개업화분</a>
+                        <ul class="submenu">
+                            <li><a href="#">예약하기</a></li>
+                            <li><a href="#">예약현황</a></li>
+                            <li><a href="#">예약절차</a></li>
+                            <li><a href="#">예약문의</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">승진취임</a>
+                        <ul class="submenu">
+                            <li><a href="#">예약하기</a></li>
+                            <li><a href="#">예약현황</a></li>
+                            <li><a href="#">예약절차</a></li>
+                            <li><a href="#">예약문의</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">택배특가</a>
+                        <ul class="submenu">
+                            <li><a href="#">예약하기</a></li>
+                            <li><a href="#">예약현황</a></li>
+                            <li><a href="#">예약절차</a></li>
+                            <li><a href="#">예약문의</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- //header -->
+
+
+        <main id="main">
+            <div class="slider">
+                <div class="sliderWrap">
+                    <div class="slider s1">
+                        <img src="../images/1.png" alt="1">
+                        <a href="#">실내 정원 식물 종류</a>
+                    </div>
+                    <div class="slider s2">
+                        <img src="../images/2.png" alt="2">
+                        <a href="#">나에게 맞는 실내 식물 찾기</a>
+                    </div>
+                    <div class="slider s3">
+                        <img src="../images/3.png" alt="3">
+                        <a href="#">실내 정원 식물 가격</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- //main -->
+
+        <article id="contents">
+            <div class="category_items">
+            <!-- loop 필요 API Data -->
+                <div class="category_box b1">
+                    <span>꽃선물</span>
+                    
+                    <a href="#"><img src="../images/2-1.jpg" alt="1"></a>
+                </div>
+                <div class="category_box b2">
+                    <span>개업축하</span>
+                    <a href="#"><img src="../images/2-2.jpg" alt="1"></a>
+                </div>
+                <div class="category_box b3">
+                    <span>공기정화</span>
+                    <a href="#"><img src="../images/2-3.jpg" alt="1"></a>
+                </div>
+                <div class="category_box b4">
+                    <span>승진취임</span>
+                    <a href="#"><img src="../images/2-2.jpg" alt="1"></a>
+                </div>
+                <div class="category_box b5"> 
+                    <span>결혼식</span>
+                    <a href="#"><img src="../images/2-1.jpg" alt="1"></a>
+                </div>
+                <div class="category_box b6"> 
+                    <span>출산선물</span>
+                    <a href="#"><img src="../images/2-1.jpg" alt="1"></a>
+                </div>
+                <div class="category_box b7"> 
+                    <span>장례식</span>
+                    <a href="#"><img src="../images/2-1.jpg" alt="1"></a>
+                </div>
+
+            </div>
+        </article>
+        <!-- // contents-->
+
+
+        <section id="section">
+            <div class="info">
+                <span>BSET 1위</span>
+                <a href="#"><img src="../images/2-1.jpg" alt="1"></a>
+            </div>
+            <div class="banner">
+                <span>BSET 2위</span>
+                <a href="#"><img src="../images/2-2.jpg" alt="1"></a>
+            </div>
+            <div class="link">
+                <span>BSET 3위</span>
+                <a href="#"><img src="../images/2-3.jpg" alt="1"></a>
+            </div>
+        </section>
+        <!-- // section-->
+
+
+        <footer id="footer">
+            <div class="footer_about">
+                <div>
+                    <div class="mark">
+                        <span>고객센터 (연중무휴)</span>
+                    </div>
+                    <h2 class="mark_h">1234-5678 (문자 수신 가능)</h2>
+                    <p>문자 전송시 지역번호를 제외한 대표번호로 보내주세요.</p>
+                </div>
+                <div class="new_menu">
+                    <ul>
+                        <li><a href="#">전화상담 | 오전 9시 ~ 오후 6시</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">채팅상담 | 월~금 오후 9시까지</a></li>
+                    </ul>
+                    <ul>
+                        <h3>카카오톡 문의</h3>
+                        <p><img src="../images/kakaotalk_sharing_btn_small.png" alt="">꽃집들 | 오전 8시 ~ 오후 9시</p>
+                    </ul>
+                    <ul>
+                        <li><a href="#">야생화</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- //footer -->
+
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+
+
+    //메뉴
+    $('.nav > ul > li').mouseover(function() {
+        $(this).find('.submenu').stop().slideDown();
+    });
+    $('.nav > ul > li').mouseout(function() {
+        $(this).find('.submenu').stop().slideUp();
+    });
+
+    window.onload = function() {
+
+    //이미지 슬라이드
+    let sliderWrap = document.querySelector(".sliderWrap");
+    let slider = document.querySelectorAll(".slider");
+    let sliderClone = sliderWrap.firstElementChild.cloneNode(true);
+    sliderWrap.append(sliderClone);
+
+    let currentIndex = 0;
+
+    setInterval(() => {
+        currentIndex++;
+        sliderWrap.style.marginTop = -currentIndex * 300 + "px";
+        sliderWrap.style.transition = "all 0.6s";
+
+        if(currentIndex == 3) {
+            setTimeout(() => {
+                sliderWrap.style.marginTop = "0";
+                sliderWrap.style.transition = "0";
+                currentIndex = 0;
+            }, 600);
+        }
+    }, 3000);
+
+
+    //headerpop
+    $('.headerpop > p > a').click(function() {
+        $('.headerpop').fadeOut(300);
+    });
+
+}
+</script>
+</body>
+</html>

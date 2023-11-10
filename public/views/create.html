@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/remixicon.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/summernote-bs4.min.css">
+    <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
+</head>
+<body>
+  <div class="login_img text-center">
+    <div class="login_img i1">
+      <span>약관동의</span>
+      <span><i class="ri-user-line"></i></span>
+    </div>
+    <div class="login_img i2 active">
+      <span class="active">정보입력</span>
+      <span><i class="ri-edit-2-fill"></i></span>
+    </div>
+    <div class="login_img i3">
+      <span>가입완료</span>
+      <span><i class="ri-verified-badge-line"></i></span>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-md-12 p-5 text-center">
+          <h1>회원가입</h1>
+      </div>
+  </div>
+
+  <div id="wrap_create">
+    <div class="cotainer">
+        <hr>
+        <form class="row" name="login_form" method="post">
+            <div class="row col-md-12  align-items-center my-3">
+                <label class="col-md-2" for="userid">아이디</label>
+                <div class="col-md-9 pr-0">
+                    <input type="userid" name="userid" class="form-control"
+                    placeholder="아이디" id="userid" required />
+                </div>
+                <a href="#" class="userid_check col-md-1">중복확인</a>    
+            </div>
+            <div class="row col-md-12  align-items-center my-3">
+                <label class="col-md-2" for="userpass">비밀번호</label>
+                <div class="col-md-10">
+                    <input type="password" name="userpass" class="form-control"
+                    placeholder="비밀번호" id="userpass" required />
+                </div>       
+            </div>
+            <div class="row col-md-12  align-items-center my-3">
+              <label class="col-md-2" for="userpass">비밀번호 확인</label>
+              <div class="col-md-10">
+                  <input type="password" name="userpass_check" class="form-control"
+                  placeholder="비밀번호 확인" id="userpass_check" required />
+              </div>       
+            </div>
+
+            <!-- hr -->
+            <div class="row form_hr col-md-12 align-items-center my-3"></div>
+
+            <div class="row col-md-12  align-items-center my-3">
+                <label class="col-md-2" for="username">이름</label>
+                <div class="col-md-10">
+                    <input type="text" name="username" class="form-control"
+                    placeholder="홍길동" id="username" required />
+                </div>       
+            </div>
+
+            <div class="row col-md-12  align-items-center my-3">
+                <label class="col-md-2" for="birth">생년월일</label>
+                <div class="col-md-10">
+                    <input type="text" name="birth" class="form-control"
+                    placeholder="1900-00-00" id="birth" required />
+                </div>       
+            </div>  
+              <div class="row col-md-12  align-items-center my-3">
+                <label class="col-md-2" for="tel">전화번호</label>
+                <div class="col-md-10">
+                    <input type="text" name="email" class="form-control"
+                    placeholder="010-0000-0000" id="tel" required />
+              </div>       
+            </div>
+            <div class="row col-md-12  align-items-center my-3">
+              <label class="col-md-2" for="address">주소</label>
+              <div class="col-md-10">
+                  <input type="text" name="address" class="form-control"
+                  placeholder="경기도 김포시 사우로" id="address" required />
+              </div>       
+            </div>
+            <div class="row col-md-12  align-items-center my-3">
+              <label class="col-md-2" for="email">이메일</label>
+              <div class="col-md-10">
+                  <input type="email" name="email" class="form-control"
+                  placeholder="example@google.com" id="email" required />
+              </div>       
+            </div>
+
+
+            <div class="kakao col-md-12 text-center mt-2">
+                <ul class="d-flex justify-content-lg-start">
+                    <li class="mr-2" onclick="kakaoLogin()">
+                        <a href="javascript:void(0)">
+                            <img src="../images/kakaotalk_sharing_btn_small.png" alt="kakao" style="height: 40px; width:auto">
+                        </a>
+                    </li>
+                    <li class="mr-2"">
+                      <a href="#">
+                          구글 (예정)
+                      </a>
+                    </li>
+                    <li class="mr-2"">
+                      <a href="#">
+                          네이버 (예정)
+                      </a>
+                    </li>
+                    <li onclick="kakaoLogout();">
+                    <a href="javascript:void(0)">
+                      로그아웃
+                    </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row col-md-12  align-items-center my-3">
+              <a href="#" class="create_btn btn btn-info col-12">가입하기</a>
+            </div>
+            <input type="hidden" name="userid" value={{userid}} />
+            <input type="hidden" name="imnum" id="imnum" />
+      </form>
+    </div>
+  </div>
+  <!-- //wrap -->
+</body>
+ 
+    
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script>
+
+    window.Kakao.init('5aaea0190cb95d8a6169d6ce269782ab');
+    console.log(Kakao.isInitialized());
+
+    //카카오로그인
+    function kakaoLogin() {
+    Kakao.Auth.login({
+      success: function (response) {
+        Kakao.API.request({
+          url: '/v2/user/me',
+          success: function (response) {
+        	  console.log(response)
+          },
+          fail: function (error) {
+            console.log(error)
+          },
+        })
+      },
+      fail: function (error) {
+        console.log(error)
+      },
+    })
+  }
+  //카카오로그아웃  
+function kakaoLogout() {
+    if (Kakao.Auth.getAccessToken()) {
+      Kakao.API.request({
+        url: '/v1/user/unlink',
+        success: function (response) {
+        	console.log(response)
+        },
+        fail: function (error) {
+          console.log(error)
+        },
+      })
+      Kakao.Auth.setAccessToken(undefined)
+    }
+  }  
+
+    
+    </script>
+</body>
+</html>
