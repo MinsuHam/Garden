@@ -1,5 +1,7 @@
 images
-
+.env
+env
+node_modules
 
 
 
