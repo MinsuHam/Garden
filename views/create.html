@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>회원가입</title>
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/remixicon.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/summernote-bs4.min.css">
-    <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
-</head>
-<body>
+{% extends 'layout.html' %}
+
+{% block content %}
   <div class="login_img text-center">
     <div class="login_img i1">
       <span>약관동의</span>
@@ -97,34 +87,8 @@
                   placeholder="example@google.com" id="email" required />
               </div>       
             </div>
-
-
-            <div class="kakao col-md-12 text-center mt-2">
-                <ul class="d-flex justify-content-lg-start">
-                    <li class="mr-2" onclick="kakaoLogin()">
-                        <a href="javascript:void(0)">
-                            <img src="../images/kakaotalk_sharing_btn_small.png" alt="kakao" style="height: 40px; width:auto">
-                        </a>
-                    </li>
-                    <li class="mr-2"">
-                      <a href="#">
-                        <img src="../images/google.png" alt="kakao" style="height: 40px; width:auto">
-                      </a>
-                    </li>
-                    <li class="mr-2"">
-                      <a href="#">
-                          네이버 (예정)
-                      </a>
-                    </li>
-                    <li onclick="kakaoLogout();">
-                    <a href="javascript:void(0)">
-                      로그아웃
-                    </a>
-                    </li>
-                </ul>
-            </div>
             <div class="row col-md-12  align-items-center my-3">
-              <a href="#" class="create_btn btn btn-info col-12">가입하기</a>
+              <a href="#" class="create_btn btn btn-info col-12">입력완료</a>
             </div>
             <input type="hidden" name="userid" value={{userid}} />
             <input type="hidden" name="imnum" id="imnum" />
@@ -132,11 +96,11 @@
     </div>
   </div>
   <!-- //wrap -->
-</body>
- 
-    
-    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
-    <script>
+{% endblock %}
+
+{% block indexScript %}
+<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+<script>
 
     window.Kakao.init('5aaea0190cb95d8a6169d6ce269782ab');
     console.log(Kakao.isInitialized());
@@ -175,8 +139,5 @@ function kakaoLogout() {
       Kakao.Auth.setAccessToken(undefined)
     }
   }  
-
-    
-    </script>
-</body>
-</html>
+</script>
+{% endblock %}

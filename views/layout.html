@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/summernote-bs4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    {% block style %}
+    {% endblock %}
+</head>
+<body>
+    <!-- ######### 팝업창 #########-->
+    <div class="header_popup row">
+        <div class="header_popup_txt">
+            <a href="#">
+                <p href="#">회원가입시 2,000원 바로지급!
+                    <span></span>
+                    <button class="header_close"></button>
+                </p>
+            </a>
+        </div>
+    </div>
+    <!-- ######### //팝업창 #########-->
+
+    <!-- ######### 헤더 로고 #########-->
+    <header>
+        <div class="container nav_top mt-5">
+            <div class="row d-flex justify-content-between align-items-center text-center">
+                <!-- 햄버거 메뉴 -->
+                <div class="top_left_nav">
+                    <a href="#"><i class="ri-menu-line"></i></a>
+                    <a href="#"><span>전체상품</span></a>
+                </div>
+                <!-- //햄버거 메뉴 -->
+                <div class="top_nav_img">
+                    <a href="/"><img src="../images/header_logo/resp_logo_sample.png" alt="LOGO"></a>
+                </div>
+                
+                <div class="top_right_nav">
+                    <a href="/"><img src="../images/header_logo/111.jpg" alt="right_nav_img"></a>
+                </div>
+            </div>
+        </div> 
+        <hr>
+        <div class="nav_bar container mt-2 text-center p-0">
+            <div class="row">
+                <div class="nav_bar_menu col-10">
+                    <ul class="justify-content-left d-flex text-center ml-5">
+                        <li><a href="#">꽃선물</a></li>
+                        <li><a href="#">개업화분</a></li>
+                        <li><a href="#">승진취임</a></li>
+                        <li><a href="#">결혼장례</a></li>
+                        <li><a href="#">정기구독</a></li>
+                        <li><a href="#">택배특가</a></li>
+                        <li><a href="#">EVENT</a></li>
+                        <li><a href="#">MAGAZINE</a></li>
+                    </ul>
+                </div>
+                <div class="nav_bar_right col-2">
+                    <a href="/login"><img src="../images/header_nav/icon_myinfo.svg" alt="myinfo"></a>
+                    <a href="/login" class="cart">
+                        <img src="../images/header_nav/icon_cart.svg" alt="cart">
+                        <div class="cart_count"><span>1</span></div>
+                    </a>
+                    <a href="#"><img src="../images/header_nav/icon_search.svg" alt="search"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ######### //헤더 #########-->
+    <div class="container mt-5">
+    {% block content %}
+    {% endblock %}
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="../js/summernote-bs4.min.js"></script>
+    <script src="/js/custom.js"></script>
+    <script src="../js/script.js"></script>
+
+    {% block script %}
+    {% endblock %}
+    {% block indexScript %}
+    {% endblock %}
+</body>
+</html>
