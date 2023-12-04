@@ -64,12 +64,35 @@
                     </ul>
                 </div>
                 <div class="nav_bar_right col-2">
-                    <a href="/login"><img src="../images/header_nav/icon_myinfo.svg" alt="myinfo"></a>
-                    <a href="/login" class="cart">
-                        <img src="../images/header_nav/icon_cart.svg" alt="cart">
-                        <div class="cart_count"><span>1</span></div>
-                    </a>
-                    <a href="#"><img src="../images/header_nav/icon_search.svg" alt="search"></a>
+                    <div class="nav_bar_right_container">
+                        <ul class="d-flex justify-content-end">
+                            <li class="mr-2">
+                                <a href="/login"><img src="../images/header_nav/icon_myinfo.svg" alt="myinfo"></a>
+                            </li>
+                            <li class="mr-2">
+                                <a href="/cart" class="cart">
+                                    <img src="../images/header_nav/icon_cart.svg" alt="cart">
+                                    <div class="cart_count"><span>1</span></div>
+                                </a>
+                            </li>
+                            <li class="mr-2 ml-2">
+                                <a href="#" class="search_btn"><img src="../images/header_nav/icon_search.svg" alt="search"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="search_new">
+                        <form action="" name="topSearchForm" id="topSearchForm">
+                            <div class="input_area">
+                                <div class="cont">
+                                    <label for="" class="search_box">
+                                        <input type="text">
+                                        <button type="submit" class="search"></button>
+                                        <button type="button" class="close"></button>
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

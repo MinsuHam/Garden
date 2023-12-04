@@ -12,24 +12,22 @@ $(function() {
 		$(".float_banner").stop().animate({
 			"top" : newPosition
 		}, 800);
-
 	}).scroll();
 
-    $(".float_banner").stop().animate({
-        "top" : newPosition
-    }, {
-        'duration' : 500,
-        'easing' : 'easeInOutCubic',
-        'complete' : function() {
-            console.log('이동 완료하였습니다.');
-        }
-    });
+    
+    //nav hover 
+    $('.nav_bar_menu > ul > li').mouseover(function() {
+        $(this).find('a').addClass('on');
+    }); 
+    $('.nav_bar_menu > ul > li').mouseout(function() {
+        $(this).find('a').removeClass('on');
+    }); 
 
 
     //search_btn 
     $('.search_btn').click(function() {
         $('.nav_bar_right_container').hide();
-        $('.search_new').stop().fadeIn(600);
+        $('.search_new').stop().fadeIn(500);
     });
     $('.close').click(function() {
         $('.nav_bar_right_container').show();
