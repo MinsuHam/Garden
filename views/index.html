@@ -49,7 +49,7 @@
             <div class="row d-flex justify-content-between align-items-center text-center">
                 <!-- 햄버거 메뉴 -->
                 <div class="top_left_nav">
-                    <a href="/"><i class="ri-menu-line"></i></a>
+                    <a href="/" class="hamburger"></a>
                     <a href="/"><span>전체상품</span></a>
                 </div>
                 <!-- //햄버거 메뉴 -->
@@ -680,7 +680,6 @@
 
             <!-- footer -->
             <footer id="footer">
-                <div class="resp_wrap">
                     <div class="footer_banner">
                         <ul class="footer_banner_box">
                             <li class="footer_banner_subscription">
@@ -702,9 +701,11 @@
                                 <li class="menu_cs">
                                     <h4 class="title">고객센터(연중무휴)</h4>
                                     <ul>
-                                        <li class="comp_phone"><a href="#">1800-7879 <span>(문자수신가능)</span></a></li>
-                                        <li class="comp_speak"><span>문자 전송 시 지역번호를 제외한 <br>대표번호로 보내주세요.</span></li>
-                                        <li class="comp_date"><span>전화상담 |오전 8시 ~ 오후 8시</span></li>
+                                        <li class="comp_phone"><a href="#"><h3>1800-7879</h3> <span>(문자수신가능)</span></a></li>
+                                        <li class="comp_speak"><span>문자 전송 시 지역번호를 제외한 <br>대표번호로 보내주세요.</span></li><br>
+                                        <li class="comp_date"><span>전화상담 | 오전 8시 ~ 오후 8시</span></li>
+                                        <li class="comp_chat"><span>채팅상담 | 월~토요일 오후 10시까지<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;일요일 오후 8시까지</span></li>
                                         <li class="comp_foreign"><span>해외주문| +82-70-7806-7050</span></li>
 
                                         <li class="comp_kakao">
@@ -722,7 +723,7 @@
                                 <!-- //menu_cs -->
 
                                 <li class="menu_bank">
-                                    <h4 class="title">입금계좌 정보</h4>
+                                    <h5 class="title">입금계좌 정보</h5>
                                     <ul>
                                         <li><p>우리 &nbsp; : &nbsp; 1005-402-463003 </p></li>
                                         <li><p>농협 &nbsp; : &nbsp; 301-0149-4037-31 </p></li>
@@ -795,7 +796,7 @@
 
                             <ul class="footer_cert">
                                 <div class="slick_list">
-                                    <div class="slick_track d-flex">
+                                    <div class="slick_track">
                                         <li class="slick_slide">
                                             <a href="#">
                                                 <div><img src="../images/footer/footer_logo_iso.png" alt="footer_logo_iso"></div>
@@ -833,15 +834,16 @@
                                             </a>
                                         </li>
                                         <li class="slick_slide">
-                                            <div><img src="../images/footer/footer_logo_escrow_toss.png" alt="footer_logo_escrow_toss"></div>
-                                            <p>
-                                                toss payments 매매보호(에스크로)서비스
-                                                <span>
-                                                    TossPayments전자결제의 매매보호(에스크로)<br>
-                                                    서비스를 이용하실 수 있습니다.
-                                                </span>
-                                                <em>가입사실확인</em>
-                                            </p>
+                                            <a href="#">
+                                                <div><img src="../images/footer/footer_logo_escrow_toss.png" alt="footer_logo_escrow_toss"></div>
+                                                <p>
+                                                    toss payments 매매보호(에스크로)서비스
+                                                    <span>
+                                                        TossPayments전자결제의 매매보호(에스크로)<br>
+                                                        서비스를 이용하실 수 있습니다.
+                                                    </span>
+                                                    <em>가입사실확인</em>
+                                                </p>
                                             </a>
                                         </li>
                                     </div>
@@ -851,16 +853,7 @@
                         </div>
                     </div>
                     <!-- //footer_c -->
-                </div>
-                <!-- //resp_wrap -->
             </footer>
-
-
-
-
-
-            <div class="null"></div>
-
 <script>
     //메뉴
     $('.nav > ul > li').mouseover(function() {
