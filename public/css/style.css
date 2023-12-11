@@ -66,6 +66,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
 body {
     position: relative;
 }
+
 /* ###################### float_banner ###################### */
 .float_banner {
     position: absolute;
@@ -73,7 +74,257 @@ body {
     top: 740px;
     z-index: 100;
 }
+/* ###################### //float_banner ###################### */
+
+/* ###################### aside_menu ###################### */
+
+/* aside_userinformation */
+.layout_aside {
+    width: 0;
+    display: block;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    box-sizing: border-box;
+    height: 100%;
+    padding-bottom: 20px;
+    overflow: auto;
+    z-index: 2023;
+    display: block;
+    background-color: #fff;
+    transition: all 600ms;
+    -webkit-transition: all 600ms;
+    -moz-transition: all 600ms;
+    -ms-transition: all 600ms;
+    -o-transition: all 600ms;
+}
+.layout_aside.on {
+    width: 280px;
+}
+.aside_userinformation {
+    opacity: 0.8;   
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px #ddd solid;
+    background-color: #fff;
+    z-index: 100;
+    position: relative;
+}
+.aside_userinformation > ul {
+    display: table;
+    width: 100%;
+}
+.aside_userinformation > ul > li {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/* log_right */
+.log_right {
+    display: inline-block;
+    color: #444;
+    text-align: right;
+}
+.log_right a  {
+    border: 1px #ccc solid;
+    background: #fff;
+    height: 28px;
+    font-size: 12px;
+    line-height: 26px;
+    padding: 0 9px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #333;
+    cursor: pointer;
+    vertical-align: middle;
+    border-radius: 2px;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+/* aside_userinformation */
+.aside_userinformation > ul > li span {
+    color: #999 !important;
+}
+/* aside_main_menu */
+.aside_main_menu {
+    padding: 10px 5px;
+}
+.aside_main_menu > ul {
+    font-size: 0;
+    line-height: 0;
+}
+.aside_main_menu > ul > li {
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+    font-size: 13px;
+    line-height: 1.3;
+    text-align: center;
+}
+.aside_main_menu > ul > li.am_order > a {
+    background-image: url(../images/aside_menu/icon_aside_102.png);
+}
+.aside_main_menu > ul > li.am_subscribe > a {
+    background-image: url(../images/aside_menu/icon_aside_109.png);
+}
+.aside_main_menu > ul > li.am_my > a {
+    background-image: url(../images/aside_menu/icon_aside_103.png);
+}
+.aside_main_menu > ul > li.am_cs > a {
+    background-image: url(../images/aside_menu/icon_aside_104.png);
+}
+.aside_main_menu > ul > li.am_cart > a {
+    background-image: url(../images/aside_menu/icon_aside_101.png);
+}
+.aside_main_menu > ul > li.am_wish > a {
+    background-image: url(../images/aside_menu/icon_aside_106.png);
+}
+.aside_main_menu > ul > li.am_coupon > a {
+    background-image: url(../images/aside_menu/icon_aside_107.png);
+}
+.aside_main_menu > ul > li.am_emony > a {
+    background-image: url(../images/aside_menu/icon_aside_108.png);
+}
+.aside_main_menu > ul > li > a {
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: 50% 10px;
+    background-size: 32px;
+}
+/* tab */
+.aside_navigation_wrap .tab {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-top: 1px #aaa solid;
+    position: relative;
+    z-index: 3;
+}
+.aside_navigation_wrap ul.tab > li {
+    display: table-cell;
+    line-height: 40px;
+    text-align: center;
+    background-color: #f6f6f6;
+    border-left: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.aside_navigation_wrap ul.tab > li.current {
+    background: none;
+    border-bottom: none;
+    color: #333;
+    font-weight: 500;
+}
+.aside_navigation_wrap .category_cont ul.menu {
+    margin-top: -1px;
+}
+.mitem_subcontents {
+    display: block;
+    margin-top: 1px;
+}
+.aside_navigation_wrap ul.menu li {
+    line-height: 1.3;
+}
+.submenu {
+    background-color: #fafbf0;
+    clear: both;
+}
+.submenu > li {
+    border-bottom: solid 1px #eee;
+}
+.submenu > li a {
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+    padding: 13px 5px 11px 15px;
+    line-height: 1.3;
+    height: 40px;
+}
+.aside_navigation_wrap ul.menu li.mitem_subcontents ul.submenu li.submitem.category a.mitem_goodsview    {
+    background: #fff url(../images/aside_menu/ico_arw_direct.png) no-repeat;
+    background-position: right 15px top 50%;
+    background-size: 7px;
+    font-weight: 500;
+    color: #333;
+    font-size: 13px;
+}
+.banner_paypal {
+    padding: 13px 15px;
+}
+.wrap_aside {
+    padding: 0 10px;
+}
+.title_sub3 {
+    padding: 30px 0 8px;
+    font-size: 19px;
+    font-weight: 300;
+    color: #333;
+}
+.aside_recently_nodata {
+    border-top: 1px #ddd solid;
+    border-bottom: 1px #ddd solid;
+    padding: 25px 10px;
+    text-align: center;
+    color: #999;
+}
+.side_close {
+    position: fixed;
+    left: 295px;
+    top: 0;
+    margin-top: 20px;
+    z-index: 2010;
+    height: 30px;
+    text-indent: -9999px;
+    transition: width 0.4s 0.8s;
+    overflow: hidden;
+    -webkit-transition: width 0.4s 0.8s;
+    -moz-transition: width 0.4s 0.8s;
+    -ms-transition: width 0.4s 0.8s;
+    -o-transition: width 0.4s 0.8s;
+}
+.side_close.on {
+    width: 30px;
+}
+.side_close::before, .side_close::after {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: calc(50% - 2px);
+    width: 100%;
+    height: 4px;
+    background: #fff;
+    border-radius: 2px;
+    transform: rotate(0deg);
+    transition: transform 0.4s 0s;
+    box-shadow: 0 0 2px #999;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+.side_close.on::before {
+    transform: rotate(45deg);
+    transition-delay: 1.2s;
+}
+.side_close.on::after {
+    transform: rotate(-45deg);
+    transition-delay: 1.2s;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+/* ###################### //aside_menu ###################### */
+
+
 /* ###################### header ###################### */
+
 header {
     width: 100%;
 }
@@ -103,8 +354,7 @@ header {
     font-weight: 400;
     align-items: center;
     position: relative;
-}
-.header_popup_txt > a > p {
+    padding: 0;
     width: 100%;
 }
 .header_popup_txt > a > p > span {
@@ -165,46 +415,82 @@ header {
     background-color: #eee;
     transform: rotate(-45deg) translateY(-50%);
 }
-.top_left_nav .hamburger {
-    width: 200px;
-    display: block;
+
+/* hamburger */
+.resp_top_hamburger {
     position: relative;
+}
+.resp_top_hamburger > a {
+    display: block;
     width: 30px;
+    height: 22px;
+    transition: all 600ms;
+    -webkit-transition: all 600ms;
+    -moz-transition: all 600ms;
+    -ms-transition: all 600ms;
+    -o-transition: all 600ms;
+}
+.resp_top_hamburger > a > b {
+    overflow: hidden;
+    text-indent: -9999px;
+    top: calc(50% - 1px);
+}
+.resp_top_hamburger > a > h2 {
+    position: absolute;
+    left: 30px;
+    width: 80px;
+    font-size: 18px;
+    display: block;
+    color: #555;
+    margin-top: 0;
+    padding-left: 12px;
+}
+.resp_top_hamburger > a > b,
+.resp_top_hamburger > a::before, 
+.resp_top_hamburger > a::after {
+    display: block;
+    font-size: 0;
+    content: '';
+    position: absolute;
+    right: 0;
     height: 2px;
+    width: 100%;
     background: #555;
 }
-.top_left_nav .hamburger::before {
-    transform: translateY(-10px) rotate(0deg);
+.resp_top_hamburger > a::after {
+    top: calc(50% - 1px);
+    transform: translateY(10px) rotate(0deg);
     transition: transform 0.2s, width 0.2s 0.2s, right 0.2s 0.2s;
 }
-.top_left_nav .hamburger::before {
-    display: block;
-    font-size: 0;
-    content: '';
+.resp_top_hamburger > a.on::before {
     position: absolute;
-    top: 0;
-    right: 0;
+    right: -3px;
+    top: 5px;
+    width: 15px;
     height: 2px;
-    width: 100%;
-    background: #555;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
 }
-.top_left_nav .hamburger::after {
-    display: block;
-    font-size: 0;
-    content: '';
-    position: absolute;
-    top: 9px;
-    right: 0;
+.resp_top_hamburger > a.on::after {
+    width: 15px;
     height: 2px;
-    width: 100%;
-    background: #555;
+    right: -3px;
+    top: 15px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
 }
-.top_left_nav > a {
-    display: inline-block;
-    color: #444;
-    padding-left: 20px;
-    height: 100%;
-}
+
+
+
+/* //hamburger */
+
+
 .top_left_nav > a span {
     font-size: 23px;
     display: inline-block;
@@ -303,7 +589,7 @@ button.close {
     right: 0px;
     top: 5px;
 }
-/* /login */
+/* login */
 #wrap_login {
     width: 400px;
     height: 400px;
@@ -1036,15 +1322,46 @@ color: #71a200; */
     font-size: 0.60rem;
     font-weight: normal;
 }
-p {
+#footer p {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-
-
-
-
 /* //footer */
+
+/* ###################### create ###################### */
+.hide {
+    display: none;
+}
+.userid_container {
+    position: relative;
+}
+.message_box {
+    position: absolute;
+    left: 15px;
+    top: 45px;
+}
+.password_container {
+    position: relative;
+}
+.strongPassword-message {
+    position: absolute;
+    left: 15px;
+    top: 45px;
+}
+.userpass_check_container {
+    position: relative;
+}
+.mismatch-message {
+    position: absolute;
+    left: 15px;
+    top: 45px;
+}
+.match-message {
+    position: absolute;
+    left: 15px;
+    top: 45px;
+}
+/* ###################### //create ###################### */

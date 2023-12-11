@@ -22,80 +22,122 @@
   </div>
 
   <div id="wrap_create">
-    <div class="cotainer">
+    <div class="container">
         <hr>
-        <form class="row" name="login_form" method="post">
-            <div class="row col-md-12  align-items-center my-3">
+        <form class="row justify-content-center" name="login_form" method="post">
+            <div class="row col-md-8  align-items-center my-3">
                 <label class="col-md-2" for="userid">아이디</label>
-                <div class="col-md-9 pr-0">
+                <div class="col-md-8 userid_container">
                     <input type="userid" name="userid" class="form-control"
-                    placeholder="아이디" id="userid" required />
+                    placeholder="공백 없는 영문/숫자 포함 6~20자" id="userid" required autocomplete="off" />
+                    <div class="message_box">
+                      <div class="success-message hide">사용할 수 있는 아이디입니다.</div>
+                      <div class="failure-message hide">아이디는 6 ~ 20글자이어야 합니다.</div>
+                      <div class="failure-message2 hide">영어 또는 숫자만 가능합니다.</div>
+                    </div>
                 </div>
-                <a href="#" class="userid_check col-md-1">중복확인</a>    
+                <div class="col-md-2">
+                  <a href="#" class="userid_check btn btn-info d-block">중복확인</a>
+                </div> 
             </div>
-            <div class="row col-md-12  align-items-center my-3">
+            <div class="row col-md-8  align-items-center my-3">
                 <label class="col-md-2" for="userpass">비밀번호</label>
-                <div class="col-md-10">
+                <div class="col-md-10 password_container">
                     <input type="password" name="userpass" class="form-control"
-                    placeholder="비밀번호" id="userpass" required />
-                </div>       
+                            id="userpass" required autocomplete="off" />
+                    <div class="strongPassword-message hide">8글자 이상, 영문, 숫자, 특수문자(@$!%*#?&)를 사용하세요.</div>
+                </div>
             </div>
-            <div class="row col-md-12  align-items-center my-3">
+            <div class="row col-md-8  align-items-center my-3">
               <label class="col-md-2" for="userpass">비밀번호 확인</label>
-              <div class="col-md-10">
+              <div class="col-md-10 userpass_check_container">
                   <input type="password" name="userpass_check" class="form-control"
-                  placeholder="비밀번호 확인" id="userpass_check" required />
-              </div>       
+                          id="userpass_check" required />
+                  <div class="mismatch-message hide">비밀번호가 일치하지 않습니다.</div>
+                  <div class="match-message hide">비밀번호가 일치합니다.</div>
+              </div>
             </div>
-
-            <!-- hr -->
-            <div class="row form_hr col-md-12 align-items-center my-3"></div>
-
-            <div class="row col-md-12  align-items-center my-3">
+            <hr>
+            <div class="row col-md-8  align-items-center my-3">
                 <label class="col-md-2" for="username">이름</label>
                 <div class="col-md-10">
-                    <input type="text" name="username" class="form-control"
-                    placeholder="홍길동" id="username" required />
+                    <input type="text" name="username" class="form-control username"
+                            id="username" required />
+                    <div class="success-korean hide">사용할 수 있는 이름입니다.</div>
+                    <div class="failure-korean hide">한글만 입력 가능합니다.</div>
                 </div>       
             </div>
-
-            <div class="row col-md-12  align-items-center my-3">
-                <label class="col-md-2" for="birth">생년월일</label>
-                <div class="col-md-10">
-                    <input type="text" name="birth" class="form-control"
-                    placeholder="1900-00-00" id="birth" required />
-                </div>       
-            </div>  
-              <div class="row col-md-12  align-items-center my-3">
-                <label class="col-md-2" for="tel">전화번호</label>
-                <div class="col-md-10">
-                    <input type="text" name="email" class="form-control"
-                    placeholder="010-0000-0000" id="tel" required />
-              </div>       
+            <div class="row col-md-8  align-items-center my-3">
+                <label class="col-md-2" for="email">이메일</label>
+                <div class="col-md-3">
+                    <input type="text" name="emailName" class="form-control emailName"
+                            id="emailName" required placeholder="" />
+                </div>
+                <div><span>@</span></div>
+                <div class="col-md-3">
+                  <input type="text" name="emailId" class="form-control emailId"
+                          id="emailId" required />
+                </div>
+                <div class="col-md">
+                    <select name="E_select" id="E_select" class="form-control E_select">
+                      <option value="directly" id="textEmail">직접입력</option>
+                      <option value="naver.com" id="naver.com">naver.com</option>
+                      <option value="nate.com" id="nate.com">nate.com</option>
+                      <option value="dreamwiz.com" id="dreamwiz.com">dreamwiz.com</option>
+                      <option value="yahoo.co.kr" id="yahoo.co.kr">yahoo.co.kr</option>
+                      <option value="empal.com" id="empal.com">empal.com</option>
+                      <option value="gmail.com" id="gmail.com">gmail.com</option>
+                      <option value="korea.com" id="korea.com">korea.com</option>
+                      <option value="chol.com" id="chol.com">chol.com</option>
+                      <option value="paran.com" id="paran.com">paran.com</option>
+                      <option value="freechal.com" id="freechal.com">freechal.com</option>
+                      <option value="hanmail.net" id="hanmail.net">hanmail.net</option>
+                      <option value="hotmail.com" id="hotmail.com">hotmail.com</option>
+                    </select>
+                </div>
             </div>
-            <div class="row col-md-12  align-items-center my-3">
+              <div class="row col-md-8  align-items-center my-3">
+                <label class="col-md-2" for="tel">휴대폰번호</label>
+                <div class="col-md-3">
+                    <input type="tel" name="tel" class="form-control tel"
+                            id="tel" required />
+                </div>
+                -
+                <div class="col-md-4">
+                  <input type="tel" name="tel" class="form-control tel"
+                          id="tel" required />
+                </div>
+                -
+                <div class="col-md">
+                  <input type="tel" name="tel" class="form-control tel"
+                          id="tel" required />
+                </div> 
+                <div class="elFailureTel hide">숫자만 입력 가능합니다.</div>      
+              </div>
+            <div class="row col-md-8  align-items-center my-3">
               <label class="col-md-2" for="address">주소</label>
-              <div class="col-md-10">
-                  <input type="text" name="address" class="form-control"
-                  placeholder="경기도 김포시 사우로" id="address" required />
-              </div>       
+              <ul class="col-md-10">
+                <li class="d-flex mb-1">
+                  <input type="tel" name="new_zipcode" id="zip_code" class="size_zip_all form-control col-md-2" readonly>
+                  <button type="button" class="btn btn-info ml-1" onclick="findAddr()">주소찾기</button>
+                </li>
+                <li>
+                  <input type="text" name="addr" id="addr" class="addr form-control mb-1" readonly>
+                </li>
+                <li>
+                  <input type="text" name="addr_dtl" id="addr_dtl" class="form-control addr_dtl">
+                </li>
+              </ul>
             </div>
-            <div class="row col-md-12  align-items-center my-3">
-              <label class="col-md-2" for="email">이메일</label>
-              <div class="col-md-10">
-                  <input type="email" name="email" class="form-control"
-                  placeholder="example@google.com" id="email" required />
-              </div>       
-            </div>
-            <div class="row col-md-12  align-items-center my-3">
-              <a href="#" class="create_btn btn btn-info col-12">입력완료</a>
+            <div class="row col-md-8 align-items-center my-3">
+              <a href="#" class="create_btn btn btn-info col-md-12">입력완료</a>
             </div>
             <input type="hidden" name="userid" value={{userid}} />
             <input type="hidden" name="imnum" id="imnum" />
       </form>
-    </div>
+      </div>
   </div>
-  <!-- //wrap -->
+  <!-- //wrap_create -->
 {% endblock %}
 
 {% block indexScript %}
@@ -139,5 +181,28 @@ function kakaoLogout() {
       Kakao.Auth.setAccessToken(undefined)
     }
   }  
+
+  
+//회원가입 주소 Daum API 사용
+function findAddr() {
+    new daum.Postcode({
+        oncomplete: function(data) {
+            //사용자 주소를 받아올 변수를 정의.
+            var addr = '';
+
+            // 사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+            if(data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우(R)
+                addr = data.roadAddress;
+            }else { //사용자가 지번 주소를 선택했을 경우(J)
+                addr = data.jibunAddress;
+            }
+            $("#zip_code").val(data.zonecode);
+            $("#addr").val(addr);
+            $("#addr_dtl").val("");
+            $("#addr_dtl").focus();
+
+        }
+    }).open();
+}
 </script>
 {% endblock %}

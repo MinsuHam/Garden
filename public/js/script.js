@@ -14,7 +14,26 @@ $(function() {
 		}, 800);
 	}).scroll();
 
-    
+    //hamburger
+    $('.resp_top_hamburger').mouseover(function() {
+        $('.resp_top_hamburger > a').addClass('on');
+    });
+    $('.resp_top_hamburger').mouseout(function() {
+        $('.resp_top_hamburger > a').removeClass('on');
+    });
+
+    //aside_menu 
+    $('.resp_top_hamburger > a').click(function() {
+        $('.layout_aside').addClass('on');
+        $('.side_close').addClass('on')
+    });
+    $('.side_close').click(function() {
+        $('.layout_aside').removeClass('on');
+        $('.side_close').removeClass('on')
+
+    }); 
+
+
     //nav hover 
     $('.nav_bar_menu > ul > li').mouseover(function() {
         $(this).find('a').addClass('on');
