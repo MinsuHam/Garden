@@ -1,0 +1,47 @@
+[
+    {
+        "flowerId": 1,
+        "flowerTitle": "계절마음",
+        "flowerDescription": "계절마음은 전국 해당지점에서 당일 가장 신선한 꽃으로 제작합니다.",
+        "flowerStar": ["star", "star", "star", "half", "line"],
+        "flowerPrice": 52900,
+        "flowerImg": "../images/banner/bg_hydrangea.jpg",
+        "detailUrl": "../images/banner/bg_hydrangea.jpg"
+    },
+    {
+        "flowerId": 2,
+        "flowerTitle": "분홍장미계절꽃다발",
+        "flowerDescription": "분홍장미와 어울리는 계절꽃으로 다양한 매력이 있는 꽃다발입니다.",
+        "flowerStar": ["star", "star", "star", "half", "line"],
+        "flowerPrice": 58900,
+        "flowerImg": "../images/banner/bg_hydrangea.jpg",
+        "detailUrl": "../images/banner/bg_hydrangea.jpg"
+    },
+    {
+        "flowerId": 3,
+        "flowerTitle": "별이빛나는밤",
+        "flowerDescription": "수국과 장미 께절꽃으로 '별이 빛나는 밤'을 표현해봤어요.",
+        "flowerStar": ["star", "star", "star", "half", "line"],
+        "flowerPrice": 90000,
+        "flowerImg": "../images/banner/bg_hydrangea.jpg",
+        "detailUrl": "../images/banner/bg_hydrangea.jpg"
+    },
+    {
+        "flowerId": 4,
+        "flowerTitle": "계절꽃다발",
+        "flowerDescription": "계절꽃다발은 전국 해당지점에서 당일 가장 신선한 꽃으로 제작합니다.",
+        "flowerStar": ["star", "star", "star", "half", "line"],
+        "flowerPrice": 52900,
+        "flowerImg": "../images/banner/bg_hydrangea.jpg",
+        "detailUrl": "../images/banner/bg_hydrangea.jpg"
+    },
+    {
+        "flowerId": 5,
+        "flowerTitle": "르누아르",
+        "flowerDescription": "르누아르는 특유의 따스한 빛을 담은 꽃바구니입니다.",
+        "flowerStar": ["star", "star", "star", "half", "line"],
+        "flowerPrice": 99000,
+        "flowerImg": "../images/banner/bg_hydrangea.jpg",
+        "detailUrl": "../images/banner/bg_hydrangea.jpg"
+    },
+]

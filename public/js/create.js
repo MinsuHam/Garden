@@ -50,7 +50,7 @@ window.onload = function() {
 
     /** 한글만 들어간 경우 true, 아니면 false를 리턴 */
     function onlyKorean(str) {
-        return /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/.test(str);
+        return /^[가-힣]+$/g.test(str);
     }
 
     /** 최소 8글자 이상이면서, 알파벳과 숫자 및 특수문자(@$!%*#?&)가 하나 이상 포함될 경우 true, 아니면 false를 리턴  */
@@ -69,7 +69,7 @@ window.onload = function() {
 
     let userid_check_btn = document.querySelector('.userid_check');
     userid_check_btn.addEventListener('click', function() {
-        if(elInputUserid.value.length >= 6 && elInputUserid.value.length <= 20) {
+        if(elInputUserid.value.length >= 8 && elInputUserid.value.length <= 20) {
             alert("사용 가능한 아이디입니다.");
         }
         else {

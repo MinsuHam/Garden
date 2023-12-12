@@ -68,12 +68,14 @@ body {
 }
 
 /* ###################### float_banner ###################### */
+
 .float_banner {
     position: absolute;
-    left: 100px;
-    top: 740px;
-    z-index: 100;
+
+    left: 160px;
+    z-index: 10;
 }
+
 /* ###################### //float_banner ###################### */
 
 /* ###################### aside_menu ###################### */
@@ -1365,3 +1367,93 @@ color: #71a200; */
     top: 45px;
 }
 /* ###################### //create ###################### */
+
+
+/* ###################### catalog_list_page ###################### */
+
+/* catalog_title */
+.catalog_title {
+    border-bottom: #ECECEC 1px solid;
+    margin: 0;
+    padding: 14px 0 10px;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+.catalog_title > ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.catalog_title > ul > li {
+    padding: 5px 5px;
+    color: #888;
+    border-bottom: 2px solid transparent;
+    margin: 0 4px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+.catalog_title > ul > li:last-child {
+    margin-left: auto;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.catalog_title > ul > li:last-child  p {
+    font-size: 14px;
+    color: #888;
+    background-color: #FFF;
+    border: 1px solid #cccccc;
+    border-radius: 999px;
+    padding: 5px 15px;
+    font-weight: normal;
+}
+
+/* catalog_content */
+.catalog_content {
+    padding: 40px 0;
+}
+.catalog_content_top {
+    text-align: center;
+    padding: 0;
+}
+.catalog_content_top_html {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.4em;
+    color: #000000;
+    padding: 0 0 10px;
+}
+/* catalog_subtitle */
+.catalog_content_subtitle, .search_filter_wrap .catalog_subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+/* //catalog_subtitle */
+
+.catalog_content_subtitle > li.on, .search_filter_wrap .catalog_subtitle > li.on {
+    color: #FFFFFF;
+    background-color: #71A200;
+}
+.catalog_content_subtitle > li > a {
+    display: inline-block;
+    margin: 0 4px;
+    padding: 10px 20px;
+    color: #444444;
+    cursor: pointer;
+    border-radius: 999px;
+    background-color: #eef0f2;
+    font-size: 14px;
+    font-weight: 400;
+}
+.catalog_content_subtitle > li > a:hover {
+    color: #71A200;
+}
+
+/* ###################### //catalog_list_page ###################### */
+

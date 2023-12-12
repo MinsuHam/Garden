@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <div class="col-md-2">
-                  <a href="#" class="userid_check btn btn-info d-block">중복확인</a>
+                  <a href="javascript:void(0);" class="userid_check btn btn-info d-block">중복확인</a>
                 </div> 
             </div>
             <div class="row col-md-8  align-items-center my-3">
@@ -154,7 +154,7 @@
         Kakao.API.request({
           url: '/v2/user/me',
           success: function (response) {
-        	  console.log(response)
+            console.log(response)
           },
           fail: function (error) {
             console.log(error)
@@ -172,7 +172,7 @@ function kakaoLogout() {
       Kakao.API.request({
         url: '/v1/user/unlink',
         success: function (response) {
-        	console.log(response)
+          console.log(response)
         },
         fail: function (error) {
           console.log(error)
@@ -185,11 +185,14 @@ function kakaoLogout() {
   
 //회원가입 주소 Daum API 사용
 function findAddr() {
+            //팝업 위치를 지정(화면의 가운데 정렬)
+            var width = 500; //팝업의 너비
+            var height = 600; //팝업의 높이
     new daum.Postcode({
         oncomplete: function(data) {
             //사용자 주소를 받아올 변수를 정의.
             var addr = '';
-
+          
             // 사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
             if(data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우(R)
                 addr = data.roadAddress;
@@ -202,7 +205,10 @@ function findAddr() {
             $("#addr_dtl").focus();
 
         }
-    }).open();
+    }).open({
+      left: (window.screen.width / 2) - (width / 2),
+      top: (window.screen.height / 2) - (height / 2)
+    });
 }
 </script>
 {% endblock %}

@@ -1,0 +1,106 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <div id="catalog_list_page">
+        <div class="catalog_title bg_blur swiper-container-horizontal">
+            <ul class="d-flex">
+                <li>
+                    <a href="#">플로리스트 추천</a>
+                </li>
+                <li>
+                    <a href="#">택배특가</a>
+                </li>
+                <li>
+                    <a href="#">크리스마스 꽃</a>
+                </li>
+                <li>
+                    <a href="#">내가 만드는 꽃</a>
+                </li>
+                <li>
+                    <a href="#">명화컬렉션</a>
+                </li>
+                <li>
+                    <a href="#">이달의 꽃</a>
+                </li>
+                <li>
+                    <a href="#">케이크</a>
+                </li>
+                <li class="justify-content-end">
+                    <a href="#"><p>전체보기</p></a>
+                </li>
+            </ul>
+        </div>
+        <!-- //catalog_list_page -->
+        <div class="catalog_content_list">
+            <div class="catalog_content">
+                <div class="catalog_content_top">
+                    <div class="catalog_content_top_html">
+                        <div>플로리스트 추천 꽃선물</div>
+                    </div>
+                </div>
+                <!-- catalog_content_top -->
+                <div class="catalog_content_subtitle_container">
+                    <ul class="catalog_content_subtitle">
+                        <li><a href="#" data-filter="all" class="active">전체</a></li>
+                        <li><a href="#" data-filter="flowers">꽃다발</a></li>
+                        <li><a href="#" data-filter="flower_basket">꽃바구니</a></li>
+                        <li><a href="#" data-filter="flower_box">꽃상자</a></li>
+                    </ul>
+                </div>
+                <!-- catalog_content_subtitle -->
+                <div class="catalog_content_middle">
+                    <ul>
+                        <li data-filter="flowers">flowers</li>
+                        <li data-filter="flower_basket">flower_basket</li>
+                        <li data-filter="flower_basket">flower_basket</li>
+                        <li data-filter="flower_box">box</li>
+                        <li data-filter="flower_basket">flower_basket</li>
+                        <li data-filter="flower_box">box</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- //catalog_content_list -->
+    </div>
+    <!-- //catalog_list_page -->
+{% endblock %}
+
+
+
+
+
+
+
+
+{% block indexScript %}
+<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+<script>
+    const filterMenuInit = () => {
+        const filters = document.querySelectorAll('[data-filter-id]');
+
+        filters.forEach(filter => {
+            const filterBtns = [...filter.querySelectorAll('[data-filter]')].filter(el => el.nodeName === 'A');
+            const filterLists = [...filter.querySelectorAll('[data-filter]')].filter(el => el.nodeName === 'LI');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const filterType = btn.getAttribute('data-filter');
+
+                    filterBtns.forEach(btn => btn.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    filterLists.forEach(list => {
+                        if (filterType === 'all'){
+                            list.style.display = 'list-item';
+                            return;
+                        }
+                        
+                        list.style.display = list.getAttribute('data-filter') === filterType ? 'list-item' : 'none';
+                    })
+                });
+            })
+        })
+    };
+    filterMenuInit();
+</script>
+{% endblock %}

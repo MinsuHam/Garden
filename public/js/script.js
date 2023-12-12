@@ -1,7 +1,8 @@
+
+
 $(function() {
-    
     //float_banner
-	var floatPosition = parseInt($(".float_banner").css('top'));
+    var floatPosition = parseInt($(".float_banner").css('bottom'));
 	// 250px 이런식으로 가져오므로 여기서 숫자만 가져온다. parseInt( 값 );
 
 	$(window).scroll(function() {
@@ -12,7 +13,11 @@ $(function() {
 		$(".float_banner").stop().animate({
 			"top" : newPosition
 		}, 800);
-	}).scroll();
+	}).scroll(); 
+
+
+
+
 
     //hamburger
     $('.resp_top_hamburger').mouseover(function() {

@@ -18,6 +18,11 @@ router.get('/cart', (req, res) => {
     res.render('cart');
 });
 
+router.get('/page_present', (req, res) => {
+    res.render('page_present');
+});
+
+
 
 
 
