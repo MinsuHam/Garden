@@ -22,6 +22,10 @@ router.get('/page_present', (req, res) => {
     res.render('page_present');
 });
 
+router.get('/page_present_detail', (req, res) => {
+    res.render('page_present_detail');
+});
+
 
 
 

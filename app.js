@@ -19,6 +19,7 @@ nunjucks.configure('views', {
 });
 
 app.use('/', express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, "data")));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended : false }));
