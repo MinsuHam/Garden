@@ -565,9 +565,8 @@ header {
     margin-right: 10px;
 }
 .search_box input[type=text] {
-    height: 100%;
     width: 140px;
-    height: 38px;
+    height: 35px;
     border: none;
 }
 .search {
@@ -1452,7 +1451,7 @@ color: #71a200; */
 }
 /* //catalog_subtitle */
 
-.catalog_content_subtitle > li.on, .search_filter_wrap .catalog_subtitle > li.on {
+.catalog_content_subtitle > li.on a {
     color: #FFFFFF;
     background-color: #71A200;
 }
@@ -1497,6 +1496,7 @@ color: #71a200; */
 .display_goods_name {
     font-size: 15px;
     line-height: 1.4;
+    color: #444;
 }
 .display_sales_price .area span {
     color: #71A200;
@@ -1566,6 +1566,16 @@ color: #71a200; */
     line-height: 1.4;
     font-weight: 400;
     color: #767676;
+}
+.display_sales_percent span {
+    color: #71a200 !important;
+}
+
+.displaY_sales_percent .num {
+    font-size: 17px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -1px;
 }
 
 
