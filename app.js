@@ -4,11 +4,15 @@ const path = require('path');
 const fs = require('fs');
 const nunjucks = require('nunjucks');
 
+
+
 //routes 별도로 만들어 라우터 분리
 const indexRouter = require('./routes');
 
 dotenv.config();
 const app = express();
+
+
 
 app.set('port', process.env.PORT || 8080);
 app.set('view engine', 'html');
@@ -18,13 +22,17 @@ nunjucks.configure('views', {
     watch: true
 });
 
-app.use('/', express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, "data")));
-
 app.use(express.json());
 app.use(express.urlencoded({ extended : false }));
 
+
+app.use('/', express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, "data")));
+
 app.use('/', indexRouter);
+
+
+
 
 app.use((req, res, next)=>{
     const error = new Error(`${req.method} ${req.url} 라우터가 없습니다.`);
@@ -48,3 +56,6 @@ app.get('/', (req, res) => {
 app.listen(app.get('port'), () => {
     console.log(app.get('port') + "에서 응답을 기다리는 중... http://localhost:8080");
 });
+
+
+module.exports = app;

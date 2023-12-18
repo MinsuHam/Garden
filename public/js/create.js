@@ -71,6 +71,7 @@ window.onload = function() {
     userid_check_btn.addEventListener('click', function() {
         if(elInputUserid.value.length >= 8 && elInputUserid.value.length <= 20) {
             alert("사용 가능한 아이디입니다.");
+            document.getElementById('userpass').focus();
         }
         else {
             alert("아이디를 확인해주세요.");
@@ -172,11 +173,6 @@ window.onload = function() {
             }
         }
     } */
-
-
-
-
-
 };//JavaScript
 
 

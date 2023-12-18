@@ -20,7 +20,7 @@ const mysqlConnection = {
                 console.error('Error Code' + err.code);
                 console.error('Error Message' + err.message);
             }else {
-                console.log("MYSQL 접속 성공!!");
+                console.log("MYSQL 접속 성공!!😀");
             }
         });
     }

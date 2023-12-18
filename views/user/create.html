@@ -1,7 +1,7 @@
-{% extends 'layout.html' %}
+{% extends '../layout.html' %}
 
 {% block content %}
-  <div class="login_img text-center">
+  <div class="login_img text-center mt-5 mb-5">
     <div class="login_img i1">
       <span>약관동의</span>
       <span><i class="ri-user-line"></i></span>
@@ -21,8 +21,8 @@
       </div>
   </div>
 
-  <div id="wrap_create">
-    <div class="container">
+  <div id="wrap_create" class="mt-1">
+    <div class="container create_container">
         <hr>
         <form class="row justify-content-center" name="login_form" method="post">
             <div class="row col-md-8  align-items-center my-3">
@@ -70,8 +70,8 @@
             <div class="row col-md-8  align-items-center my-3">
                 <label class="col-md-2" for="email">이메일</label>
                 <div class="col-md-3">
-                    <input type="text" name="emailName" class="form-control emailName"
-                            id="emailName" required placeholder="" />
+                    <input type="text" name="emailname" class="form-control emailName"
+                            id="emailname" required placeholder="" />
                 </div>
                 <div><span>@</span></div>
                 <div class="col-md-3">
@@ -98,20 +98,11 @@
             </div>
               <div class="row col-md-8  align-items-center my-3">
                 <label class="col-md-2" for="user_tel">휴대폰번호</label>
-                <div class="col-md-3">
+                <div class="col-md">
                     <input type="tel" name="user_tel" class="form-control tel"
                             id="tel" required />
                 </div>
-                -
-                <div class="col-md-4">
-                  <input type="tel" name="user_tel" class="form-control tel"
-                          id="tel" required />
-                </div>
-                -
-                <div class="col-md">
-                  <input type="tel" name="user_tel" class="form-control tel"
-                          id="tel" required />
-                </div> 
+
                 <div class="elFailureTel hide">숫자만 입력 가능합니다.</div>      
               </div>
             <div class="row col-md-8  align-items-center my-3">
@@ -130,10 +121,8 @@
               </ul>
             </div>
             <div class="row col-md-8 align-items-center my-3">
-              <a href="#" class="create_btn btn btn-info col-md-12">입력완료</a>
+              <button type="submit" class="create_btn btn btn-info col-md-12">입력완료</button>
             </div>
-            <input type="hidden" name="userid" value={{userid}} />
-            <input type="hidden" name="imnum" id="imnum" />
       </form>
       </div>
   </div>
@@ -142,6 +131,8 @@
 
 {% block indexScript %}
 <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+<script src="../js/create.js"></script>
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <script>
 
     window.Kakao.init('5aaea0190cb95d8a6169d6ce269782ab');

@@ -1,5 +1,3 @@
-
-
 $(function() {
     //float_banner
     var floatPosition = parseInt($(".float_banner").css('bottom'));
@@ -14,10 +12,6 @@ $(function() {
 			"top" : newPosition
 		}, 800);
 	}).scroll(); 
-
-
-
-
 
     //hamburger
     $('.resp_top_hamburger').mouseover(function() {
@@ -35,9 +29,7 @@ $(function() {
     $('.side_close').click(function() {
         $('.layout_aside').removeClass('on');
         $('.side_close').removeClass('on')
-
     }); 
-
 
     //nav hover 
     $('.nav_bar_menu > ul > li').mouseover(function() {
@@ -46,7 +38,6 @@ $(function() {
     $('.nav_bar_menu > ul > li').mouseout(function() {
         $(this).find('a').removeClass('on');
     }); 
-
 
     //search_btn 
     $('.search_btn').click(function() {
@@ -57,8 +48,6 @@ $(function() {
         $('.nav_bar_right_container').show();
         $('.search_new').stop().fadeOut(200);
     });
-
-
 
     //two_display_wrap .two_display_nav
     let navBtn = $('.two_display_nav > li');
@@ -71,7 +60,4 @@ $(function() {
         navCont.eq(index).show().siblings().hide();
         navCont.focus();
     });
-    
-    
-
 });//jQuery
