@@ -83,13 +83,6 @@ router.post('/login', (req, res) => {
     }
 });
 
-//로그아웃
-router.get('/logout', function (req, res) {
-    req.session.destroy(function (err) {
-        res.redirect('/');
-    });
-});
-
 //회원가입
 router.get('/create', (req, res) => {
     res.render('./user/create');
@@ -135,7 +128,13 @@ router.post('/create', (req, res) => {
 
 //장바구니
 router.get('/cart', (req, res) => {
-    res.render('./user/cart');
+    if(!authCheck.isOwner(req, res)) { //로그인 안되어 있으면 로그인 페이지로
+        res.redirect('/login');
+        return false;
+    }else {
+        res.render('./user/cart'); //로그인 되어있으면 메인 페이지로 이동
+        return false;
+    }
 });
 
 
@@ -149,13 +148,21 @@ router.get('/page_present', (req, res) => {
 
 //my Page
 router.get('/mypage', (req, res) => {
-    if(!authCheck.isOwner(req, res)) { //로그인 안되어있으면 로그인 페이지로
+    if(!authCheck.isOwner(req, res)) { //로그인 안되어 있으면 로그인 페이지로
         res.redirect('/login');
         return false;
     }else {
-        res.redirect('/index'); //로그인 되어있으면 메인 페이지로 이동
+        res.render('./user/mypage'); //로그인 되어있으면 메인 페이지로 이동
         return false;
     }
+});
+
+
+//로그아웃
+router.get('/logout', function (req, res) {
+    req.session.destroy(function (err) {
+        res.redirect('/');
+    });
 });
 
 

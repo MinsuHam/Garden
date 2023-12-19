@@ -1,100 +1,152 @@
-    
-    
-    <!-- ######### 팝업창 #########-->
-    <div class="header_popup row">
-        <div class="header_popup_txt">
-            <a href="#">
-                <p>회원가입시 2,000원 바로지급!
-                    <span></span>
-                    <button class="header_close"></button>
-                </p>
-            </a>
+<div id="layout_header" class="layout_header">
+    <div class="bn_top bn_top_div">
+        <a href="javascript:void(0);">
+            <p onclick="location.href='page_present'">
+                <!-- 지금 회원가입하면 할인/적립/페이백 혜택! -->
+                회원가입시 2,000원 바로지급!
+                <span></span>
+                <button onclick="">닫기</button>
+            </p>
+        </a>
+    </div>
+    <div class="util_wrap">
+        <div class="resp_wrap" style="position: relative;">
+            <!-- 왼쪽 플로팅 배너 -->
+            <div class="wing_area left_wing_area" style="top: 685px; visibility: visible;">
+                <a href="/page_present">
+                    <img src="../../images/wing_banner_delivery.png" alt="전국 2~3시간 순간배송">
+                </a>
+                <a href="/page_present" style="display:block;margin:10px 0 0 0;">
+                    <img src="../../images/wing_banner_paypal.png" alt="페이팔 결제 가이드">
+                </a>
+            </div>
+            <!-- 오른쪽 플로팅 배너 -->
+            <div class="wing_area right_wing_area" style="top: 685px; visibility: visible;">
+                <!-- <img src="../../public/images/wing_banner_paypal.png" alt="페이팔 결제 가이드"> -->
+            </div>
         </div>
     </div>
-    <!-- ######### //팝업창 #########-->
-
-    <!-- ######### float_banner #########-->
-    <div class="float_banner">
-        <ul>
-            <li class="mb-3">
-                <a href="#"><img src="../images/wing_banner_delivery.png" alt="wing_banner_delivery"></a>
-            </li>
-            <li>
-                <a href="#"><img src="../images/wing_banner_paypal.png" alt="wing_banner_delivery"></a>
-            </li>
-        </ul>
-    </div>
-    <!-- ######### //float_banner #########-->
-
-    <!-- ######### header  #########-->
-    <header>
-        <div class="container nav_top mt-5">
-            <div class="row d-flex justify-content-between align-items-center text-center">
-                <!-- 햄버거 메뉴 -->
-                <div class="resp_top_hamburger">
-                    <a href="javascript:void(0);" class="">
-                        <b>aside menu</b>
-                        <h2>전체상품</h2>
-                    </a>
-                </div>  
-                <!-- //햄버거 메뉴 -->
-                <div class="top_nav_img">
-                    <a href="/"><img src="../images/header_logo/resp_logo_sample.png" alt="LOGO"></a>
-                </div>
-                
-                <div class="top_right_nav">
-                    <a href="/"><img src="../images/header_logo/111.jpg" alt="right_nav_img"></a>
-                </div>
+    <!-- //util_wrap -->
+    <div class="logo_wrap">
+        <div class="resp_wrap">
+            <!-- logo -->
+            <h1 class="logo_area">
+                <a href="/">
+                    <img src="../images/header_logo/resp_logo_sample.png" alt="(주)청년들">
+                </a>
+            </h1>
+            <!-- 햄버거 버튼 -->
+            <div class="resp_top_hamburger">
+                <a href="#">
+                    <b>aside menu</b>
+                    <h2>전체상품</h2>
+                </a>
             </div>
-        </div> 
-        <hr>
-        <div class="nav_bar container mt-2 text-center p-0">
-            <div class="row">
-                <div class="nav_bar_menu col-10">
-                    <ul class="justify-content-left d-flex text-center ml-5">
-                        <li><a href="/page_present" class="">꽃선물</a></li>
-                        <li><a href="/mypage" class="">개업화분</a></li>
-                        <li><a href="#" class="">승진취임</a></li>
-                        <li><a href="#" class="">결혼장례</a></li>
-                        <li><a href="#" class="">정기구독</a></li>
-                        <li><a href="#" class="">택배특가</a></li>
-                        <li><a href="#" class="">EVENT</a></li>
-                        <li><a href="#" class="">MAGAZINE</a></li>
-                    </ul>
-                </div>
-                <div class="nav_bar_right col-2">
-                    <div class="nav_bar_right_container">
-                        <ul class="d-flex justify-content-end">
-                            <li class="mr-2">
-                                <a href="/login"><img src="../images/header_nav/icon_myinfo.svg" alt="myinfo"></a>
-                            </li>
-                            <li class="mr-2">
-                                <a href="/cart" class="cart">
-                                    <img src="../images/header_nav/icon_cart.svg" alt="cart">
-                                    <div class="cart_count"><span>1</span></div>
-                                </a>
-                            </li>
-                            <li class="mr-2 ml-2">
-                                <a href="#" class="search_btn"><img src="../images/header_nav/icon_search.svg" alt="search"></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="search_new">
-                        <form action="" name="topSearchForm" id="topSearchForm">
-                            <div class="input_area">
-                                <div class="cont">
-                                    <label for="" class="search_box">
-                                        <input type="text">
-                                        <button type="submit" class="search"></button>
-                                        <button type="button" class="close"></button>
-                                    </label>
+            <!-- 슬라이드 배너 영역 -->
+            <div class="gnb_bnr_slide gnb_bnr_slide_02" style="position:absolute; right:40px; top:0px; width:220px; height:148px;">
+                <div class="slider_gon">
+                    <!-- 슬라이드 배너 데이터 영역 :: START -->
+                    <div class="light_style_1_2 designBanner slick-initialized slick-slider slick-vertical">
+                        <button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="display: block;">Previous</button>
+                        <div class="slick-list draggable" style="height: 120px;">
+                            <div class="slick-track">
+                                <div class="sslide slick-slide slick-cloned">
+                                    <a href="#" class="slink">
+                                        <img class="simg" src="../../images/header_logo/images_1.jpg" alt="1">
+                                    </a>
                                 </div>
                             </div>
-                        </form>
+                        </div>
+                        <button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;">Next</button>
                     </div>
+                    <!-- 슬라이드 배너 데이터 영역 :: END -->
                 </div>
-                <!-- // nav_bar -->
+            </div>
+            <!-- //슬라이드 배너 영역 -->
+        </div>
+    </div>
+    <!-- //로고영역 -->
+
+    <!-- ++++ 카테고리 메뉴 ++++ -->
+    <div id="cateSwiper" class="nav_wrap">
+        <div class="resp_wrap">
+            <div class="nav_category_area">
+                <div class="designCategoryNavigation">
+                    <ul class="respCategoryList">
+                        <li class="categoryDepth1">
+                            <a href="/" class="categoryDepthLink">
+                                <em style="color:#D00002">크리스마스</em>
+                            </a>
+                        </li>
+                        <li class="categoryDepth1">
+                            <a href="/page_present" class="categoryDepthLink">
+                                <em>꽃선물</em>
+                            </a>
+                        </li>
+                        <li class="categoryDepth1">
+                            <a href="/" class="categoryDepthLink">
+                                <em>개업화분</em>
+                            </a>
+                        </li>
+                        <li class="categoryDepth1">
+                            <a href="/" class="categoryDepthLink">
+                                <em>승진취임</em>
+                            </a>
+                        </li>
+                        <li class="categoryDepth1">
+                            <a href="/" class="categoryDepthLink">
+                                <em>결혼장례</em>
+                            </a>
+                        </li>
+                        <li class="categoryDepth1">
+                            <a href="/" class="categoryDepthLink">
+                                <em>장기구독</em>
+                            </a>
+                        </li>
+                        <li class="categoryDepth1 right_area">
+                            <div class="nav_comment">
+                                <span>46% 할인</span>
+                            </div>
+                            <a href="/" class="categoryDepthLink">
+                                <em>택배특가</em>
+                            </a>
+                        </li>
+                        <li class="categoryDepth1 right_area">
+                            <div class="nav_comment nav_comment_diy">
+                                <span>NEW</span>
+                            </div>
+                            <a href="/" class="categoryDepthLink">
+                                <em>꽃시장</em>
+                            </a>
+                        </li>
+                        <li class="custom_nav_link">
+                            <a href="/" class="categoryDepthLink">
+                                <em>EVENT</em>
+                            </a>
+                        </li>
+                        <li class="custom_nav_link">
+                            <a href="/" class="categoryDepthLink">
+                                <em>MAGAZINE</em>
+                            </a>
+                        </li>
+                        <!-- 카테고리 메뉴 오른쪽  -->
+                        <li class="categoryDepth1 right_area">
+                            <a href="/mypage" class="top_menu_myinfo"></a>
+                        </li>
+                        <li class="categoryDepth1 right_area">
+                            <a href="/cart" class="top_menu_cart">
+                                <span class="cart_cnt2">0</span>
+                            </a>
+                        </li>
+                        <li class="categoryDepth1 right_area">
+                            <a href="javascript:void(0);" class="top_menu_search"></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </header>
-    <!-- ######### //header #########-->
+    </div>
+</div>
+<!-- 헤더영역: 끝 -->
+
+
