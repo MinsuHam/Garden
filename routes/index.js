@@ -165,7 +165,10 @@ router.get('/logout', function (req, res) {
     });
 });
 
-
+//메인 바디영역
+router.get('/main', (req, res) => {
+    res.render('./template/main');
+});
 
 
 //상세페이지(상품)

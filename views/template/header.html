@@ -1,3 +1,4 @@
+<!-- ++++ 헤더 영역: 시작 ++++ -->
 <div id="layout_header" class="layout_header">
     <div class="bn_top bn_top_div">
         <a href="javascript:void(0);">
@@ -5,10 +6,11 @@
                 <!-- 지금 회원가입하면 할인/적립/페이백 혜택! -->
                 회원가입시 2,000원 바로지급!
                 <span></span>
-                <button onclick="">닫기</button>
+                <button onclick="event.stopPropagation(); $('.bn_top_div').slideUp();">닫기</button>
             </p>
         </a>
     </div>
+    <!-- 플로팅 배너 영역: 시작 -->
     <div class="util_wrap">
         <div class="resp_wrap" style="position: relative;">
             <!-- 왼쪽 플로팅 배너 -->
@@ -26,7 +28,7 @@
             </div>
         </div>
     </div>
-    <!-- //util_wrap -->
+    <!-- 플로팅 배너 영역: 끝 -->
     <div class="logo_wrap">
         <div class="resp_wrap">
             <!-- logo -->
@@ -42,10 +44,40 @@
                     <h2>전체상품</h2>
                 </a>
             </div>
-            <!-- 슬라이드 배너 영역 -->
+            <!-- //햄버거 버튼 -->
+            <!-- ++++ 검색 메뉴 ( 1023px 이하에서 노출 )-->
+            <div id="searchModule" class="resp_top_search">
+                <a href="javascript:void(0);" id="btnSearchV2" class="btn_search_open">
+                    검색
+                </a>
+                <div id="searchVer2" class="searchVer2">
+                    <div class="search_new">
+                        <!-- ++++ 검색 입력 ++++ -->
+                        <form name="topSearchForm" id="topSearchForm">
+                            <div class="input_area">
+                                <div class="cont">
+                                    <label class="search_box">
+                                        <input type="text" name="search_text" id="searchVer2InputBox" class="search_ver2_input_box" 
+                                                placeholder="필요한 상품을 입력해주세요." autocomplete="off">
+                                    </label>
+                                    <button type="submit" class="search"></button>
+                                    <button type="button" class="close searchModuleClose"></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ++++ 장바구니 ( 1023px 이하에서 노출 )-->
+            <a href="#" class="resp_top_cart">
+                <span class="cart_cnt2">0</span>
+            </a>
+
+            <!-- 헤더 슬라이드 배너 영역 -->
             <div class="gnb_bnr_slide gnb_bnr_slide_02" style="position:absolute; right:40px; top:0px; width:220px; height:148px;">
                 <div class="slider_gon">
-                    <!-- 슬라이드 배너 데이터 영역 :: START -->
+                    <!-- 헤더 슬라이드 배너 데이터 영역 :: START -->
                     <div class="light_style_1_2 designBanner slick-initialized slick-slider slick-vertical">
                         <button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="display: block;">Previous</button>
                         <div class="slick-list draggable" style="height: 120px;">
@@ -59,10 +91,10 @@
                         </div>
                         <button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;">Next</button>
                     </div>
-                    <!-- 슬라이드 배너 데이터 영역 :: END -->
+                    <!-- 헤더 슬라이드 배너 데이터 영역 :: END -->
                 </div>
             </div>
-            <!-- //슬라이드 배너 영역 -->
+            <!-- //헤더 슬라이드 배너 영역 -->
         </div>
     </div>
     <!-- //로고영역 -->
@@ -147,6 +179,16 @@
         </div>
     </div>
 </div>
-<!-- 헤더영역: 끝 -->
+<!-- ++++ 헤더 영역: 끝 ++++ -->
+{% block script %}
+<script>
+    $(function() {
+        //headerpop
+        $('.header_close').click(function() {
+        $('.bn_top').fadeOut(300);
+    });
+    });//jQeury
 
+</script>
+{% endblock %}
 

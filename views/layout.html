@@ -21,14 +21,17 @@
     {% block style %}
     {% endblock %}
 </head>
-<body>
-    {% include "./template/header.html" %}
+<body style="overflow: visible;">
+    <div id="wrap">
+        <div id="layout_wrap" class="layout_wrap" style="height: 522px; position: relative; width: auto;">
+            {% include "./template/header.html" %}
+                {% block content %}
 
-    <div class="container">
-        {% block content %}
-        {% endblock %}
+                {% endblock %}
+            {% include "./template/footer.html" %}
+        </div>
     </div>
-    {% include "./template/footer.html" %}
+
 
     
 
