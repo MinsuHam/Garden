@@ -46,29 +46,7 @@
             </div>
             <!-- //햄버거 버튼 -->
             <!-- ++++ 검색 메뉴 ( 1023px 이하에서 노출 )-->
-            <div id="searchModule" class="resp_top_search">
-                <a href="javascript:void(0);" id="btnSearchV2" class="btn_search_open">
-                    검색
-                </a>
-                <div id="searchVer2" class="searchVer2">
-                    <div class="search_new">
-                        <!-- ++++ 검색 입력 ++++ -->
-                        <form name="topSearchForm" id="topSearchForm">
-                            <div class="input_area">
-                                <div class="cont">
-                                    <label class="search_box">
-                                        <input type="text" name="search_text" id="searchVer2InputBox" class="search_ver2_input_box" 
-                                                placeholder="필요한 상품을 입력해주세요." autocomplete="off">
-                                    </label>
-                                    <button type="submit" class="search"></button>
-                                    <button type="button" class="close searchModuleClose"></button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
+            <a href="javascript:void(0);" class="top_menu_search_1"></a>
             <!-- ++++ 장바구니 ( 1023px 이하에서 노출 )-->
             <a href="#" class="resp_top_cart">
                 <span class="cart_cnt2">0</span>
@@ -172,6 +150,28 @@
                         </li>
                         <li class="categoryDepth1 right_area">
                             <a href="javascript:void(0);" class="top_menu_search"></a>
+                            <div id="searchModule" class="resp_top_search">
+                                <a href="javascript:void(0);" id="btnSearchV2" class="btn_search_open">
+                                    검색
+                                </a>
+                                <div id="searchVer2" class="search_ver2">
+                                    <div class="search_new">
+                                        <!-- ++++ 검색 입력 ++++ -->
+                                        <form name="topSearchForm" id="topSearchForm">
+                                            <div class="input_area">
+                                                <div class="cont">
+                                                    <label class="search_box">
+                                                        <input type="text" name="search_text" id="searchVer2InputBox" class="search_ver2_input_box" 
+                                                                placeholder="필요한 상품을 입력해주세요." autocomplete="off">
+                                                    </label>
+                                                    <button type="submit" class="search"></button>
+                                                    <button type="button" class="close searchModuleClose"></button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -185,9 +185,19 @@
     $(function() {
         //headerpop
         $('.header_close').click(function() {
-        $('.bn_top').fadeOut(300);
-    });
-    });//jQeury
+            $('.bn_top').fadeOut(300);
+        });
+
+        $('.top_menu_search').click(function() {
+            $('.search_ver2').addClass('on');
+        });
+        $('.close').click(function() {
+            $('.search_ver2').removeClass('on');
+            $('.search_new').style.display = "block";
+        });
+
+        
+    });//jQuery
 
 </script>
 {% endblock %}

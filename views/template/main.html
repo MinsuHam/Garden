@@ -1,5 +1,9 @@
 {% extends 'layout.html' %}
 
+{% block style %}
+    <link rel="stylesheet" href="../../css/main/main.css">
+{% endblock %}
+
 {% block content %}
 <div id="layout_body" class="layout_body">
     <div class="main_visual">
@@ -45,99 +49,83 @@
 
     <!-- ++++ 테마 메뉴 영역: 시작 ++++ -->
     <div class="theme_content">
-        <div class="theme_box">
-            <div class="theme_box_item">
-                <div class="theme_box_item_box">
+        <div class="row g-3 g-md-2">
+            <div class="col sizing">
+                <div class="theme_box_1220">
                     <a href="#">
-                        <div class="theme_box_item_title">꽃선물</div>
-                        <div class="theme_box_item_image_box">
-                            <div class="theme_box_item_image theme_1_box">
-                                <img src="../../images/theme_content/theme_1_230711.png" alt="1" class="theme_1">
-                            </div>
+                        <div class="theme_text">꽃선물</div>
+                        <div>
+                            <img src="../../images/theme_content/flower.jpg" alt="flower" class="flower">
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="theme_box_item">
-                <div class="theme_box_item_box">
+            <div class="col sizing">
+                <div class="theme_box_1220">
                     <a href="#">
-                        <div class="theme_box_item_title">개업축하</div>
-                        <div class="theme_box_item_image_box">
-                            <div class="theme_box_item_image" style="right: -7px; top: 0">
-                                <img src="../../images/theme_content/theme_2.png" alt="2" class="theme_2">
-                            </div>
+                        <div class="theme_text">개업축하</div>
+                        <div>
+                            <img src="../../images/theme_content/plant.jpg" alt="plant" class="plant">
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="theme_box_item">
-                <div class="theme_box_item_box">
+            <div class="col sizing">
+                <div class="theme_box_1220">
                     <a href="#">
-                        <div class="theme_box_item_title">공기정화</div>
-                        <div class="theme_box_item_image_box">
-                            <div class="theme_box_item_image" style="right: 2px; top: 8px">
-                                <img src="../../images/theme_content/theme_3.png" alt="3" class="theme_3">
-                            </div>
+                        <div class="theme_text">공기정화</div>
+                        <div>
+                            <img src="../../images/theme_content/plant2.jpg" alt="plant2" class="plant2">
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="theme_box_item">
-                <div class="theme_box_item_box">
+            <div class="col sizing">
+                <div class="theme_box_1220">
                     <a href="#">
-                        <div class="theme_box_item_title">승진취임</div>
-                        <div class="theme_box_item_image_box">
-                            <div class="theme_box_item_image" style="right: 9px; top: 3px">
-                                <img src="../../images/theme_content/theme_4.png" alt="4" class="theme_4">
-                            </div>
+                        <div class="theme_text">승진취임</div>
+                        <div>
+                            <img src="../../images/theme_content/orchid.jpg" alt="orchid" class="orchid">
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="theme_box_item">
-                <div class="theme_box_item_box">
+            <div class="col sizing">
+                <div class="theme_box_1220">
                     <a href="#">
-                        <div class="theme_box_item_title">병문안</div>
-                        <div class="theme_box_item_image_box">
-                            <div class="theme_box_item_image" style="right: -12px; top: 16px">
-                                <img src="../../images/theme_content/theme_5.png" alt="5" class="theme_5">
-                            </div>
+                        <div class="theme_text">병문안</div>
+                        <div>
+                            <img src="../../images/theme_content/etc.jpg" alt="etc" class="etc">
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="theme_box_item">
-                <div class="theme_box_item_box">
+            <div class="col sizing">
+                <div class="theme_box_1220">
                     <a href="#">
-                        <div class="theme_box_item_title">출산선물</div>
-                        <div class="theme_box_item_image_box">
-                            <div class="theme_box_item_image" style="right: -5px; top: 10px">
-                                <img src="../../images/theme_content/theme_6.png" alt="6" class="theme_6">
-                            </div>
+                        <div class="theme_text">출산선물</div>
+                        <div>
+                            <img src="../../images/theme_content/etc2.jpg" alt="etc2" class="etc2">
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="theme_box_item">
-                <div class="theme_box_item_box">
+            <div class="col sizing">
+                <div class="theme_box_1220">
                     <a href="#">
-                        <div class="theme_box_item_title">결혼식</div>
-                        <div class="theme_box_item_image_box">
-                            <div class="theme_box_item_image" style="right: -18px; top: 9px">
-                                <img src="../../images/theme_content/theme_7.png" alt="7" class="theme_7">
-                            </div>
+                        <div class="theme_text">결혼식</div>
+                        <div>
+                            <img src="../../images/theme_content/wreath.jpg" alt="wreath" class="wreath">
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="theme_box_item">
-                <div class="theme_box_item_box">
+            <div class="col sizing">
+                <div class="theme_box_1220">
                     <a href="#">
-                        <div class="theme_box_item_title">장례식</div>
-                        <div class="theme_box_item_image_box">
-                            <div class="theme_box_item_image" style="right: -18px; top: 9px">
-                                <img src="../../images/theme_content/theme_8.png" alt="8" class="theme_8">
-                            </div>
+                        <div class="theme_text">장례식</div>
+                        <div>
+                            <img src="../../images/theme_content/wreath2.jpg" alt="wreath2" class="wreath2">
                         </div>
                     </a>
                 </div>

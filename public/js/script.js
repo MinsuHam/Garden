@@ -1,6 +1,6 @@
 $(function() {
     //float_banner
-    var floatPosition = parseInt($(".float_banner").css('bottom'));
+    var floatPosition = parseInt($(".left_wing_area").css('bottom'));
 	// 250px 이런식으로 가져오므로 여기서 숫자만 가져온다. parseInt( 값 );
 
 	$(window).scroll(function() {
@@ -32,10 +32,10 @@ $(function() {
     }); 
 
     //nav hover 
-    $('.nav_bar_menu > ul > li').mouseover(function() {
+    $('.designCategoryNavigation > ul > li').mouseover(function() {
         $(this).find('a').addClass('on');
     }); 
-    $('.nav_bar_menu > ul > li').mouseout(function() {
+    $('.designCategoryNavigation > ul > li').mouseout(function() {
         $(this).find('a').removeClass('on');
     }); 
 
