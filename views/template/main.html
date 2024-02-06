@@ -6,144 +6,924 @@
 
 {% block content %}
 <div id="layout_body" class="layout_body">
-    <div class="main_visual">
-        <div class="slides">
-            <div class="visual slick-initialized slick-slider slick-dotted">
-                <button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="display: block;">Previous</button>
-                <div class="slick-list draggable">
-                    <div class="slick-track">
-                        <div class="visual-wrap slick-slide slick-cloned">
-                            <a href="#">
-                                <div class="visual_pc" style="background-image: url('../../images/slider/visual_open.jpg');">
+    <div class="slide-intro">
+        <div id="image-carousel" class="splide">
+            <div class="splide__arrows">
+                <button class="splide__arrow splide__arrow--prev" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false">
+                        <path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path>
+                    </svg>
+                </button>
+                <button class="splide__arrow splide__arrow--next" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false">
+                        <path d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="splide__track splide__track--loop splide__track--ltr splide__track--draggable" 
+                        id="image-carousel-track">
+                <ul class="splide__list" id="image-carousel-list" role="presentation">
+                    <!-- 날짜 설정 -->
+                    <li class="splide__slide" id="image-carousel-clone01" style="margin-right: 10px; width: calc(100% + 0px);">
+                        <a href="#" class="btn_tvcf01">
+                            <div class="splide__slide_pc">
+                                <div style="position: relative;">
+                                    <img src="../../images/template/main/intro_slide/cf_pc.jpg" alt="cf">
+                                    <div style="position: absolute; left: 0; top: 0; width: 100%; height: 100%;">
+                                        <video classname="" autoplay="" loop="" muted="" playsinline="" 
+                                                poster="../../images/template/main/intro_slide/cf_pc.jpg" width="100%" height="100%">
+                                            <source src="" type="video/webm">
+                                            <source src="../../images/template/main/intro_slide/tf_pc.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="splide__slide_mobile">
+                                <div style="position: relative;">
+                                    <img src="../../images/template/main/intro_slide/cf_m.jpg" alt="cf">
+                                    <div style="position: absolute; left: 50%; top: 0; width: 100%; height: 100%;">
+                                        <video classname="" autoplay="" loop="" muted="" playsinline="" 
+                                                poster="../../images/template/main/intro_slide/cf_m.jpg" width="100%" height="100%">
+                                            <source src="" type="video/webm">
+                                            <source src="../../images/template/main/intro_slide/tf_m.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fm_text_box">
+                                <h2>T도 F가 되는 매직</h2>
+                                <h3>FLOWER 앞에선</h3>
+                                <div class="fm_btn" style="color: rgba(0, 0, 0, .8);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                        <path></path>
+                                    </svg>
+                                    
+								TV CF 보러가기
+							
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="splide__slide" id="image-carousel-clone02" style="margin-right: 10px; width: calc(100% + 0px);">
+                        <a href="#" class="btn_tvcf01">
+                            <div class="splide__slide_pc">
+                                <img src="../../images/template/main/intro_slide/app_pc.jpg" alt="app">
+                            </div>
+                            <div class="splide__slide_mobile">
+                                <img src="../../images/template/main/intro_slide/app_m.jpg" alt="app_m">
+                            </div>
+                            <div class="fm_text_box">
+                                <h2>앱으로 회원 가입시</h2>
+                                <h3>최대 4,500원 지급혜택을 드려요</h3>
+                                <div class="fm_btn" style="color: rgba(56, 107, 139, 0.8);">
+                                    앱 설치하러 가기
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="splide__slide" id="image-carousel-clone01" style="margin-right: 10px; width: calc(100% + 0px);">
+                        <a href="#" class="btn_tvcf01">
+                            <div class="splide__slide_pc">
+                                <div style="position: relative;">
+                                    <img src="../../images/template/main/intro_slide/mind_pc.jpg" alt="mind_pc">
+                                    <div style="position: absolute; left: 0; top: 0; width: 100%; height: 100%;">
+                                        <video classname="" autoplay="" loop="" muted="" playsinline="" 
+                                                poster="../../images/template/main/intro_slide/cf_pc.jpg" width="100%" height="100%">
+                                            <source src="" type="video/webm">
+                                            <source src="../../images/template/main/intro_slide/ending_pc.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="splide__slide_mobile">
+                                <div style="position: relative;">
+                                    <img src="../../images/template/main/intro_slide/mind_m.jpg" alt="mind_m">
+                                    <div style="position: absolute; left: 50%; top: 0; width: 100%; height: 100%;">
+                                        <video classname="" autoplay="" loop="" muted="" playsinline="" 
+                                                poster="../../images/template/main/intro_slide/cf_m.jpg" width="100%" height="100%">
+                                            <source src="" type="video/webm">
+                                            <source src="../../images/template/main/intro_slide/ending_m.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fm_text_box">
+                                <h2>마음을 전하다</h2>
+                                <h3>전국 당일 배송은 꽃집청년들</h3>
+                                <div class="fm_btn" style="color: rgba(0, 59, 91, 0.8);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                        <path d="M7 0.21875C3.25391 0.21875 0.21875 3.25391 0.21875 7C0.21875 10.7461 3.25391 13.7812 
+                                                7 13.7812C10.7461 13.7812 13.7812 10.7461 13.7812 7C13.7812 3.25391 10.7461 0.21875 7 0.21875ZM10.1637 
+                                                7.65625L5.35117 10.418C4.91914 10.6586 4.375 10.3496 4.375 9.84375V4.15625C4.375 3.65313 4.91641 3.34141 
+                                                5.35117 3.58203L10.1637 6.50781C10.6121 6.75937 10.6121 7.40742 10.1637 7.65625Z" 
+                                        fill="rgba(0, 0, 0, .8)">
+                                    </path>
+                                    </svg>
 
+                                    TV CF 보기
+							
                                 </div>
-                                <div class="visual_m">
-                                    <!-- <img src="../../images/slider/m_visual_open.jpg" alt="오픈이미지"> -->
+                            </div>
+                        </a>
+                    </li>
+                    <li class="splide__slide" id="image-carousel-clone01" style="margin-right: 10px; width: calc(100% + 0px);">
+                        <a href="#" class="btn_tvcf01">
+                            <div class="splide__slide_pc">
+                                <img src="../../images/template/main/intro_slide/famous_pc.jpg" alt="famous_pc">
+                            </div>
+                            <div class="splide__slide_mobile">
+                                <img src="../../images/template/main/intro_slide/famous_m.jpg" alt="famous_m">
+                            </div>
+                            <div class="fm_text_box">
+                                <h2>명화를 꽃으로 만나다</h2>
+                                <h3>꽃집청년들에만 있는 특별한 꽃</h3>
+                                <div class="fm_btn" style="color: rgba(42, 19, 23, 0.8);">
+                                    명화꽃 보러가기
                                 </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;">Next</button>
-                <ul class="slick-dots" style="display: block;" role="tablist">
-                    <li class="slick-active" role="presentation">
-                        <button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 5" tabindex="-1">1</button>
+                            </div>
+                        </a>
                     </li>
-                    <li role="presentation">
-                        <button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide01" aria-label="2 of 5" tabindex="-1">2</button>
-                    </li>
-                    <li role="presentation">
-                        <button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide02" aria-label="3 of 5" tabindex="-1">3</button>
-                    </li>
-                    <li role="presentation">
-                        <button type="button" role="tab" id="slick-slide-control03" aria-controls="slick-slide03" aria-label="4 of 5" tabindex="-1">4</button>
-                    </li>
-                    <li role="presentation">
-                        <button type="button" role="tab" id="slick-slide-control04" aria-controls="slick-slide04" aria-label="5 of 5" tabindex="-1">5</button>
+                    <li class="splide__slide" id="image-carousel-clone01" style="margin-right: 10px; width: calc(100% + 0px);">
+                        <a href="#" class="btn_tvcf01">
+                            <div class="splide__slide_pc">
+                                <img src="../../images/template/main/intro_slide/diy_pc.jpg" alt="diy_pc">
+                            </div>
+                            <div class="splide__slide_mobile">
+                                <img src="../../images/template/main/intro_slide/diy_m.jpg" alt="diy_m">
+                            </div>
+                            <div class="fm_text_box">
+                                <h2>OOO, 꽃시장</h2>
+                                <h3>서비스명을 맞추시면, 선물이 와르르.</h3>
+                                <div class="fm_btn" style="color: rgba(4, 64, 58, .8);">
+                                    꽃시장 구경가기
+                                </div>
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </div>
+            <ul class="splide__pagination"></ul>
         </div>
     </div>
     <!-- ++++ 슬라이드 영역: 끝 ++++ -->
 
     <!-- ++++ 테마 메뉴 영역: 시작 ++++ -->
     <div class="theme_content">
-        <div class="row g-3 g-md-2">
-            <div class="col sizing">
-                <div class="theme_box_1220">
-                    <a href="#">
-                        <div class="theme_text">꽃선물</div>
-                        <div>
-                            <img src="../../images/theme_content/flower.jpg" alt="flower" class="flower">
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col sizing">
-                <div class="theme_box_1220">
-                    <a href="#">
-                        <div class="theme_text">개업축하</div>
-                        <div>
-                            <img src="../../images/theme_content/plant.jpg" alt="plant" class="plant">
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col sizing">
-                <div class="theme_box_1220">
-                    <a href="#">
-                        <div class="theme_text">공기정화</div>
-                        <div>
-                            <img src="../../images/theme_content/plant2.jpg" alt="plant2" class="plant2">
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col sizing">
-                <div class="theme_box_1220">
-                    <a href="#">
-                        <div class="theme_text">승진취임</div>
-                        <div>
-                            <img src="../../images/theme_content/orchid.jpg" alt="orchid" class="orchid">
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col sizing">
-                <div class="theme_box_1220">
-                    <a href="#">
-                        <div class="theme_text">병문안</div>
-                        <div>
-                            <img src="../../images/theme_content/etc.jpg" alt="etc" class="etc">
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col sizing">
-                <div class="theme_box_1220">
-                    <a href="#">
-                        <div class="theme_text">출산선물</div>
-                        <div>
-                            <img src="../../images/theme_content/etc2.jpg" alt="etc2" class="etc2">
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col sizing">
-                <div class="theme_box_1220">
-                    <a href="#">
-                        <div class="theme_text">결혼식</div>
-                        <div>
-                            <img src="../../images/theme_content/wreath.jpg" alt="wreath" class="wreath">
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col sizing">
-                <div class="theme_box_1220">
-                    <a href="#">
-                        <div class="theme_text">장례식</div>
-                        <div>
-                            <img src="../../images/theme_content/wreath2.jpg" alt="wreath2" class="wreath2">
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-
+        <div class="content_container row g-3 g-md-2">
+            <!-- loop 영역 -->
         </div>
     </div>
     <!-- ++++ 테마 메뉴 영역: 끝 ++++ -->
 
+    <!-- ++++ resp_wrap 영역: 시작 ++++ -->
+    <div class="resp_wrap" style="position:relative;">
+        <!-- ++++ 추천상품 영역: 시작 ++++ -->
+        <div class="title_group1" style="display:block;">
+            <h3 class="title1">
+                <span>추천상품</span>
+            </h3>
+            <p class="text2">꽃집청년들이 선택했어요:D</p>
+        </div>
+        <div style="display:block;" class="best_container">
+            <div id="designDisplay" class="designDisplay">
+                <div class="designDisplay display_slide_class">
+                    <div class="goods_display_slide_wrap swiper-container" style="cursor: grab;">
+                        <div class="swiper-wrapper swiper_wrapper_1" style="transition-duration: 0ms;">
+                            <!-- ++++++++ Swiper 영역: 시작 ++++++++ -->
+                                <!-- loop 영역 -->
+                        </div>
+                        <!-- scrollbar -->
+                        <div class="display-scrollbar swiper-scrollbardesignDisplay"></div>
+                        <!-- left, right button -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev swiper-button-disabled"></div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <!-- ++++ 추천상품 영역: 끝 ++++ -->
 
+    <!-- 꽃, 명화 띠 배너 -->
+    <a href="#" class="bn_famous bn_sunflower">
+        <h5>꽃, 명화(名花)를 표현하다.</h5>
+        <span>자세히 보기</span>
+    </a>
+    <!-- 배너 모음 및 화환 영역: 시작 -->
+    <ul class="main_bnr_c1">
+        <li class="left_area">
+            <a href="#"><!-- 좌측 긴 배너 --></a>
+            <a href="" target="_self">
+                <img src="../../images/template/main/banners/ban_award_2023.png" alt="ban_award_2023">
+            </a>
+            <ul class="main_bnr_c1_2 Pt6">
+                <li class="left_area">
+                    <a href="#"><!-- 좌측 하단 --></a>
+                    <a href="" target="_self">
+                        <img src="../../images/template/main/banners/resp_bnr_main_102.jpg" alt="kakao">
+                    </a>
+                </li>
+                <li class="center_area">
+                    <a href="#"><!-- 중앙 하단 --></a>
+                    <a href="" target="_self">
+                        <img src="../../images/template/main/banners/resp_bnr_main_103.jpg" alt="navertalktalk">
+                    </a>
+                </li>
+                <li class="right_area">
+                    <a href="#"><!-- 우측 하단 --></a>
+                    <a href="" target="_self">
+                        <img src="../../images/template/main/banners/resp_bnr_main_104.jpg" alt="paypal">
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="right_area">
+            <!-- 슬라이드 배너 영역: 시작 -->
+            <div class="sliderA">
+                <div class="light_style_1_3 designBanner slick-initialized slick-slider slick-dotted">
+                    <div class="slick-list draggable">
+                        <div class="slick_banners">
+                            <div class="sslide slick-slide">
+                                <a href="#" class="slink" target="_self">
+                                    <img class="simg" src="../../images/template/main/banners/images_2.png" alt="2">
+                                </a>
+                            </div>
+                            <div class="sslide slick-slide">
+                                <a href="#" class="slink" target="_self">
+                                    <img class="simg" src="../../images/template/main/banners/images_1.png" alt="1">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 슬라이드 배너 영역: 끝 -->
+            </div>
+        </li>
+    </ul>
+    <!-- 배너 모음 및 화환 영역: 끝 -->
+
+    <!-- 꽃선물 영역: 시작 -->
+    <div class="title_group1">
+		<h3 class="title1">
+            <span>꽃선물</span>
+        </h3>
+		<p class="text2">한아름 피어나는 싱그러운 미소를 상상해요.</p>
+	</div>
+    <!-- 꽃선물 슬라이드(swiper) 영역: 시작 -->
+    <div  style="display:block;" class="present_container">
+        <div id="designDisplay" class="designDisplay" 
+                designelement="display" templatepath="/index.html" 
+                >
+            <div class="display_slide_class set_slide_clear">
+                <div class="goods_display_slide_wrap swiper-container" style="cursor: grab;">
+                    <div class="swiper-wrapper swiper_wrapper_2" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+                        <!-- ++++++++ Swiper 영역: 시작 ++++++++ -->
+                            <!-- loop 영역 -->
+                    </div>
+                    <!-- scrollbar -->
+                    <div class="display-scrollbar swiper-scrollbardesignDisplay"></div>
+                    <!-- left, right button -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev swiper-button-disabled"></div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <!-- 꽃선물 영역: 끝 -->
+
+    <!-- 수국 띠 배너-->
+    <a href="#" class="bn_hydrangea">
+        <h5>수국으로 진심을 선물해보세요:)</h5>
+        <span>자세히 보기</span>
+    </a>
+    <div class="title_group1" style="display:block;">
+        <h3 class="title1">
+            <span>관엽식물</span>
+        </h3>
+        <p class="text2">삭막한 공간을 생기 넘치게!</p>
+    </div>
+        <!-- 관엽식물 슬라이드(swiper) 영역: 시작 -->
+        <div data-effect="scale opacity" data-iconposition="left" data-icontype="best" style="display:block;" class="foliage_container">
+            <div id="designDisplay" class="designDisplay" 
+                    designelement="display" templatepath="/index.html" 
+                    displayseq="10001" perpage category displaystyle="sizewipe">
+                <div class="designDisplay display_slide_class displaySwipeTabContentsContainer set_slide_clear"
+                            tabindex="0">
+                    <div class="goods_display_slide_wrap swiper-container" style="cursor: grab;">
+                        <div class="swiper-wrapper swiper_wrapper_3" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+                            <!-- ++++++++ Swiper 영역: 시작 ++++++++ -->
+                                <!-- loop 역역 -->
+                        </div>
+                            <!-- scrollbar -->
+                            <div class="display-scrollbar swiper-scrollbardesignDisplay"></div>
+                            <!-- left, right button -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev swiper-button-disabled"></div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <!-- 관엽식물 슬라이드(swiper) 영역: 끝 -->
+        <!-- 협찬 띠배너 -->
+        <a href="#" class="bn_support">
+            <h5>
+                <em>Support</em>
+                방송&공연 협찬
+            </h5>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </a>
+        <div class="title_group1" style="display:block;">
+            <h3 class="title1">
+                <span>동서양난</span>
+            </h3>
+            <p class="text2">꼿꼿한 기품, 절개의 상징</p>
+        </div>
+        <!-- 동서양난 슬라이드(swiper) 영역: 시작 -->
+        <div id="designDisplay" class="designDisplay slide-wrap">
+            <ul class="displayTabContainer displayTabType1">
+                <li class="current" style="width:50%">동양난</li>
+                <li class="" style="width:50%">서양난</li>
+            </ul>
+        <div class="tab_cont">
+            <div class="displayTabContentsContainerWrap">
+                <div class="designDisplay display_responsible_class 
+                            displayTabContentsContainer displayTabContentsContainerBox" style="display: block;">
+                    <ul class="goods_list designDisplay goods_info_style_2">
+                        <li class="gl_item">
+                            <div class="gl_inner_item_wrap">
+                                <!-- 상품이미지 -->
+                                <div class="gli_image goodsDisplayImageWrap" style="border: 0px;">
+                                    <a href="javascript:void(0);" class="respItemImageArea">
+                                        <img src="../../images/template/main/EastWestOrchid/128.jpg" alt="고민NO 동양란-동">
+                                    </a>
+                                    <!-- 반응형 zzim -->
+                                    <div class="respGoodsZzim">
+                                        <a class="zzimArea" href="#">
+                                            <img src="../../images/template/main/recommendation/icon_zzim.png" alt="찜하기" class="zzimImage normal" title="찜하기">
+                                            <img src="../../images/template/main/recommendation/icon_zzim_on.png" alt="찜한 상품" class="zzimImage active hide" title="찜한 상품">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="resp_display_goods_info infO_style_2">
+                                    <!-- +++++++++++++++++++++++++++++++++ NEW 상품 정보 ++++++++++++++++++++++++++++++++ -->
+                                    <!-- 컬러옵션 -->
+                                    <div class="goodS_info displaY_color_option"></div>
+                                    <div class="infO_group">
+                                        <!-- 브랜드명 -->
+                                        <!-- 상품명-->
+                                        <div class="goodS_info displaY_goods_name">
+                                            <span class="areA"><a href="#">고민NO 동양란-동</a></span>
+                                        </div>
+                                    </div>
+                                    <!-- 짧은 설명 -->
+                                    <div class="goodS_info displaY_goods_short_desc">
+                                        <span class="areA">어렵기만한 동양란, 어떤것으로 보낼지 고민하지 마시고 고민NO 상품을 선택하세요.</span>
+                                    </div>
+                                    <!-- 비회원 대체문구 -->
+                                    <!-- 정가 -->
+                                    <div class="infO_group">
+                                        <!-- (할인혜택)판매가 -->
+                                        <div class="goodS_info displaY_sales_price">
+                                            <span class="areA">
+                                                <span class="nuM">49,900</span>원
+                                            </span>
+                                        </div>
+                                        <!-- 할인율 -->
+                                        <span style="color:#08B899; font-size:14px;" class="no_mobile">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="gl_item">
+                            <div class="gl_inner_item_wrap">
+                                <!--상품이미지-->
+                                <div class="gli_image goodsDisplayImageWrap" style="border: 0px;">
+                                    <a href="javascript:void(0);" class="respItemImageArea">
+                                        <img src="../../images/template/main/EastWestOrchid/171.jpg" alt="황금채홍 청자투각">
+                                    </a>
+                                    <!-- 반응형 icon new -->
+                                    <!-- 반응형 zzim -->
+                                    <div class="respGoodsZzim">
+                                        <a class="zzimArea" href="javascript:void(0)" onclick="">
+                                            <img src="../../images/template/main/recommendation/icon_zzim.png" alt="찜하기" class="zzimImage normal" title="찜하기">
+                                            <img src="../../images/template/main/recommendation/icon_zzim_on.png" alt="찜한 상품" class="zzimImage active hide" title="찜한 상품">
+                                        </a>
+                                    </div>
+                                    <!-- 미리보기/옵션보기/SNS보내기 -->
+                                    <!-- 상품 상태 표시 -->
+                                </div>
+                        
+                                <div class="resp_display_goods_info infO_style_2">
+                                <!-- +++++++++++++++++++++++++++++++++ NEW 상품 정보 ++++++++++++++++++++++++++++++++ -->
+                                    <!-- 컬러옵션 -->
+                                    <div class="goodS_info displaY_color_option"></div>
+                                    <div class="infO_group">
+                                        <!-- 브랜드명 -->
+                                        <!-- 상품명-->
+                                        <div class="goodS_info displaY_goods_name">
+                                            <span class="areA"><a href="#">황금채홍 청자투각</a></span>
+                                        </div>
+                                    </div>
+                                    <!-- 짧은 설명 -->
+                                    <div class="goodS_info displaY_goods_short_desc">
+                                        <span class="areA">무지개를 뜻하는 이름처럼 잎의 곡선과 가장자리에 머금은 금빛 테두리는 아름다움을 한껏 뽐내고, 청자분은 고급스러움을 더합니다.</span>
+                                    </div>
+                                    <!-- 비회원 대체문구 -->
+                                    <!-- 정가 -->
+                                    <div class="infO_group">
+                                        <!-- (할인혜택)판매가 -->
+                                        <div class="goodS_info displaY_sales_price">
+                                            <span class="areA">
+                                                <span class="nuM">99,000</span>원
+                                            </span>
+                                        </div>
+                                        <!-- 할인율 -->
+                                        <span style="color:#08B899; font-size:14px;" class="no_mobile">
+                                        </span>
+                                    </div>
+                                    <!-- 아이콘 -->
+                                <!-- +++++++++++++++++++++++++++++++++ //NEW 상품 정보 ++++++++++++++++++++++++++++++++ -->
+                                </div>
+                            </div>
+                        </li>
+                        <li class="gl_item">
+                            <div class="gl_inner_item_wrap">
+                                <!--상품이미지-->
+                                <div class="gli_image goodsDisplayImageWrap" style="border: 0px;">
+                                    <a href="javascript:void(0);" class="respItemImageArea">
+                                        <img src="../../images/template/main/EastWestOrchid/129.jpg" alt="고민NO 동양란-서">
+                                    </a>
+                                    <!-- 반응형 icon new -->
+                                    <!-- 반응형 zzim -->
+                                    <div class="respGoodsZzim">
+                                        <a class="zzimArea" href="javascript:void(0)" onclick="">
+                                            <img src="../../images/template/main/recommendation/icon_zzim.png" alt="찜하기" class="zzimImage normal" title="찜하기">
+                                            <img src="../../images/template/main/recommendation/icon_zzim_on.png" alt="찜한 상품" class="zzimImage active hide" title="찜한 상품">
+                                        </a>
+                                    </div>
+                                    <!-- 미리보기/옵션보기/SNS보내기 -->
+                                    <!-- 상품 상태 표시 -->
+                                </div>
+                        
+                                <div class="resp_display_goods_info infO_style_2">
+                                <!-- +++++++++++++++++++++++++++++++++ NEW 상품 정보 ++++++++++++++++++++++++++++++++ -->
+                                    <!-- 컬러옵션 -->
+                                    <div class="goodS_info displaY_color_option"></div>
+                                    <div class="infO_group">
+                                        <!-- 브랜드명 -->
+                                        <!-- 상품명-->
+                                        <div class="goodS_info displaY_goods_name">
+                                            <span class="areA"><a href="#">고민NO 동양란-서</a></span>
+                                        </div>
+                                    </div>
+                                    <!-- 짧은 설명 -->
+                                    <div class="goodS_info displaY_goods_short_desc">
+                                        <span class="areA">어렵기만한 동양란, 어떤것으로 보낼지 고민하지 마시고 고민NO 상품을 선택하세요.</span>
+                                    </div>
+                                    <!-- 비회원 대체문구 -->
+                                    <!-- 정가 -->
+                                    <div class="infO_group">
+                                        <!-- (할인혜택)판매가 -->
+                                        <div class="goodS_info displaY_sales_price">
+                                            <span class="areA">
+                                                <span class="nuM">99,000</span>원
+                                            </span>
+                                        </div>
+                                        <!-- 할인율 -->
+                                        <span style="color:#08B899; font-size:14px;" class="no_mobile">
+                                        </span>
+                                    </div>
+                                    <!-- 아이콘 -->
+                                <!-- +++++++++++++++++++++++++++++++++ //NEW 상품 정보 ++++++++++++++++++++++++++++++++ -->
+                                </div>
+                            </div>
+                        </li>
+                        <li class="gl_item">
+                            <div class="gl_inner_item_wrap">
+                                <!--상품이미지-->
+                                <div class="gli_image goodsDisplayImageWrap" style="border: 0px;">
+                                    <a href="javascript:void(0);" class="respItemImageArea">
+                                        <img src="../../images/template/main/EastWestOrchid/173.jpg" alt="황룡관 청자투각">
+                                    </a>
+                                    <!-- 반응형 icon new -->
+                                    <!-- 반응형 zzim -->
+                                    <div class="respGoodsZzim">
+                                        <a class="zzimArea" href="javascript:void(0)" onclick="">
+                                            <img src="../../images/template/main/recommendation/icon_zzim.png" alt="찜하기" class="zzimImage normal" title="찜하기">
+                                            <img src="../../images/template/main/recommendation/icon_zzim_on.png" alt="찜한 상품" class="zzimImage active hide" title="찜한 상품">
+                                        </a>
+                                    </div>
+                                    <!-- 미리보기/옵션보기/SNS보내기 -->
+                                    <!-- 상품 상태 표시 -->
+                                </div>
+                        
+                                <div class="resp_display_goods_info infO_style_2">
+                                <!-- +++++++++++++++++++++++++++++++++ NEW 상품 정보 ++++++++++++++++++++++++++++++++ -->
+                                    <!-- 컬러옵션 -->
+                                    <div class="goodS_info displaY_color_option"></div>
+                                    <div class="infO_group">
+                                        <!-- 브랜드명 -->
+                                        <!-- 상품명-->
+                                        <div class="goodS_info displaY_goods_name">
+                                            <span class="areA"><a href="#">황룡관 청자투각</a></span>
+                                        </div>
+                                    </div>
+                                    <!-- 짧은 설명 -->
+                                    <div class="goodS_info displaY_goods_short_desc">
+                                        <span class="areA">고풍스러운 금빛 기품을 자랑하는 고급란입니다.</span>
+                                    </div>
+                                    <!-- 비회원 대체문구 -->
+                                    <!-- 정가 -->
+                                    <div class="infO_group">
+                                        <!-- (할인혜택)판매가 -->
+                                        <div class="goodS_info displaY_sales_price">
+                                            <span class="areA">
+                                                <span class="nuM">148,500</span>원
+                                            </span>
+                                        </div>
+                                        <!-- 할인율 -->
+                                        <span style="color:#08B899; font-size:14px;" 
+                                                class="no_mobile">
+                                        </span>
+                                    </div>
+                                    <!-- 아이콘 -->
+                                <!-- +++++++++++++++++++++++++++++++++ //NEW 상품 정보 ++++++++++++++++++++++++++++++++ -->
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 서양난 -->
+            <div class="displayTabContentsContainerWrap">
+                <div class="display_responsible_class 
+                            displayTabContentsContainer displayTabContentsContainerBox">
+                    <ul class="goods_list designDisplay goods_info_style_2">
+                        <li class="gl_item">
+                            <div class="gl_inner_item_wrap">
+                                <!-- 상품이미지 -->
+                                <div class="gli_image goodsDisplayImageWrap" style="border: 0px;">
+                                    <a href="javascript:void(0);" class="respItemImageArea">
+                                        <img src="../../images/template/main/EastWestOrchid/210.jpg" alt="만천홍 클래식 1호">
+                                    </a>
+                                    <!-- 반응형 zzim -->
+                                    <div class="respGoodsZzim">
+                                        <a class="zzimArea" href="#">
+                                            <img src="../../images/template/main/recommendation/icon_zzim.png" alt="찜하기" class="zzimImage normal" title="찜하기">
+                                            <img src="../../images/template/main/recommendation/icon_zzim_on.png" alt="찜한 상품" class="zzimImage active hide" title="찜한 상품">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="resp_display_goods_info infO_style_2">
+                                    <!-- +++++++++++++++++++++++++++++++++ NEW 상품 정보 ++++++++++++++++++++++++++++++++ -->
+                                    <!-- 컬러옵션 -->
+                                    <div class="goodS_info displaY_color_option"></div>
+                                    <div class="infO_group">
+                                        <!-- 브랜드명 -->
+                                        <!-- 상품명-->
+                                        <div class="goodS_info displaY_goods_name">
+                                            <span class="areA"><a href="#">만천홍 클래식 1호</a></span>
+                                        </div>
+                                    </div>
+                                    <!-- 짧은 설명 -->
+                                    <div class="goodS_info displaY_goods_short_desc">
+                                        <span class="areA">'행운이 찾아온다'는 의미를 담은 만천홍(미니호접란)</span>
+                                    </div>
+                                    <!-- 비회원 대체문구 -->
+                                    <!-- 정가 -->
+                                    <div class="infO_group">
+                                        <!-- (할인혜택)판매가 -->
+                                        <div class="goodS_info displaY_sales_price">
+                                            <span class="areA">
+                                                <span class="nuM">59,000</span>원
+                                            </span>
+                                        </div>
+                                        <!-- 할인율 -->
+                                        <span style="color:#08B899; font-size:14px;" class="no_mobile">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="gl_item">
+                            <div class="gl_inner_item_wrap">
+                                <!--상품이미지-->
+                                <div class="gli_image goodsDisplayImageWrap" style="border: 0px;">
+                                    <a href="javascript:void(0);" class="respItemImageArea">
+                                        <img src="../../images/template/main/EastWestOrchid/216.jpg" alt="썬셋 클래식 1호">
+                                    </a>
+                                    <!-- 반응형 icon new -->
+                                    <!-- 반응형 zzim -->
+                                    <div class="respGoodsZzim">
+                                        <a class="zzimArea" href="javascript:void(0)" onclick="">
+                                            <img src="../../images/template/main/recommendation/icon_zzim.png" alt="찜하기" class="zzimImage normal" title="찜하기">
+                                            <img src="../../images/template/main/recommendation/icon_zzim_on.png" alt="찜한 상품" class="zzimImage active hide" title="찜한 상품">
+                                        </a>
+                                    </div>
+                                    <!-- 미리보기/옵션보기/SNS보내기 -->
+                                    <!-- 상품 상태 표시 -->
+                                </div>
+                        
+                                <div class="resp_display_goods_info infO_style_2">
+                                <!-- +++++++++++++++++++++++++++++++++ NEW 상품 정보 ++++++++++++++++++++++++++++++++ -->
+                                    <!-- 컬러옵션 -->
+                                    <div class="goodS_info displaY_color_option"></div>
+                                    <div class="infO_group">
+                                        <!-- 브랜드명 -->
+                                        <!-- 상품명-->
+                                        <div class="goodS_info displaY_goods_name">
+                                            <span class="areA"><a href="#">썬셋 클래식 1호</a></span>
+                                        </div>
+                                    </div>
+                                    <!-- 짧은 설명 -->
+                                    <div class="goodS_info displaY_goods_short_desc">
+                                        <span class="areA">사랑스러운 나비를 닮은, 노랑호접란</span>
+                                    </div>
+                                    <!-- 비회원 대체문구 -->
+                                    <!-- 정가 -->
+                                    <div class="infO_group">
+                                        <!-- (할인혜택)판매가 -->
+                                        <div class="goodS_info displaY_sales_price">
+                                            <span class="areA">
+                                                <span class="nuM">59,000</span>원
+                                            </span>
+                                        </div>
+                                        <!-- 할인율 -->
+                                        <span style="color:#08B899; font-size:14px;" class="no_mobile">
+                                        </span>
+                                    </div>
+                                    <!-- 아이콘 -->
+                                <!-- +++++++++++++++++++++++++++++++++ //NEW 상품 정보 ++++++++++++++++++++++++++++++++ -->
+                                </div>
+                            </div>
+                        </li>
+                        <li class="gl_item">
+                            <div class="gl_inner_item_wrap">
+                                <!--상품이미지-->
+                                <div class="gli_image goodsDisplayImageWrap" style="border: 0px;">
+                                    <a href="javascript:void(0);" class="respItemImageArea">
+                                        <img src="../../images/template/main/EastWestOrchid/542.jpg" alt="심비디움 클래식 1호">
+                                    </a>
+                                    <!-- 반응형 icon new -->
+                                    <!-- 반응형 zzim -->
+                                    <div class="respGoodsZzim">
+                                        <a class="zzimArea" href="javascript:void(0)" onclick="">
+                                            <img src="../../images/template/main/recommendation/icon_zzim.png" alt="찜하기" class="zzimImage normal" title="찜하기">
+                                            <img src="../../images/template/main/recommendation/icon_zzim_on.png" alt="찜한 상품" class="zzimImage active hide" title="찜한 상품">
+                                        </a>
+                                    </div>
+                                    <!-- 미리보기/옵션보기/SNS보내기 -->
+                                    <!-- 상품 상태 표시 -->
+                                </div>
+                        
+                                <div class="resp_display_goods_info infO_style_2">
+                                <!-- +++++++++++++++++++++++++++++++++ NEW 상품 정보 ++++++++++++++++++++++++++++++++ -->
+                                    <!-- 컬러옵션 -->
+                                    <div class="goodS_info displaY_color_option"></div>
+                                    <div class="infO_group">
+                                        <!-- 브랜드명 -->
+                                        <!-- 상품명-->
+                                        <div class="goodS_info displaY_goods_name">
+                                            <span class="areA"><a href="#">심비디움 클래식 1호</a></span>
+                                        </div>
+                                    </div>
+                                    <!-- 짧은 설명 -->
+                                    <div class="goodS_info displaY_goods_short_desc">
+                                        <span class="areA">심비디움의 꽃말은 "우아한 여인"</span>
+                                    </div>
+                                    <!-- 비회원 대체문구 -->
+                                    <!-- 정가 -->
+                                    <div class="infO_group">
+                                        <!-- (할인혜택)판매가 -->
+                                        <div class="goodS_info displaY_sales_price">
+                                            <span class="areA">
+                                                <span class="nuM">99,000</span>원
+                                            </span>
+                                        </div>
+                                        <!-- 할인율 -->
+                                        <span style="color:#08B899; font-size:14px;" class="no_mobile">
+                                        </span>
+                                    </div>
+                                    <!-- 아이콘 -->
+                                <!-- +++++++++++++++++++++++++++++++++ //NEW 상품 정보 ++++++++++++++++++++++++++++++++ -->
+                                </div>
+                            </div>
+                        </li>
+                        <li class="gl_item">
+                            <div class="gl_inner_item_wrap">
+                                <!--상품이미지-->
+                                <div class="gli_image goodsDisplayImageWrap" style="border: 0px;">
+                                    <a href="javascript:void(0);" class="respItemImageArea">
+                                        <img src="../../images/template/main/EastWestOrchid/541.jpg" alt="분홍심비디움 클래식 1호">
+                                    </a>
+                                    <!-- 반응형 icon new -->
+                                    <!-- 반응형 zzim -->
+                                    <div class="respGoodsZzim">
+                                        <a class="zzimArea" href="javascript:void(0)" onclick="">
+                                            <img src="../../images/template/main/recommendation/icon_zzim.png" alt="찜하기" class="zzimImage normal" title="찜하기">
+                                            <img src="../../images/template/main/recommendation/icon_zzim_on.png" alt="찜한 상품" class="zzimImage active hide" title="찜한 상품">
+                                        </a>
+                                    </div>
+                                    <!-- 미리보기/옵션보기/SNS보내기 -->
+                                    <!-- 상품 상태 표시 -->
+                                </div>
+                        
+                                <div class="resp_display_goods_info infO_style_2">
+                                <!-- +++++++++++++++++++++++++++++++++ NEW 상품 정보 ++++++++++++++++++++++++++++++++ -->
+                                    <!-- 컬러옵션 -->
+                                    <div class="goodS_info displaY_color_option"></div>
+                                    <div class="infO_group">
+                                        <!-- 브랜드명 -->
+                                        <!-- 상품명-->
+                                        <div class="goodS_info displaY_goods_name">
+                                            <span class="areA"><a href="#">분홍심비디움 클래식 1호</a></span>
+                                        </div>
+                                    </div>
+                                    <!-- 짧은 설명 -->
+                                    <div class="goodS_info displaY_goods_short_desc">
+                                        <span class="areA">심비디움의 꽃말은 "우아한 여인"</span>
+                                    </div>
+                                    <!-- 비회원 대체문구 -->
+                                    <!-- 정가 -->
+                                    <div class="infO_group">
+                                        <!-- (할인혜택)판매가 -->
+                                        <div class="goodS_info displaY_sales_price">
+                                            <span class="areA">
+                                                <span class="nuM">99,000</span>원
+                                            </span>
+                                        </div>
+                                        <!-- 할인율 -->
+                                        <span style="color:#08B899; font-size:14px;" 
+                                                class="no_mobile">
+                                        </span>
+                                    </div>
+                                    <!-- 아이콘 -->
+                                <!-- +++++++++++++++++++++++++++++++++ //NEW 상품 정보 ++++++++++++++++++++++++++++++++ -->
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- 동서양난 슬라이드(swiper) 영역: 끝 -->
+        <!-- MAGAZINE 띠 배너-->
+        <a href="#" class="bn_magazine">
+            <h5>
+                MAGAZINE
+                <p>내 마음을 담다</p>
+            </h5>
+            <span>자세히 보기</span>
+        </a>
+        <div class="title_group1">
+            <h3 class="title1">
+                <span designelement="text">고객만족</span>
+            </h3>
+            <p class="text2" designelement="text">
+                만족도가 높은 상품입니다.
+            </p>
+        </div>
+        <!-- 고객만족 슬라이드(swiper) 영역: 시작 -->
+        <div data-effect="scale opacity" data-iconposition="left" data-icontype="best" style="display:block;" class="satisfy_container">
+            <div id="designDisplay" class="designDisplay" 
+                    designelement="display" templatepath="/index.html" 
+                    displayseq="10001" perpage category displaystyle="sizewipe">
+                <div class="designDisplay display_slide_class displaySwipeTabContentsContainer set_slide_clear active_swipe_slide"
+                            tabindex="0">
+                    <div class="goods_display_slide_wrap swiper-container" style="cursor: grab;">
+                        <div class="swiper-wrapper swiper_wrapper_4" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+                            <!-- ++++++++ Swiper 영역: 시작 ++++++++ -->
+                                <!-- loop 영역 -->
+                        </div>
+                        <!-- scrollbar -->
+                        <div class="display-scrollbar"></div>
+                        <!-- left, right button -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev swiper-button-disabled"></div>
+                    </div>
+                    <!-- ++++ 바디 영역: 끝 ++++ -->
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<!-- ++++ 바디 영역: 끝 ++++ -->
+<!-- //layout_body -->
 {% endblock %}
 
 {% block indexScript %}
-<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <script>
+    //slide_intro 슬라이드(splide)
+    var splide = new Splide('.splide', {
+        type: 'loop',
+        gap: '10px',
+        start: 1,
+        autoplay : true, 
+        perPage : 1, //한 페이지에 노출되는 이미지
+        perMove : 1, //슬라이드 이미지 개수
+        arrows : true,
+        drag : true, 
+        interval : 3000, 
+        pauseOnHover : true, 
+        pagination : true,
+        focus: 'center',
+
+    }).mount();
+
+    //추천상품 슬라이드(swiper)
+    const slide = new Swiper('.swiper-container', {
+        slidesPerView: 4,
+        pagination: false,
+        autoplay: false,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl:   ".swiper-button-prev",
+        },
+        breakpoints: { //반응형 조건 속성
+            640: {
+                slidesPerView: 5, //레이아웃 4열
+            },
+            768: {
+                slidesPerView: 3
+            },
+            1024: {
+                slidesPerView: 4
+            }
+        }
+    });
+
+    //추천상품 이미지 효과
+    let swiperImg = document.querySelectorAll('.respItemImageArea > img');
+    let swiperP = document.querySelectorAll('.respGoodsIcon');
+
+    swiperImg.forEach((img) => {
+        img.addEventListener("mouseover", function () {
+            img.style.opacity = "0.7";
+            img.style.scale = "1.1";
+            swiperP.forEach((p) => {
+                p.style.opacity = "0.4";
+                p.style.transform = "translate(0, -20%)";
+                p.style.transition = "all 500ms";
+            });
+        });
+        img.addEventListener("mouseout", function () {
+            img.style.opacity = "1.0";
+            img.style.scale = "1.0";
+            swiperP.forEach((p) => {
+                p.style.opacity = "1.0";
+                p.style.transform = "translate(0,0)";
+                p.style.transition = "all 400ms";
+            });
+        });
+    });
+
+
+
+    /** 수정 예정 */
+    function zzim() {
+        confirm("회원만 사용가능합니다. 로그인하시겠습니까?");
+    }
+
+    /* //배너 모음 및 화환 슬라이드(slick) */
+        $('.slick_banners').slick({
+            slide: 'div', //슬라이드 되어야 할 태그
+            infinite: true,
+            slideToShow: 1,
+            slideToScroll: 1,
+            speed: 500,
+            arrows: true,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            pauseHover: true,
+            vertical: false,
+            draggable: true,
+            responsive: [
+                {
+                    breakpoint: 960,
+                    settings: {
+                        slideToShow: 1,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slideToShow: 1,
+                    }
+                }
+            ]
+        });
+
 
 </script>
 {% endblock %}

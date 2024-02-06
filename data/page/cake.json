@@ -1,0 +1,47 @@
+[
+    {
+        "flowerId": 1,
+        "flowerTitle": "오설록 케이크와 꽃다발(서울한정)",
+        "sales_price": 70900,
+        "consumer_price": "77,000원",
+        "sales_percent": "8%",
+        "orderEA": 154,
+        "review_count": 2,
+        "flowerImg": "../../images/pages/flower_present_page/cake/704.jpg",
+        "data_src": "../../images/pages/flower_present_page/cake/704.jpg",
+        "alt": "오설록 케이크와 꽃다발(서울한정)",
+        "class": "goodsDisplayImage lazyload",
+        "onerror": "this.src='./images/404.jpg'",
+        "state": ""
+    },
+    {
+        "flowerId": 2,
+        "flowerTitle": "켈리스핑거 타르트와 꽃다발(서울한정)",
+        "sales_price": 76200,
+        "consumer_price": "",
+        "sales_percent": "",
+        "orderEA": 364,
+        "review_count": 5,
+        "flowerImg": "../../images/pages/flower_present_page/cake/705.jpg",
+        "data_src": "../../images/pages/flower_present_page/cake/705.jpg",
+        "alt": "켈리스핑거 타르트와 꽃다발(서울한정)",
+        "class": "goodsDisplayImage lazyload",
+        "onerror": "this.src='./images/404.jpg'",
+        "state": ""
+    },
+    {
+        "flowerId": 3,
+        "flowerTitle": "디엔타르 치즈케익과 꽃다발(서울한정)",
+        "sales_price": 68000,
+        "consumer_price": "",
+        "sales_percent": "",
+        "orderEA": 118,
+        "review_count": 1,
+        "flowerImg": "../../images/pages/flower_present_page/cake/706.jpg",
+        "data_src": "../../images/pages/flower_present_page/cake/706.jpg",
+        "alt": "디엔타르 치즈케익과 꽃다발(서울한정)",
+        "class": "goodsDisplayImage lazyload",
+        "onerror": "this.src='./images/404.jpg'",
+        "state": "SOLD OUT!"
+    }
+]

@@ -1,0 +1,186 @@
+{% extends '../layout.html' %}
+
+{% block style %}
+    <link rel="stylesheet" href="../../css/user/register.css">
+{% endblock %}
+
+{% block content %}
+<div id="layout_body" class="layout_body">
+  <!-- 타이틀 -->
+  <div class="title_container">
+    <h2>
+      <span>회원정보 입력</span>
+    </h2>
+  </div>
+  <div class="mypage_greeting Pb30">
+    <span class="pilsu_icon"></span>
+    <span>항목은 
+      <span class="pointcolor">필수 입력</span> 항목입니다.
+    </span>
+  </div>
+  <div class="resp_member_join_wrap">
+    <form name="registFrm" id="registFrm" target="actionFrame" method="post" 
+          action="/register" onsubmit="" novalidate="">
+      <input type="hidden" name="mtype" value="member">
+      <input type="hidden" name="mailing" value="y">
+      <input type="hidden" name="sms" value="y">
+
+      <div id="formMemberArea" class="resp_member_join">
+        <input type="hidden" name="kid_agree" value="Y">
+        <div class="resp_join_table">
+          <ul class="required">
+            <li class="th">
+              <p>아이디</p>
+            </li>
+            <li class="td">
+                <input type="text" name="userid" id="userid" autocapitalize="off" 
+                        class="eng_only" placeholder="공백 없는 영문/숫자 포함 6~20자">
+                <p id="id_info" class="guide_text">
+                  <div class="success-message hide">사용할 수 있는 아이디입니다.</div>
+                  <div class="failure-message hide">아이디는 6 ~ 20글자이어야 합니다.</div>
+                  <div class="failure-message2 hide">영어 또는 숫자만 가능합니다.</div>
+                </p>
+            </li>
+          </ul>
+            <ul class="required">
+              <li class="th">
+                <p>비밀번호</p>
+              </li>
+              <li class="td">
+                <input type="password" name="password" value="" id="userpass"
+                      class="eng_only class_check_password_validation">
+                <div class="strongPassword-message hide">8글자 이상, 영문, 숫자, 특수문자(@$!%*#?&)를 사용하세요.</div>
+              </li>
+            </ul>
+            <ul class="required">
+              <li class="th ">
+                <p>비밀번호 확인</p>
+              </li>
+              <li class="td">
+                <input type="password" id="userpass_check" name="re_password" 
+                        value="" class="eng_only">
+                  <div class="mismatch-message hide">비밀번호가 일치하지 않습니다.</div>
+                  <div class="match-message hide">비밀번호가 일치합니다.</div>
+              </li>
+            </ul>
+            <ul class="required">
+              <li class="th ">
+                <p>이름</p>
+              </li>
+              <li class="td">
+                <input type="text" name="user_name" class="username" value="">
+                <div class="success-korean hide">사용할 수 있는 이름입니다.</div>
+                <div class="failure-korean hide">한글만 입력 가능합니다.</div>
+              </li>
+            </ul>
+          <ul class="required">
+            <li class="th">
+              <p>이메일</p>
+            </li>
+            <li class="td">
+              <input type="email" name="email[0]" value="" class="size_mail1"> @
+              <input type="email" name="email[1]" value="" class="size_mail2">
+              <select name="find_email" id="find_email">
+                  <option value="directly">직접입력</option>
+                  <option value="naver.com">naver.com</option>
+                  <option value="nate.com">nate.com</option>
+                  <option value="dreamwiz.com">dreamwiz.com</option>
+                  <option value="yahoo.co.kr">yahoo.co.kr</option>
+                  <option value="empal.com">empal.com</option>
+                  <option value="unitel.co.kr">unitel.co.kr</option>
+                  <option value="gmail.com">gmail.com</option>
+                  <option value="korea.com">korea.com</option>
+                  <option value="chol.com">chol.com</option>
+                  <option value="paran.com">paran.com</option>
+                  <option value="freechal.com">freechal.com</option>
+                  <option value="hanmail.net">hanmail.net</option>
+                  <option value="hotmail.com">hotmail.com</option>
+              </select>
+            </li>
+          </ul>
+          <ul class="required">
+            <li class="th">
+              <p>휴대폰번호</p>
+            </li>
+            <li class="td">
+              <input type="tel" name="cellphone[]" value="" class="size_phone" maxlength="4"> -
+              <input type="tel" name="cellphone[]" value="" class="size_phone" maxlength="4"> -
+              <input type="tel" name="cellphone[]" value="" class="size_phone" maxlength="4">
+            </li>
+          </ul>
+          <ul>
+            <li class="th">
+              <p>주소</p>
+            </li>
+            <li class="td">
+              <input type="hidden" name="address_type">
+              <input type="tel" id="zip_code" name="zip_code" class="size_zip_all" readonly>
+              <button type="button" class="btn_resp size_b color4" onclick="javascript:findAddr();">
+                <span>주소찾기</span>
+              </button>
+              <div class="address_area">
+                <input type="text" id="addr" name="addr" class="address size_full " readonly>
+                <input type="text" name="address_street" class="address_street size_full hide" readonly>
+              </div>
+              <div class="address_area">
+                <input type="text" id="addr_dtl" name="addr_dtl" class="size_full">
+              </div>
+              <p id="address_view" style="padding-top:5px; display:none;"></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="btn_register" class="btn_area_c">
+        <button type="submit" class="btn_resp size_c color2 Wmax">
+          <span>입력 완료</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}
+
+{% block indexScript %}
+<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+<script src="../js/register.js"></script>
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script>
+
+    window.Kakao.init('5aaea0190cb95d8a6169d6ce269782ab');
+    console.log(Kakao.isInitialized());
+
+
+//회원가입 주소 Daum API 사용
+function findAddr() {
+            //팝업 위치를 지정(화면의 가운데 정렬)
+            var width = 500; //팝업의 너비
+            var height = 600; //팝업의 높이
+    new daum.Postcode({
+        oncomplete: function(data) {
+            //사용자 주소를 받아올 변수를 정의.
+            var addr = '';
+          
+            // 사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+            if(data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우(R)
+                addr = data.roadAddress;
+            }else { //사용자가 지번 주소를 선택했을 경우(J)
+                addr = data.jibunAddress;
+            }
+            $("#zip_code").val(data.zonecode);
+            $("#addr").val(addr);
+            $("#addr_dtl").val("");
+            $("#addr_dtl").focus();
+
+        }
+    }).open({
+      left: (window.screen.width / 2) - (width / 2),
+      top: (window.screen.height / 2) - (height / 2)
+    });
+}
+</script>
+{% endblock %}
+
+
+
+
+

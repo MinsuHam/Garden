@@ -1,0 +1,258 @@
+/* ###################### 회원가입 페이지 영역: 시작 ###################### */
+#layout_body {
+    background-color: #ffffff;
+}
+#layout_body, .resp_wrap {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.title_container {
+    margin: 0 0 30px;
+    padding: 50px 0 40px;
+    text-align: center;
+    position: relative;
+}
+.title_container > h2 {
+    line-height: 1.2;
+    border-bottom: 1px solid #222;
+    padding: 0 0 5px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 24px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #333;
+}
+.title_container + .mypage_greeting {
+    margin-top: -20px;
+    position: relative;
+}
+.mypage_greeting {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #999;
+}
+.gray_06 {
+    color: #999 !important;
+}
+.resp_login_wrap {
+    max-width: 360px;
+    margin: 30px auto 0;
+}
+.tab_basic {
+    border-bottom: 1px #666 solid;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #666;
+    margin-bottom: 20px;
+}
+.tab_basic > ul {
+    display: table;
+    margin-bottom: -1px;
+}
+.tab_basic.fullsize > ul {
+    width: 100%;
+    table-layout: fixed;
+}
+.tab_basic > ul > li {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px #ddd solid;
+    border-bottom-color: #666;
+    border-right: none;
+    background: #f4f4f4;
+    cursor: pointer;
+}
+.tab_basic > ul > li.on {
+    border-color: #666;
+    border-right: 1px #666 solid;
+    border-bottom-color: #fff;
+    background: #fff;
+    position: relative;
+    cursor: default;
+    color: #333;
+}
+.tab_basic > ul > li.on > a, .tab_basic > ul > li.on >label {
+    color: #333;
+}
+.tab_basic > ul > li > a, .tab_basic > ul > li > label {
+    display: block;
+    box-sizing: border-box;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    color: #767676;
+}
+.sub_page_tab_contents {
+    margin-top: 10px;
+}
+.resp_login_wrap .join_btns {
+    padding-top: 5px;
+}
+.title_sub3 {
+    padding: 30px 0 8px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+}
+.title_sub3.v3 {
+    text-align: center;
+    padding-top: 25px;
+    font-size: 19px;
+    font-weight: 300;
+    color: #666;
+}
+.Mt10 {
+    margin-top: 10px !important;
+}
+.Mt50 {
+    margin-top: 50px !important;
+}
+.resp_login_wrap .sns_login_ul {
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+}
+.resp_login_wrap .sns_login_ul > li {
+    display: inline-block;
+    width: 32px;
+    padding: 2px;
+}
+.resp_login_wrap .sns_login_ul img {
+    cursor: pointer;
+}
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    border: none;
+    outline: none;
+}
+.btn_resp.color2.size_c, .btn_resp.color2.size_extra, .btn_resp.color2.size_extra2, .resp_login_wrap .btn_resp.size_login1 {
+    outline: none;
+    border-color: #71a200 !important;
+    background-color: #71a200 !important;
+    color: #ffffff !important;
+}
+.btn_resp.color2.size_c span {
+    color: #ffffff !important;
+}
+.btn_resp.size_c {
+    height: 42px;
+    font-size: 17px;
+    line-height: 40px;
+    min-width: 100px;
+    padding: 0 14px;
+}
+.join_member_benefit_detail {
+    font-size: 0;
+    text-align: center;
+}
+.Wmax {
+    width: 100% !important;
+}
+.title_sub2 {
+    padding: 2px 0;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    background: url(../../images/user/create/bg_title1.png) 0 50% repeat-x;
+    animation: ani_title1 40s linear infinite;
+    -webkit-animation: ani_title1 40s linear infinite;
+}
+.title_sub2 > b {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #fff;
+    font-weight: 500;
+}
+.Fw400 {
+    font-weight: 400 !important;
+}
+.join_member_benefit_detail {
+    font-size: 0;
+    text-align: center;
+}
+.join_member_benefit_detail > ul {
+    display: inline-block;
+    padding: 0 15px;
+    margin-top: 10px;
+    vertical-align: top;
+    font-size: 14px;
+    color: #666;
+}
+.join_member_benefit_detail > ul > li {
+    padding-top: 5px;
+}
+.join_member_benefit_detail .join_gate_coupon {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.join_member_benefit_detail .join_gate_coupon li {
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0;
+    border: 1px solid #eee;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #222;
+    box-shadow: 1px 1px #eee;
+}
+.join_member_benefit_detail .join_gate_coupon li span:first-child::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 15px;
+    left: -7px;
+    width: 11px;
+    height: 11px;
+    border-radius: 11px;
+    background-color: #eee;
+}
+.join_member_benefit_detail .join_gate_coupon li span:first-child::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 15px;
+    left: -8px;
+    width: 11px;
+    height: 11px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.join_member_benefit_detail .join_gate_coupon li p span {
+    font-weight: 300;
+}
+.join_member_benefit_detail ul.join_gate_coupon li span:last-child::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 15px;
+    right: -6px;
+    width: 11px;
+    height: 11px;
+    border-radius: 11px;
+    background-color: #eee;
+}
+.join_member_benefit_detail ul.join_gate_coupon li span:last-child::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 15px;
+    right: -8px;
+    width: 11px;
+    height: 11px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+
+/* ###################### 회원가입 페이지 영역: 끝 ###################### */

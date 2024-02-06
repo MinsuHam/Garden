@@ -1,0 +1,58 @@
+[
+    {
+        "theme_num": 1,
+        "flowerTitle": "꽃선물",
+        "flowerImg": "../images/template/main/theme_content/flower.jpg",
+        "alt": "flower",
+        "class": "flower"
+    },
+    {
+        "theme_num": 2,
+        "flowerTitle": "개업축하",
+        "flowerImg": "../images/template/main/theme_content/plant.jpg",
+        "alt": "plant",
+        "class": "plant"
+    },
+    {
+        "theme_num": 3,
+        "flowerTitle": "공기정화",
+        "flowerImg": "../images/template/main/theme_content/plant2.jpg",
+        "alt": "plant2",
+        "class": "plant2"
+    },
+    {
+        "theme_num": 4,
+        "flowerTitle": "승진취임",
+        "flowerImg": "../images/template/main/theme_content/orchid.jpg",
+        "alt": "orchid",
+        "class": "orchid"
+    },
+    {
+        "theme_num": 5,
+        "flowerTitle": "병문안",
+        "flowerImg": "../images/template/main/theme_content/etc.jpg",
+        "alt": "etc",
+        "class": "etc"
+    },
+    {
+        "theme_num": 6,
+        "flowerTitle": "출산선물",
+        "flowerImg": "../images/template/main/theme_content/etc2.jpg",
+        "alt": "etc2",
+        "class": "etc2"
+    },
+    {
+        "theme_num": 7,
+        "flowerTitle": "결혼식",
+        "flowerImg": "../images/template/main/theme_content/wreath.jpg",
+        "alt": "wreath",
+        "class": "wreath"
+    },
+    {
+        "theme_num": 8,
+        "flowerTitle": "장례식",
+        "flowerImg": "../images/template/main/theme_content/wreath2.jpg",
+        "alt": "wreath2",
+        "class": "wreath2"
+    }
+]

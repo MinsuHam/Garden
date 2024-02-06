@@ -1,0 +1,179 @@
+[
+    {
+        "flowerId": 1,
+        "flowerTitle": "스투키 모던라인 2호",
+        "flowerDescription": "나사가 인정한 공기정화식물, 스투키!",
+        "sales_price": 104000,
+        "flowerImg": "../../images/template/main/foliage/1.jpg",
+        "alt": "스투키 모던라인 2호",
+        "class": "goodsDisplayImage lazyload",
+        "zzimImage": "../../images/template/main/recommendation/icon_zzim.png",
+        "zzimOn": "../../images/template/main/recommendation/icon_zzim_on.png"
+    },
+    {
+        "flowerId": 2,
+        "flowerTitle": "금전수 모던라인",
+        "flowerDescription": "금전운과 행운을 들어오게 하는 기특한 식물, 금전수",
+        "sales_price": 99000,
+        "flowerImg": "../../images/template/main/foliage/2.jpg",
+        "alt": "금전수 모던라인",
+        "class": "goodsDisplayImage lazyload",
+        "zzimImage": "../../images/template/main/recommendation/icon_zzim.png",
+        "zzimOn": "../../images/template/main/recommendation/icon_zzim_on.png"
+    },
+    {
+        "flowerId": 3,
+        "flowerTitle": "뱅갈고무나무 모던라인1호",
+        "flowerDescription": "'햇빛을 보면 잎이 물이드는, 뱅갈고무나무",
+        "sales_price": 119000,
+        "flowerImg": "../../images/template/main/foliage/3.jpg",
+        "alt": "뱅갈고무나무 모던라인1호",
+        "class": "goodsDisplayImage lazyload",
+        "zzimImage": "../../images/template/main/recommendation/icon_zzim.png",
+        "zzimOn": "../../images/template/main/recommendation/icon_zzim_on.png"
+    },
+    {
+        "flowerId": 4,
+        "flowerTitle": "녹보수 모던라인 1호",
+        "flowerDescription": "녹보수는 행복,행운,대박을 불러오는 나무입니다.",
+        "sales_price": 77000,
+        "flowerImg": "../../images/template/main/foliage/4.jpg",
+        "alt": "녹보수 모던라인 1호",
+        "class": "goodsDisplayImage lazyload",
+        "zzimImage": "../../images/template/main/recommendation/icon_zzim.png",
+        "zzimOn": "../../images/template/main/recommendation/icon_zzim_on.png"
+    },
+    {
+        "flowerId": 5,
+        "flowerTitle": "고무나무 모던라인",
+        "flowerDescription": "'영원한행복'이란 뜻을 가진 고무나무",
+        "sales_price": 99000,
+        "flowerImg": "../../images/template/main/foliage/5.jpg",
+        "alt": "고무나무 모던라인",
+        "class": "goodsDisplayImage lazyload",
+        "zzimImage": "../../images/template/main/recommendation/icon_zzim.png",
+        "zzimOn": "../../images/template/main/recommendation/icon_zzim_on.png"
+    },
+    {
+        "flowerId": 6,
+        "flowerTitle": "천냥금(백량금) 모던라인",
+        "flowerDescription": "빨간열매가 열리는 앙증맞은 모양으로 키우는 재미가 있는, 천냥금",
+        "sales_price": 54900,
+        "flowerImg": "../../images/template/main/foliage/6.jpg",
+        "alt": "천냥금(백량금) 모던라인",
+        "class": "goodsDisplayImage lazyload",
+        "zzimImage": "../../images/template/main/recommendation/icon_zzim.png",
+        "zzimOn": "../../images/template/main/recommendation/icon_zzim_on.png"
+    },
+    {
+        "flowerId": 7,
+        "flowerTitle": "황금죽 클래식 2호",
+        "flowerDescription": "행운과 황금을 상징하며 부귀죽이라고도 불리는, 황금죽",
+        "sales_price": 117000,
+        "flowerImg": "../../images/template/main/foliage/7.jpg",
+        "alt": "황금죽 클래식 2호",
+        "class": "goodsDisplayImage lazyload",
+        "zzimImage": "../../images/template/main/recommendation/icon_zzim.png",
+        "zzimOn": "../../images/template/main/recommendation/icon_zzim_on.png"
+    },
+    {
+        "flowerId": 8,
+        "flowerTitle": "뱅갈고무나무 클래식1호",
+        "flowerDescription": "햇빛을 보면 잎이 물이드는, 뱅갈고무나무",
+        "sales_price": 99000,
+        "flowerImg": "../../images/template/main/foliage/8.jpg",
+        "alt": "뱅갈고무나무 클래식1호",
+        "class": "goodsDisplayImage lazyload",
+        "zzimImage": "../../images/template/main/recommendation/icon_zzim.png",
+        "zzimOn": "../../images/template/main/recommendation/icon_zzim_on.png"
+    },
+    {
+        "flowerId": 9,
+        "flowerTitle": "극락조 모던라인",
+        "flowerDescription": "맑고 신선한 느낌의 수국 꽃다발",
+        "sales_price": 149000,
+        "flowerImg": "../../images/template/main/foliage/9.jpg",
+        "alt": "극락조 모던라인",
+        "class": "goodsDisplayImage lazyload",
+        "zzimImage": "../../images/template/main/recommendation/icon_zzim.png",
+        "zzimOn": "../../images/template/main/recommendation/icon_zzim_on.png"
+    },
+    {
+        "flowerId": 10,
+        "flowerTitle": "금전수 클래식 2호",
+        "flowerDescription": "금전운과 행운을 들어오게 하는 기특한 식물, 금전수",
+        "sales_price": 99000,
+        "flowerImg": "../../images/template/main/foliage/10.jpg",
+        "alt": "금전수 클래식 2호",
+        "class": "goodsDisplayImage lazyload",
+        "zzimImage": "../../images/template/main/recommendation/icon_zzim.png",
+        "zzimOn": "../../images/template/main/recommendation/icon_zzim_on.png"
+    },
+    {
+        "flowerId": 11,
+        "flowerTitle": "황금죽 모던라인 2호",
+        "flowerDescription": "행운과 황금을 상징하며 부귀죽이라고도 불리는, 황금죽",
+        "sales_price": 129000,
+        "flowerImg": "../../images/template/main/foliage/11.jpg",
+        "alt": "황금죽 모던라인 2호",
+        "class": "goodsDisplayImage lazyload",
+        "zzimImage": "../../images/template/main/recommendation/icon_zzim.png",
+        "zzimOn": "../../images/template/main/recommendation/icon_zzim_on.png"
+    },
+    {
+        "flowerId": 12,
+        "flowerTitle": "크로톤 클래식",
+        "flowerDescription": "형형색색 화려한 잎이 매력인, 크로톤",
+        "sales_price": 87000,
+        "flowerImg": "../../images/template/main/foliage/12.jpg",
+        "alt": "크로톤 클래식",
+        "class": "goodsDisplayImage lazyload",
+        "zzimImage": "../../images/template/main/recommendation/icon_zzim.png",
+        "zzimOn": "../../images/template/main/recommendation/icon_zzim_on.png"
+    },
+    {
+        "flowerId": 13,
+        "flowerTitle": "천냥금(백량금) 클래식",
+        "flowerDescription": "빨간열매가 열리는 앙증맞은 모양으로 키우는 재미가 있는, 천냥금",
+        "sales_price": 52000,
+        "flowerImg": "../../images/template/main/foliage/13.jpg",
+        "alt": "천냥금(백량금) 클래식",
+        "class": "goodsDisplayImage lazyload",
+        "zzimImage": "../../images/template/main/recommendation/icon_zzim.png",
+        "zzimOn": "../../images/template/main/recommendation/icon_zzim_on.png"
+    },
+    {
+        "flowerId": 14,
+        "flowerTitle": "알로카시아 클래식",
+        "flowerDescription": "하트모양의 특이한 잎을 가진 알로카시아",
+        "sales_price": 100000,
+        "flowerImg": "../../images/template/main/foliage/14.jpg",
+        "alt": "알로카시아 클래식",
+        "class": "goodsDisplayImage lazyload",
+        "zzimImage": "../../images/template/main/recommendation/icon_zzim.png",
+        "zzimOn": "../../images/template/main/recommendation/icon_zzim_on.png"
+    },
+    {
+        "flowerId": 15,
+        "flowerTitle": "금전수 클래식 1호",
+        "flowerDescription": "금전운과 행운을 들어오게 하는 기특한 식물, 금전수",
+        "sales_price": 75000,
+        "flowerImg": "../../images/template/main/foliage/15.jpg",
+        "alt": "금전수 클래식 1호",
+        "class": "goodsDisplayImage lazyload",
+        "zzimImage": "../../images/template/main/recommendation/icon_zzim.png",
+        "zzimOn": "../../images/template/main/recommendation/icon_zzim_on.png"
+    },
+    {
+        "flowerId": 16,
+        "flowerTitle": "해피트리 클래식 1호",
+        "flowerDescription": "행복을 가져다주는 나무, 해피트리",
+        "sales_price": 99000,
+        "flowerImg": "../../images/template/main/foliage/16.jpg",
+        "alt": "해피트리 클래식 1호",
+        "class": "goodsDisplayImage lazyload",
+        "zzimImage": "../../images/template/main/recommendation/icon_zzim.png",
+        "zzimOn": "../../images/template/main/recommendation/icon_zzim_on.png"
+    }
+    
+]

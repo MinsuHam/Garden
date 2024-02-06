@@ -41,12 +41,12 @@ router.get('/', (req, res) => {
     console.log(req.session);
 
     if(req.session.is_logined == true) {
-        res.render('index', {
+        res.render('./template/main', {
             is_logined: req.session.is_logined,
             name: req.session.userId,
         });
     }else {
-        res.render('index', {
+        res.render('./template/main', {
             is_logined: false,
         });
     }
@@ -57,6 +57,13 @@ router.get('/login', (req, res) => {
     console.log(req.session);
     console.log("로그인 페이지를 열었습니다.");
     res.render('./user/login');
+});
+
+//로그아웃
+router.get('/logout', function (req, res) {
+    req.session.destroy(function (err) {
+        res.redirect('/');
+    });
 });
 
 router.post('/login', (req, res) => {
@@ -87,7 +94,17 @@ router.post('/login', (req, res) => {
 router.get('/create', (req, res) => {
     res.render('./user/create');
 });
-router.post('/create', (req, res) => {
+
+//약관 동의
+router.get('/agree', (req, res) => {
+    res.render('./user/agree');
+});
+
+//회원가입 등록
+router.get('/register', (req, res) => {
+    res.render('./user/register');
+});
+router.post('/register', (req, res) => {
     const userid = req.body.userid;
     const userpass = req.body.userpass;
     const userpass2 = req.body.userpass_check;
@@ -139,11 +156,19 @@ router.get('/cart', (req, res) => {
 
 
 //꽃선물 Page
-router.get('/page_present', (req, res) => {
+router.get('/flower_present_page', (req, res) => {
     console.log("꽃선물 Page 열기 성공!");
     console.log(req.session);
 
-    res.render('./page/page_present');
+    res.render('./page/flower_present_page');
+});
+
+//꽃선물 상세 Page
+router.get('/flower_present_detail', (req, res) => {
+    console.log("꽃선물 flower_present_detail 열기 성공!");
+    console.log(req.session);
+
+    res.render('./page/flower_present_detail');
 });
 
 //my Page
@@ -158,22 +183,16 @@ router.get('/mypage', (req, res) => {
 });
 
 
-//로그아웃
-router.get('/logout', function (req, res) {
-    req.session.destroy(function (err) {
-        res.redirect('/');
-    });
-});
-
-//메인 바디영역
-router.get('/main', (req, res) => {
-    res.render('./template/main');
-});
 
 
 //상세페이지(상품)
 router.get('/page_present_detail', (req, res) => {
     res.render('./page/page_present_detail');
+});
+
+//test(test)
+router.get('/test', (req, res) => {
+    res.render('./page/test');
 });
 
 module.exports = router; 

@@ -1,0 +1,98 @@
+[
+    {
+        "flowerId": 1,
+        "flowerTitle": "금전수 모던라인",
+        "sales_price": 99000,
+        "bStyle": "width:94.9%;",
+        "review_score": 4.7,
+        "flowerImg": "../../images/template/main/customer_satisfaction/1.jpg",
+        "alt": "금전수 모던라인",
+        "class": "goodsDisplayImage lazyload",
+        "zzimImage": "../../images/template/main/recommendation/icon_zzim.png",
+        "zzimOn": "../../images/template/main/recommendation/icon_zzim_on.png"
+    },
+    {
+        "flowerId": 2,
+        "flowerTitle": "계절마음",
+        "sales_price": 52900,
+        "bStyle": "width:91.6%;",
+        "review_score": 4.6,
+        "flowerImg": "../../images/template/main/customer_satisfaction/2.jpg",
+        "alt": "계절마음",
+        "class": "goodsDisplayImage lazyload",
+        "zzimImage": "../../images/template/main/recommendation/icon_zzim.png",
+        "zzimOn": "../../images/template/main/recommendation/icon_zzim_on.png"
+    },
+    {
+        "flowerId": 3,
+        "flowerTitle": "만천홍 클래식 1호",
+        "sales_price": 59000,
+        "bStyle": "width:93.2%;",
+        "review_score": 4.7,
+        "flowerImg": "../../images/template/main/customer_satisfaction/3.jpg",
+        "alt": "만천홍 클래식 1호",
+        "class": "goodsDisplayImage lazyload",
+        "zzimImage": "../../images/template/main/recommendation/icon_zzim.png",
+        "zzimOn": "../../images/template/main/recommendation/icon_zzim_on.png"
+    },
+    {
+        "flowerId": 4,
+        "flowerTitle": "고민NO 동양란-동",
+        "sales_price": 49900,
+        "bStyle": "width:96.6%;",
+        "review_score": 4.8,
+        "flowerImg": "../../images/template/main/customer_satisfaction/4.jpg",
+        "alt": "고민NO 동양란-동",
+        "class": "goodsDisplayImage lazyload",
+        "zzimImage": "../../images/template/main/recommendation/icon_zzim.png",
+        "zzimOn": "../../images/template/main/recommendation/icon_zzim_on.png"
+    },
+    {
+        "flowerId": 5,
+        "flowerTitle": "별이빛나는밤",
+        "sales_price": 99000,
+        "bStyle": "width:88.8%;",
+        "review_score": 4.4,
+        "flowerImg": "../../images/template/main/customer_satisfaction/5.jpg",
+        "alt": "별이빛나는밤",
+        "class": "goodsDisplayImage lazyload",
+        "zzimImage": "../../images/template/main/recommendation/icon_zzim.png",
+        "zzimOn": "../../images/template/main/recommendation/icon_zzim_on.png"
+    },
+    {
+        "flowerId": 6,
+        "flowerTitle": "고무나무 모던라인",
+        "sales_price": 99000,
+        "bStyle": "width:97%;",
+        "review_score": 4.8,
+        "flowerImg": "../../images/template/main/customer_satisfaction/6.jpg",
+        "alt": "고무나무 모던라인",
+        "class": "goodsDisplayImage lazyload",
+        "zzimImage": "../../images/template/main/recommendation/icon_zzim.png",
+        "zzimOn": "../../images/template/main/recommendation/icon_zzim_on.png"
+    },
+    {
+        "flowerId": 7,
+        "flowerTitle": "뱅갈고무나무 모던라인1호",
+        "sales_price": 119000,
+        "bStyle": "width:93.6%;",
+        "review_score": 4.7,
+        "flowerImg": "../../images/template/main/customer_satisfaction/7.jpg",
+        "alt": "뱅갈고무나무 모던라인1호",
+        "class": "goodsDisplayImage lazyload",
+        "zzimImage": "../../images/template/main/recommendation/icon_zzim.png",
+        "zzimOn": "../../images/template/main/recommendation/icon_zzim_on.png"
+    },
+    {
+        "flowerId": 8,
+        "flowerTitle": "분홍호접란 클래식 4호",
+        "sales_price": 159000,
+        "bStyle": "width:91.9%;",
+        "review_score": 4.6,
+        "flowerImg": "../../images/template/main/customer_satisfaction/8.jpg",
+        "alt": "분홍호접란 클래식 4호",
+        "class": "goodsDisplayImage lazyload",
+        "zzimImage": "../../images/template/main/recommendation/icon_zzim.png",
+        "zzimOn": "../../images/template/main/recommendation/icon_zzim_on.png"
+    }
+]

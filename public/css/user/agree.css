@@ -1,0 +1,209 @@
+#layout_body {
+    background-color: #ffffff;
+}
+#layout_body, .resp_wrap {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.title_container {
+    margin: 0 0 30px;
+    padding: 50px 0 40px;
+    text-align: center;
+    position: relative;
+}
+.title_container > h2 {
+    line-height: 1.2;
+    border-bottom: 1px solid #222;
+    padding: 0 0 5px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 24px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #333;
+}
+.resp_login_wrap {
+    max-width: 360px;
+    margin: 30px auto 0;
+}
+.Mt0 {
+    margin-top: 0 !important;
+}
+form {
+    clear: both;
+}
+body, th, td, input, select, textarea, button, pre {
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #666;
+    font-family: 'Roboto','Noto Sans KR','Malgun Gothic',sans-serif;
+}
+.pilsu_agree_all {
+    display: inline-block;
+    padding: 10px 9px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #333;
+}
+label {
+    cursor: pointer;
+}
+.agree_list3 {
+    border-top: 1px #ddd solid;
+    font-size: 14px;
+}
+.pilsu_agree_all input[type='checkbox'] {
+    width: 24px;
+    height: 24px;
+}
+.agree_list3 > li {
+    border: 1px #ddd solid;
+    border-top: none;
+}
+.selection {
+    display: inline-block;
+    padding: 10px 9px;
+    color: #333;
+}
+
+.agree_list3 .agree_view + label {
+    width: calc( 100% - 66px );
+}
+input, select, textarea, button {
+    vertical-align: middle;
+}
+.agree_list3 > li > label {
+    display: block;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.agree_list3 input[type='checkbox'] {
+    margin: 0;
+    width: 20px;
+    height: 20px;
+}
+input.pilsu {
+    background-image: url(../../images/user/icon_check1.png);
+    background-position: 2px 2px;
+    background-size: 6px;
+    background-repeat: no-repeat;
+}
+.agree_list3 .desc {
+    font-size: 13px;
+}
+.pointcolor4.imp {
+    color: #697da6 !important;
+}
+.pointcolor4 {
+    color: #697da6;
+}
+.desc {
+    color: #999;
+}
+.pointcolor4.imp {
+    color: #697da6 !important;
+}
+.btn_area_c {
+    padding-top: 20px;
+    text-align: center;
+}
+.Wmax {
+    width: 100% !important;
+}
+.btn_resp.size_c {
+    height: 42px;
+    font-size: 17px;
+    line-height: 40px;
+    min-width: 100px;
+    padding: 0 14px;
+}
+.btn_resp.color2.size_c, .btn_resp.color2.size_extra, .btn_resp.color2.size_extra2, .resp_login_wrap .btn_resp.size_login1 {
+    outline: none;
+    border-color: #71a200 !important;
+    background-color: #71a200 !important;
+    color: #ffffff !important;
+}
+.btn_resp.color2.size_c span {
+    color: #ffffff !important;
+}
+.btn_resp.color2.size_c, .btn_resp.color2.size_extra, .btn_resp.color2.size_extra2, .resp_login_wrap .btn_resp.size_login1 {
+    outline: none;
+    border-color: #71a200 !important;
+    background-color: #71a200 !important;
+    color: #ffffff !important;
+}
+.resp_layer_pop .title {
+    background: #fff;
+    border-top: 1px #fff solid;
+    font-size: 21px;
+    font-weight: 300;
+    color: #333;
+    padding: 20px 50px 10px 20px;
+}
+.layer_bottom_btn_area2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 500;
+    padding: 10px 10px 0;
+    height: 52px;
+    background: #fff;
+    border-top: 1px #ddd solid;
+}
+.layer_pop_contents.v5 {
+    padding: 10px 20px 40px;
+}
+.btn_resp.color5 {
+    border-color: #999;
+    background-color: #999;
+    color: #fff;
+}
+.resp_layer_pop {
+    position: fixed;
+    z-index: 10020;
+    background: #fff;
+    width: 700px;
+    text-align: left;
+}
+.hide {
+    display: none;
+}
+.hidden {
+    visibility: hidden;
+    overflow: hidden;
+    width: 1px;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+}
+.resp_layer_pop .btn_pop_close {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 60px;
+    height: 60px;
+    background: url(../../images/user/agree/icon_close_layer.png) no-repeat center center;
+}
+.layer_pop_contents.v5 {
+    padding: 10px 20px 40px;
+}
+.y_scroll_auto2 {
+    overflow-y: auto;
+    min-height: 220px;
+    margin-bottom: 62px;
+}
+.agree_list3 .agree_view,
+.agree_list3 .agree_view_2,
+.agree_list3 .agree_view_3 {
+    display: block;
+    text-align: right;
+    float: right;
+    box-sizing: border-box;
+    width: 66px;
+    padding: 11px 10px 9px 0;
+}

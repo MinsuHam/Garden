@@ -1,0 +1,279 @@
+#layout_body, .resp_wrap {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+/* 상단 로그인 글씨 (미노출)*/
+.title_container {
+    margin: 0 0 30px;
+    padding: 50px 0 40px;
+}
+.title_container > h2 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 24px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #333;
+    line-height: 1.2;
+    border-bottom: 1px solid #222;
+    padding: 0 0 5px;
+}
+.resp_login_wrap {
+    max-width: 360px;
+    margin: 30px auto 0;
+}
+.tab_basic {
+    border-bottom: 1px #666 solid;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #666;
+    margin-bottom: 20px;
+}
+.Pt20 {
+    padding-top: 20px !important;
+}
+.tab_basic.fullsize > ul {
+    width: 100%;
+    table-layout: fixed;
+}
+.tab_basic > ul {
+    display: table;
+    margin-bottom: -1px;
+}
+.tab_basic > ul > li.on {
+    border-color: #666;
+    border-right: 1px #666 solid;
+    border-bottom-color: #fff;
+    background: #fff;
+    position: relative;
+    cursor: default;
+    color: #333;
+}
+.tab_basic > ul > li {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px #ddd solid;
+    border-bottom-color: #666;
+    border-right: none;
+    background: #f4f4f4;
+    cursor: pointer;
+}
+.tab_basic > ul > li.on > a, .tab_basic > ul > li.on > label {
+    color: #333;
+}
+.tab_basic > ul > li > a, .tab_basic > ul > li > label {
+    display: block;
+    box-sizing: border-box;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    color: #767676;
+}
+.tab_basic > ul > li.on + li {
+    border-left: none;
+}
+.tab_basic > ul > li:last-child {
+    border-right: 1px #ddd solid;
+}
+.tab_basic > ul > li {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px #ddd solid;
+    border-bottom-color: #666;
+    border-right: none;
+    background: #f4f4f4;
+    cursor: pointer;
+}
+.resp_login_wrap {
+    max-width: 360px;
+    margin: 30px auto 0;
+}
+.Mt0 {
+    margin-top: 0 !important;
+}
+form {
+    clear: both;
+}
+body, th, td, input, select, textarea, button, pre {
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #666;
+    font-family: 'Roboto','Noto Sans KR','Malgun Gothic',sans-serif;
+}
+input, select, textarea, button {
+    vertical-align: middle;
+}
+fieldset {
+    border: 0 none;
+    vertical-align: top;
+}
+.resp_login_wrap .login_real_area {
+    text-align: left;
+}
+.resp_login_wrap .box_id, .resp_login_wrap .box_pw {
+    border: 1px #ddd solid;
+    height: 46px;
+    line-height: 46px;
+    font-size: 15px;
+    width: 100%;
+    padding: 0 15px;
+    color: #333;
+    outline: none;
+}
+.resp_login_wrap .box_pw {
+    margin-top: 10px;
+}
+.resp_login_wrap .id_save {
+    display: inline-block;
+    padding: 0 10px 0 0;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    color: #767676;
+}
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+}
+label {
+    cursor: pointer;
+}
+.resp_login_wrap .btn_resp.size_login1 {
+    width: 100%;
+    font-size: 17px;
+    font-weight: 300;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 2px;
+}
+.resp_login_wrap .btn_resp.size_login1 {
+    outline: none;
+    border-color: #71a200 !important;
+    background-color: #71a200 !important;
+    color: #ffffff !important;
+}
+.resp_login_wrap .btn_resp.size_login1 span {
+    color: #ffffff !important;
+}
+.resp_login_wrap .login_real_area .find_join {
+    padding-top: 5px;
+    font-size: 14px;
+    font-weight: 100;
+    color: #ccc;
+    text-align: center;
+}
+.resp_login_wrap .login_real_area .find_join > a {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #767676;
+    padding: 18px 4px;
+}
+.resp_login_wrap .login_real_area .find_join > a:hover {
+    text-decoration: underline;
+}
+.gray_01 {
+    color: #333 !important;
+}
+.title_sub3 {
+    padding: 30px 0 8px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+}
+.title_sub3.v3 {
+    text-align: center;
+    padding-top: 25px;
+    font-size: 19px;
+    font-weight: 300;
+    color: #666;
+}
+.resp_login_wrap .sns_login_ul {
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+    box-sizing: content-box;
+}
+.resp_login_wrap .sns_login_ul > li {
+    display: inline-block;
+    width: 32px;
+    padding: 2px;
+}
+.resp_login_wrap .sns_login_ul img {
+    cursor: pointer;
+    width: 100%;
+    vertical-align: middle;
+    border: none;
+    outline: none;
+}
+/* 비회원 입력 영역 */
+.resp_login_wrap .input_area .box_order:first-child {
+    margin-top: 0;
+}
+.resp_login_wrap .box_order {
+    border: 1px #ddd solid;
+    height: 46px;
+    line-height: 46px;
+    width: 100%;
+    padding: 0 15px;
+    color: #333;
+    margin-top: 10px;
+}
+.btn_resp {
+    border: 1px #ccc solid;
+    background: #fff;
+    height: 28px;
+    font-size: 12px;
+    line-height: 26px;
+    padding: 0 9px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #333;
+    cursor: pointer;
+    vertical-align: middle;
+    border-radius: 2px;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+.resp_login_wrap .login_real_area .desc_area {
+    box-sizing: border-box;
+    padding: 15px 0;
+    min-height: 50px;
+    font-size: 14px;
+    color: #999 !important;
+}
+.resp_login_wrap .btn_resp.size_login1 {
+    outline: none;
+    border-color: #71a200 !important;
+    background-color: #71a200 !important;
+    color: #ffffff !important;
+}
+.resp_login_wrap .btn_resp.size_login1 {
+    width: 100%;
+    font-size: 17px;
+    font-weight: 300;
+    height: 48px;
+    line-height: 48px;
+    background-color: #333;
+    border-color: #333;
+    color: #fff;
+    border-radius: 2px;
+}
+input[type=text], input[type=password], input[type=email], input[type=tel], input[type=number] {
+    box-sizing: border-box;
+    padding: 0 9px;
+    width: 180px;
+    height: 32px;
+    font-size: 15px;
+    line-height: 32px;
+    color: #333;
+    border: 1px #ccc solid;
+    border-radius: 2px;
+}

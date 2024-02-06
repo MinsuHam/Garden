@@ -1,74 +1,143 @@
 {% extends 'layout.html' %}
 
+{% block style %}
+    <link rel="stylesheet" href="../../css/user/login.css">
+{% endblock %}
+
 {% block content %}
-  <div id="wrap_login" class="mt-5">
-    <div class="container-md">
-        <h2>로그인</h2>
-        <hr class="row col-md-12">
-        <form class="row justify-content-center" name="login_form" method="post">
-            <div class="row col-md-12 align-items-center my-3">
-                <div class="col-md-12">
-                    <input type="userid" name="userid" class="form-control"
-                    placeholder="아이디" id="userid" required />
-                </div> 
-            </div>
-            <div class="row col-md-12  align-items-center my-3">
-                <div class="col-md-12">
-                    <input type="password" name="userpass" class="form-control"
-                    placeholder="비밀번호" id="userpass" required />
-                </div>       
-            </div>
-
-            <hr>
-            
-            <div class="checkbox row col-md-12  align-items-center my-3">
-              <input type="checkbox" class="ml-3" checked>
-              <label for="checkbox" class="savedId">아이디 저장</label>
-            </div>
-
-            <div class="row col-md-12  align-items-center my-3">
-              <button type="submit" class="login_btn btn btn-light col-12">로그인</button>
-              <a href="/create" class="login_btn btn btn-light col-12 mt-4">회원가입</a>
-            </div>
-
-            <div class="sub_login_btn row col-md-12  align-items-center justify-content-center text-center">
-              <ul>
-                <li><a href="#">아이디 찾기</a></li>
-                <li><a href="#">비밀번호 찾기</a></li>
-                <li><a href="#">회원가입</a></li>
-              </ul>
-            </div>
-            <div class="sub_login_btn2 row col-md-12  align-items-center justify-content-center text-center">
-              <ul class="mt-4 ml-2">
-                <li class="mr-2 mb-2">
-                  <p>또는 SNS 로그인</p>
-                </li>
-              </ul>
-            </div>
-            <div class="sub_login_img row col-md-12 align-items-center justify-content-md-center my-3 mt-2">
-              <ul class="d-flex">
-                <li>
-                  <a href="#"><img src="../images/sns_icon_kakao.png"  style="width: 40px" alt="kakao"></a>
-                </li>
-                <li>
-                  <a href="#"><img src="../images/sns_icon_naver.png" style="width: 40px" alt="instar"></a>
-                </li>
-                <li>
-                  <a href="#"><img src="../images/sns_icon_apple.png" style="width: 40px" alt="facebook"></a>
-                </li>
-              </ul>
-            </div>
-      </form>
-      <!-- //form -->
+  <div id="layout_body" class="layout_body">
+    <div class="title_container" style="display:none;">
+      <h2>
+        <span>로그인</span>
+      </h2>
     </div>
+
+    <!-- 탭 -->
+    <div class="resp_login_wrap">
+      <div id="loginTab" class="tab_basic fullsize Pt20">
+        <ul>
+          <li class="on">
+            <a href="javascript:void(0)" data-tab="member">
+              <span>회원</span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" data-tab="nonmember">
+              <span>비회원</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- +++++++++++ 회원 +++++++++++ -->
+    <div id="member" class="loginTabContetns resp_login_wrap Mt0">
+      <form name="loginForm" target="actionFrame" method="post" action="/login">
+        <input type="hidden" name="return_url" value="/mypage">
+        <input type="hidden" name="order_auth" value="0">
+        <fieldset>
+          <ul class="login_real_area">
+            <li class="input_area">
+              <input type="text" name="userid" id="userid" class="box_id" value="" placeholder="아이디" required="required">
+              <input type="password" name="userpass" id="password" class="box_pw" placeholder="비밀번호" password="password" required="required">
+            </li>
+            <li>
+              <label class="id_save">
+                <input type="checkbox" name="idsave" id="idsave" value="checked">
+                  <span>아이디 저장</span>
+                </label>
+            </li>
+            <li>
+              <button type="submit" class="btn_resp size_login1">
+                <span>로그인</span>
+              </button>
+            </li>
+            <li class="find_join">
+              <a href="../member/findId">아이디 찾기</a> &nbsp;|&nbsp;
+              <a href="../member/findPass">비밀번호 찾기</a> &nbsp;|&nbsp;
+              <a href="/create" class="Fw500 gray_01">회원가입</a>
+            </li>
+          </ul>
+
+          <!-- SNS 가입폼 -->
+          <h3 class="title_sub3 v3"><span>또는 SNS 로그인</span></h3>
+          <ul class="sns_login_ul">
+            <li class="sns-login-button" snstype="kakao">
+              <div class="img">
+                <img src="../../images/sns_icons/sns_icon_kakao.png" 
+                    alt="kakao 로그인" title="카카오 로그인">
+              </div>
+            </li>
+            <li class="sns-login-button" snstype="naver">
+              <div class="img">
+                <img src="../../images/sns_icons/sns_icon_naver.png" 
+                    alt="naver 로그인" title="네이버 로그인">
+              </div>
+            </li>
+            <li class="sns-login-button" snstype="apple">
+              <div class="img">
+                <img src="../../images/sns_icons/sns_icon_apple.png" 
+                    alt="apple 로그인" title="애플 로그인">
+              </div>
+            </li>			
+          </ul>
+        </fieldset>
+      </form>
+    </div>
+    <!-- +++++++++++ //회원 +++++++++++ -->
+
+
+    <!-- +++++++++++ 비회원 +++++++++++ -->
+  <div id="nonmember" class="loginTabContetns resp_login_wrap Mt0" style="display:none;">
+    <form name="order_auth_form" target="actionFrame" method="post" action="/mypage">
+      <input type="hidden" name="return_url" value="/mypage">
+      <ul class="login_real_area">
+        <li class="input_area">
+          <input type="text" name="order_seq" value="" id="order_num" class="box_order" placeholder="주문번호">
+          <input type="text" name="order_email" value="" id="order_email" class="box_order" placeholder="주문자 이메일">
+        </li>
+        <li class="desc_area">
+          <p>비회원은 주문번호와 이메일로 주문을 조회할 수 있습니다.</p>
+        </li>
+        <li>
+          <button type="submit" class="btn_resp size_login1">
+            <span>주문조회</span>
+          </button>
+        </li>
+      </ul>
+    </form>
   </div>
-  <!-- //wrap -->
+  <!-- +++++++++++ //비회원 +++++++++++ -->
+</div>
 
 {% endblock %}
 {% block indexScript %}
-  <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
   <script>
 
+    //회원, 비화원 탭
+    let tabBtn = $('.tab_basic > ul > li');
+    let userid = $('#userid');
+    let box_order = $('#order_num');
+    let nonmember = $('#nonmember');
+    let member = $('#member');
+
+    userid.focus();
+    box_order.focus();
+
+      tabBtn.click(function() {
+        const index = $(this).index();
+        $(this).addClass('on').siblings().removeClass('on');
+
+        if(index === 0) {
+          member.show();
+          nonmember.hide();
+          userid.focus();
+        }else {
+          member.hide();
+          nonmember.show();
+          box_order.focus();
+        }
+    });
   </script>
 {% endblock %}
 

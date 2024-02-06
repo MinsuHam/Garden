@@ -1,0 +1,58 @@
+[
+    {
+        "flowerId": 1,
+        "flowerTitle": "mix M",
+        "sales_price": 22900,
+        "consumer_price": "24,900원",
+        "sales_percent": "9%",
+        "orderEA": 2,
+        "review_count": 0,
+        "flowerImg": "../../images/pages/flower_present_page/DIY/826.jpg",
+        "data_src": "../../images/pages/flower_present_page/DIY/826.jpg",
+        "alt": "mix M",
+        "class": "goodsDisplayImage lazyload",
+        "onerror": "this.src='./images/404.jpg'"
+    },
+    {
+        "flowerId": 2,
+        "flowerTitle": "mix S",
+        "sales_price": 15900,
+        "consumer_price": "17,900원",
+        "sales_percent": "12%",
+        "orderEA": "",
+        "review_count": 0,
+        "flowerImg": "../../images/pages/flower_present_page/DIY/825.jpg",
+        "data_src": "../../images/pages/flower_present_page/DIY/825.jpg",
+        "alt": "mix M",
+        "class": "goodsDisplayImage lazyload",
+        "onerror": "this.src='./images/404.jpg'"
+    },
+    {
+        "flowerId": 3,
+        "flowerTitle": "DIY 플라워 트리",
+        "sales_price": 22900,
+        "consumer_price": "24,900원",
+        "sales_percent": "9%",
+        "orderEA": 2,
+        "review_count": 0,
+        "flowerImg": "../../images/pages/flower_present_page/DIY/822.jpg",
+        "data_src": "../../images/pages/flower_present_page/DIY/822.jpg",
+        "alt": "DIY 플라워 트리",
+        "class": "goodsDisplayImage lazyload",
+        "onerror": "this.src='./images/404.jpg'"
+    },
+    {
+        "flowerId": 4,
+        "flowerTitle": "DIY 크리스마스 스와그",
+        "sales_price": 32900,
+        "consumer_price": "38,000원",
+        "sales_percent": "14%",
+        "orderEA": 8,
+        "review_count": 3,
+        "flowerImg": "../../images/pages/flower_present_page/DIY/823.jpg",
+        "data_src": "../../images/pages/flower_present_page/DIY/823.jpg",
+        "alt": "DIY 크리스마스 스와그",
+        "class": "goodsDisplayImage lazyload",
+        "onerror": "this.src='./images/404.jpg'"
+    }
+]

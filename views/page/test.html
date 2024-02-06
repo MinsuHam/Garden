@@ -1,0 +1,188 @@
+{% extends 'layout.html' %}
+
+{% block style %}
+    <link rel="stylesheet" href="../../css/test.css">
+{% endblock %}
+
+{% block content %}
+
+<div class="container product_detail"><!--container S-->
+    <div class="in_box"><!--in_box S-->
+        <div class="product_top">
+            
+            <div class="product_box">						
+                <div class="product_txt">
+                    <p class="tit">상품옵션</p>
+                    <p class="sub_txt">3만원/5만원/10만원 모바일 상품권</p>
+                    <p class="price"><strong>30,000</strong>원~</p>
+                </div>
+            
+                <div class="product_option">
+                    <div class="drop-down01">
+                        <select class="productname" name="nameoption">
+                            <option value="00" style="background-image:url('../../images/pages/flower_present_page/61.jpg');">기본형</option>
+                            <option value="01" style="background-image:url('../../images/pages/flower_present_page/140.jpg');">-사이즈선택-</option>
+                            <option value="02" style="background-image:url('../../images/pages/flower_present_page/143.jpg');">기본형</option>
+                            <option value="03" style="background-image:url('../../images/pages/flower_present_page/153.jpg');">고급형(+20,000원)</option>
+                            <option value="04" style="background-image:url('../../images/pages/flower_present_page/681.jpg');">특별형(+40,000원)</option>
+                        </select>
+                    </div>
+                    <div class="drop-down02">
+                        <p>- 배송방법 선택 -</p>
+                        <ul class="productprice" name="priceoption">									
+                            <li>- 배송방법 선택 -</li>
+                            <li>전국퀵배송(당일O, 도착일지정O, 희망시간O)</li>
+                            <li>택배배송(당일X, 도착일지정O, 시간지정X)(-15,000)</li>
+                        </ul>
+                    </div>
+                    <div class="option_btm">
+                        <div class="price clearfix">
+                            <strong>합계</strong>
+                            <span><strong>0</strong>원</span>
+                        </div>
+
+                        <div class="btn_box">
+                            <button class="black-btn btn">바로 구매</button>
+                        </div>
+                    </div>					
+                </div>
+            </div>
+        </div>
+        {% endblock %}
+
+
+
+{% block indexScript %}
+<script>
+    
+var counter_plus = 0;
+var w_height = $('.wish-box').height();
+
+$(document).ready(function () {
+    $('.drop-down01').append('<div class="clone-slt"></div>');
+    $('.drop-down01').append('<ul class="select-list"></ul>');
+
+    /* 각 옵션들의 이미지들과 선택한 값과 텍스트를 정의 */
+    $('.drop-down01 select option').each(function () {
+        var bg = $(this).css('background-image');
+
+        $('.select-list').append(
+            '<li class="clsAnchor"><span value="' + $(this).val() + '" class="slt-thumb" st' +
+            'yle=background-image:' + bg + '>' + $(this).text() + '</span></li>'
+        );
+    });
+    
+    /* 상품 선택 */
+    $('.drop-down01 .clone-slt').html(
+        '<span style=background-image:' + $('.drop-down01 select').find(':selected').css('background-image') +
+        '>' + $('.drop-down01 select').find(':selected').text() + '</span><a href="java' +
+        'script:void(0);" class="select-list-link">Arrow</a>'
+    );
+
+    $('.drop-down01 ul li').each(function () {
+        if ($(this).find('span').text() == $('.drop-down01 select').find(':selected').text()) {
+            $(this).addClass('active');
+        }
+    });
+
+    $('.drop-down01 .select-list span').on('click', function () {
+
+        counter_plus++;
+        w_height++;
+        var dd_text = $(this).text();
+        var dd_img = $(this).css('background-image');
+        var dd_val = $(this).attr('value');
+        var price_text = $(this).text();
+        //var w_height = $('.wish-box').height();
+
+        $('.drop-down01 .clone-slt').html(
+            '<span style=background-image:' + dd_img + '>' + dd_text + '</span><a href="jav' +
+            'ascript:void(0);" class="select-list-link">Arrow</a>'
+        );
+        $('.drop-down01 .select-list span')
+            .parent()
+            .removeClass('active');
+        $(this)
+            .parent()
+            .addClass('active');
+        console.log(dd_text);
+        $('.drop-down01 select[name=nameoption]').val(dd_val);
+        $('.drop-down02').after(
+            '<div class="wish-box" id="wish-' + counter_plus + '"><div></div></div>'
+        );
+        $('#wish-' + counter_plus + '>div').html('<span>' + dd_text + '</span>');
+        $('.product_option').css({
+            "height": 220 + w_height * 107 + "px"
+        });
+
+        $('.drop-down01 .select-list li').slideUp();
+        $('.productprice').slideDown();
+    });
+
+    $('.drop-down01 .clone-slt').on('click', 'a.select-list-link', function () {
+        $('.drop-down01 ul li').slideToggle();
+    });
+
+    //상품권 가격
+    $('.drop-down02 p').click(function () {
+        $('.productprice').slideToggle();
+        $('.drop-down01 ul li').slideUp();
+        $('.productprice').toggleClass('active');
+
+    });
+
+    $('.productprice li').click(function () {
+        var pp_text = $(this).text();
+        var dd_text = $('#wish-' + counter_plus + '>div').text();
+        $('#wish-' + counter_plus + '>div').html(
+            '<span class="name_txt">' + dd_text + '</span><span class="close_btn">X</span><' +
+            'div class="num_box"><span class="minus_btn">-</span><span class="number">1</sp' +
+            'an><span class="plus_btn">+</span></div><span class="price_txt">' +
+            pp_text + '</span>'
+        );
+
+        $('.productprice').slideUp();
+
+    });
+});
+
+$(document).on('click', '.close_btn', function (e) {
+    w_height--;
+    //console.log('dd')
+    $(this)
+        .parent()
+        .parent()
+        .hide();
+    $('.product_option').css({
+        "height": 200 + w_height * 100 + "px"
+    });
+});
+
+$(function () {
+    $(document).on('click', '.minus_btn', function (e) {
+        e.preventDefault();
+        var stat = $('.number').text();
+        var num = parseInt(stat, 10);
+        num--;
+        if (num <= 0) {
+            //alert('더이상 줄일수 없습니다.');
+            num = 1;
+        }
+        $('.number').text(num);
+    });
+    $(document).on('click', '.plus_btn', function (e) {
+        e.preventDefault();
+        var stat = $('.number').text();
+        var num = parseInt(stat, 10);
+        num++;
+
+        if (num > 30) {
+            //alert('더이상 늘릴수 없습니다.');
+            num = 30;
+        }
+        $('.number').text(num);
+    });
+});
+</script>
+{% endblock %}
+

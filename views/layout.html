@@ -7,23 +7,26 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="../css/header/header.css">
+    <link rel="stylesheet" href="../css/footer/footer.css">
+
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="/js/popper.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/summernote-bs4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-
-
-    <script src="../js/create.js"></script>
-    <script src="../js/page_present.js"></script>
+    
+    <script src="../js/template/main.js"></script>
     <script src="../js/script.js"></script>
+    
     {% block style %}
     {% endblock %}
 </head>
-<body style="overflow: visible;">
+<body style="overflow: visible; overflow-x: hidden;" >
     <div id="wrap">
-        <div id="layout_wrap" class="layout_wrap" style="height: 522px; position: relative; width: auto;">
+        <div id="layout_wrap" class="layout_wrap">
             {% include "./template/header.html" %}
                 {% block content %}
 
@@ -32,15 +35,7 @@
         </div>
     </div>
 
-
     
-
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/popper.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="../js/summernote-bs4.min.js"></script>
-    <script src="/js/custom.js"></script>
-    <script src="../js/script.js"></script>
 
     {% block script %}
     {% endblock %}

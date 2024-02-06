@@ -1,0 +1,412 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, 
+h3, h4, h5, h6, pre, code, form, fieldset, 
+legend, textarea, p, blockquote, th, td, 
+input, select, textarea, button {
+    margin: 0;
+    padding: 0;
+    max-height: 100000px;
+}
+em, address {
+    font-style: normal;
+}
+#layout_body {
+    min-height: 100%;
+}
+#layout_body {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: content-box;
+    background-color: #ffffff;
+}
+.bg_blur {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background: rgba(255,255,255,0.8);
+}
+.catalog_title {
+    border-bottom: #ECECEC 1px solid;
+    margin: 0;
+    padding: 14px 0 10px;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+.catalog_title .swiper-slide {
+    width: auto;
+}
+.catalog_title > ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.catalog_title > ul > li {
+    padding: 5px 5px;
+    color: #888;
+    border-bottom: 2px solid transparent;
+    margin: 0 4px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+.catalog_title > ul > li:last-child {
+    margin-left: auto;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.catalog_title > ul > li:last-child > p {
+    font-size: 14px;
+    color: #888;
+    background-color: #FFF;
+    border: 1px solid #cccccc;
+    border-radius: 999px;
+    padding: 5px 15px;
+    font-weight: normal;
+}
+.display_responsible_class {
+    margin: 0 auto;
+}
+.catalog_content {
+    padding: 40px 0;
+}
+.catalog_content_top {
+    text-align: center;
+    padding: 0;
+}
+.catalog_content_top_html {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.4em;
+    color: #000000;
+    padding: 0 0 10px;
+}
+.catalog_content_top_html div {
+    word-break: keep-all;
+}
+.catalog_content_subtitle, .search_filter_wrap .catalog_subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+.catalog_content_subtitle > li, .search_filter_wrap .catalog_subtitle > li {
+    margin: 0 4px;
+    padding: 10px 20px;
+    color: #444444;
+    cursor: pointer;
+    border-radius: 999px;
+    background-color: #eef0f2;
+    font-size: 14px;
+}
+.catalog_content_subtitle > li.on, .search_filter_wrap .catalog_subtitle > li.on {
+    color: #FFFFFF;
+    background-color: #71A200;
+}
+/* 바디영역: 시작 */
+.display_responsible_class {
+    margin: 0 auto;
+}
+.display_responsible_class .goods_list {
+    margin-left: -20px;
+    vertical-align: top;
+    font-size: 0px;
+}
+@media only screen and (max-width: 1023px) {
+    .display_responsible_class .goods_list {
+        margin-left: -10px;
+    }
+}
+.display_responsible_class .goods_list .gl_item {
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 300px;
+    box-sizing: content-box;
+}
+@media only screen and (max-width: 1360px) {
+    .display_responsible_class .goods_list .gl_item {
+        box-sizing: border-box;
+        width: 25%;
+    }
+}
+@media only screen and (max-width: 860px) {
+    .display_responsible_class .goods_list .gl_item {
+        width: 33.33%;
+    }
+}
+@media only screen and (max-width: 639px) {
+    .display_responsible_class .goods_list .gl_item {
+        width: 50%;
+    }
+}
+.gl_inner_item_wrap {
+    position: relative;
+}
+.display_responsible_class .gli_image {
+    display: block !important;
+    position: relative;
+    margin: 0;
+}
+.respItemImageArea {
+    display: block;
+    overflow: hidden;
+}
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    border: none;
+    outline: none;
+}
+.catalog_content_bottom > .total_goods img {
+    content: url(../../images/pages/flower_present_page/icon_arrow.svg);
+    height: 18px;
+    margin: -2px 0 0 12px;
+}
+.display_responsible_class:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.resp_display_goods_info {
+    padding: 10px 0 0;
+}
+.goodS_info {
+    padding: 3px 0;
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #767676;
+}
+.displaY_sales_percent, .searched_item_display .item_info_area .goods_price_area .discount_rate, .quick_basic_sale_rate {
+    color: #71a200 !important;
+}
+.displaY_goods_name {
+    font-size: 15px;
+    line-height: 1.4;
+}
+.displaY_goods_name a {
+    color: #333;
+}
+.infO_group {
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+}
+.infO_group .goodS_info:last-child {
+    margin-right: 0;
+}
+.infO_group .goodS_info {
+    display: inline-block;
+    margin-right: 8px;
+}
+.displaY_sales_price {
+    color: #71a200 !important;
+}
+.displaY_sales_price .nuM, 
+.displaY_goods_price .nuM,
+.displaY_sales_percent .nuM {
+    font-size: 17px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+.infO_group .goodS_info.displaY_besong {
+    margin-right: -1px;
+}
+.displaY_besong {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 24px;
+    font-size: 12px;
+    line-height: 24px;
+    padding: 0 6px;
+    border: 1px #ddd solid;
+}
+.displaY_event_order_ea .nuM {
+    display: inline-block;
+    margin-left: 4px;
+}
+.displaY_consumer_price {
+    text-decoration: line-through;
+}
+.infO_group .goodS_info:last-child {
+    margin-right: 0;
+}
+.catalog_content_bottom {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35px;
+    color: #000000;
+    text-align: center;
+    margin: 25px 0;
+}
+.catalog_content_bottom > a {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #1C1C1C;
+    padding: 10px 40px;
+}
+/* 택배 띠배너 영역 */
+.eventday_pc {
+    display: block;
+}
+.eventday_mobile {
+    display: none;
+}
+/* //택배 띠배너 영역 */
+
+/* DIY 영역 */
+.catalog_content_top_html {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.4em;
+    color: #000000;
+    padding: 0 0 10px;
+}
+.catalog_content_top_html div {
+    word-break: keep-all;
+}
+.display_slide_class .swiper-slide:first-child {
+    padding-left: 0;
+}
+.display_slide_class .swiper-slide {
+    display: table-cell;
+    width: auto;
+    padding: 10px 0 0 10px;
+    vertical-align: top;
+}
+.swiper-slide {
+    flex-shrink: 0;
+    height: 100%;
+    position: relative;
+    outline: none;
+}
+.goods_list .gl_item {
+    vertical-align: top;
+}
+.gl_inner_item_wrap {
+    position: relative;
+}
+.goods_list .gli_image {
+    margin: 0;
+    position: relative;
+}
+.respItemImageArea {
+    display: block;
+
+}
+.display_slide_class .swiper-button-prev {
+    display: block;
+    width: 16px;
+    height: 33px;
+    background-size: 100%;
+    left: 10px;
+}
+.swiper-container {
+    position: relative;
+}
+.swiper-button-prev, .swiper-button-next {
+    position: absolute;
+    top: 45%;
+    width: 27px;
+    height: 44px;
+    margin-top: -22px;
+    z-index: 10;
+    cursor: pointer;
+    -moz-background-size: 27px 44px;
+    -webkit-background-size: 27px 44px;
+    background-size: 27px 44px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+    opacity: 0.35;
+    cursor: auto;
+    pointer-events: none;
+}
+.display_slide_class .swiper-button-next {
+    display: block;
+    width: 16px;
+    height: 33px;
+    background-size: 100%;
+    right: 10px;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    background-image: url(../../images/pages/flower_present_page/DIY/left_arrow.svg);
+    left: auto;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    background-image: url(../../images/pages/flower_present_page/DIY/right_arrow.svg);
+    left: auto;
+}
+/* //DIY 영역 */
+
+/* 명화 슬라이드 영역: 시작 */
+.respGoodsStatus {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+}
+.respGoodsStatus .area {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.respGoodsStatus .status_style {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.respGoodsStatus .status_style em {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 26px;
+}
+.display_slide_class .catalog_content_top_html {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.goods_display_slide_wrap {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.display_slide_class .swiper-button-prev {
+    display: block;
+    width: 16px;
+    height: 33px;
+    background-size: 100%;
+    left: 10px;
+}
+.display_slide_class .swiper-button-next {
+    display: block;
+    width: 16px;
+    height: 33px;
+    background-size: 100%;
+    right: 10px;
+}
+
+/* 명화 슬라이드 영역: 끝 */
+
+/* cake */
+.catalog_content_top_06 .catalog_content_bottom {
+    margin-bottom: 143px;
+}
+/* //cake */

@@ -1,0 +1,243 @@
+#layout_body {
+    background-color: #ffffff;
+}
+form {
+    clear: both;
+}
+body, th, td, input, select, textarea, button, pre {
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #666;
+    font-family: 'Roboto','Noto Sans KR','Malgun Gothic',sans-serif;
+}
+@media only screen and (max-width: 1023px) {
+    #layout_body, .resp_wrap {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+#layout_body, .resp_wrap {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.title_container {
+    margin: 0 0 30px;
+    padding: 50px 0 40px;
+    text-align: center;
+    position: relative;
+}
+.title_container > h2 {
+    line-height: 1.2;
+    border-bottom: 1px solid #222;
+    padding: 0 0 5px;
+}
+@media only screen and (max-width: 1023px) {
+    .title_container > h2 {
+        font-size: 25px;
+    }
+}
+.title_container > h2 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 24px;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #333;
+}
+@media only screen and (max-width: 1023px) {
+    .title_container + .mypage_greeting {
+        margin-top: -15px;
+    }
+}
+@media only screen and (max-width: 1023px) {
+    .title_container > h2 {
+        font-size: 25px;
+    }
+}
+    @media only screen and (max-width: 767px) {
+    .title_container + .mypage_greeting {
+        margin-top: -12px;
+    }
+}
+.title_container + .mypage_greeting {
+    margin-top: -20px;
+    position: relative;
+}
+.mypage_greeting {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #999 !important;
+}
+.Pb30 {
+    padding-bottom: 30px !important;
+}
+.pilsu_icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../../images/user/icon_check1.png) 50% 50% no-repeat;
+    background-size: 16px;
+}
+.pointcolor {
+    color: #333;
+}
+.resp_member_join_wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    line-height: 1.4;
+}
+.resp_member_join input[type].size_mail1 {
+    width: 120px;
+}
+.resp_member_join input[type].size_mail2 {
+    width: 110px;
+}
+.resp_member_join select {
+    border: 1px solid #ccc;
+    background: #fff;
+    height: 32px;
+    min-width: 50px;
+    padding: 0 0 0 5px;
+    border-radius: 2px;
+    font-size: 13px;
+    vertical-align: bottom;
+    max-width: 100%;
+    -webkit-appearance: menulist;
+}
+.resp_member_join input[type].size_phone {
+    width: 60px;
+}
+.resp_member_join {
+    line-height: 1.4;
+}
+.resp_join_table {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-bottom: 1px #ddd solid;
+    font-size: 13px;
+}
+.resp_join_table > ul {
+    display: table-row;
+}
+.resp_join_table > ul > li {
+    display: table-cell;
+    border-top: 1px #ddd solid;
+    border-left: 1px #eee solid;
+    padding: 8px;
+    color: #666;
+    vertical-align: middle;
+}
+.resp_join_table > ul > li:first-child {
+    border-left: none;
+}
+.resp_join_table > ul > li.th {
+    width: 140px;
+    text-align: left;
+    padding: 0;
+    background: #f8f8f8;
+    color: #333;
+}
+.resp_join_table .required .th p {
+    background: url(../../images/user/icon_check1.png) right 8px top 8px no-repeat;
+    background-size: 12px;
+}
+.resp_join_table .th p {
+    padding: 8px 22px 8px 10px;
+}
+.resp_member_join input[type=text], 
+.resp_member_join input[type=password], 
+.resp_member_join input[type=email], 
+.resp_member_join input[type=tel] {
+    box-sizing: border-box;
+    padding: 0 9px;
+    width: 200px;
+    height: 32px;
+    font-size: 12px;
+    line-height: 32px;
+    color: #333;
+    border: 1px #ccc solid;
+    border-radius: 2px;
+    text-indent: 0;
+    vertical-align: middle;
+}
+.btn_area_c {
+    padding-top: 20px;
+    text-align: center;
+}
+.btn_resp.color2.size_c, 
+.btn_resp.color2.size_extra, 
+.btn_resp.color2.size_extra2, 
+.resp_login_wrap .btn_resp.size_login1 {
+    outline: none;
+    border-color: #71a200 !important;
+    background-color: #71a200 !important;
+    color: #ffffff !important;
+}
+.btn_resp.color2 {
+    border-color: #434343;
+    background-color: #434343;
+    color: #fff;
+}
+.btn_resp.size_c {
+    height: 42px;
+    font-size: 17px;
+    line-height: 40px;
+    min-width: 100px;
+    padding: 0 14px;
+}
+button[type=submit] {
+    outline: none;
+}
+.btn_resp {
+    border: 1px #ccc solid;
+    background: #fff;
+    height: 28px;
+    font-size: 12px;
+    line-height: 26px;
+    padding: 0 9px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #333;
+    cursor: pointer;
+    vertical-align: middle;
+    border-radius: 2px;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+.Wmax {
+    width: 100% !important;
+}
+
+.resp_member_join input[type].size_zip_all {
+    width: 76px;
+}
+.resp_member_join input[readonly], 
+.resp_member_join select[disabled] {
+    background: #f4f4f4 !important;
+    border-color: #ccc !important;
+    cursor: default;
+}
+.btn_resp.size_b {
+    height: 32px;
+    font-size: 13px;
+    line-height: 32px !important;
+    min-width: 60px;
+}
+.btn_resp.color4 {
+    border-color: #444;
+    color: #444;
+}
+.resp_member_join input[type].size_full {
+    width: 100%;
+}
+.hide {
+    display: none;
+}
+.address_area {
+    padding-top: 5px;
+}

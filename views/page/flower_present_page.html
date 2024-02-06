@@ -1,0 +1,253 @@
+{% extends 'layout.html' %}
+
+{% block style %}
+    <link rel="stylesheet" href="../../css/pages/flower_present_page.css">
+{% endblock %}
+
+{% block content %}
+<div id="layout_body" class="layout_body">
+    <div id="catalog_list_page">
+        <!-- 카테고리 서브 메뉴 영역: 시작 -->
+        <div class="catalog_title bg_blur">
+            <ul class="">
+                <li>플로리스트 추천</li>
+                <li>택배특가</li>
+                <li>내가 만드는 꽃</li>
+                <li>명화컬렉션</li>
+                <li>이달의 꽃</li>
+                <li>케이크</li>
+                <li class="swiper-slide">
+                    <p>
+                        <!-- 꽃선물 <img>-->전체보기
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <!-- 카테고리 서브 메뉴 영역: 끝 -->
+        <!-- ++++ 콘텐츠 영역: 시작 ++++ -->
+        <div id="catalog_content_list">
+            <div class="catalog_content">
+                <div class="catalog_content_top catalog_content_top_01">
+                    <div class="catalog_content_top_html">
+                        <div>플로리스트 추천 꽃선물</div>
+                    </div>
+                </div>
+                <div class="catalog_content_subtitle_container">
+                    <ul class="catalog_content_subtitle">
+                        <li class="on">전체</li>
+                        <li>꽃다발</li>
+                        <li>꽃바구니</li>
+                        <li>꽃상자</li>
+                    </ul>
+                </div>
+                <div class="catalog_content_middle">
+                    <div id="designDisplay" class="designDisplay">
+                        <div class="display_responsible_class">
+                            <ul class="goods_list goods_list_1 goods_info_style_1">
+                                <!-- loop 영역 -->
+                                <!-- ------- //상품정보. ------- -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog_content_bottom">
+                    <a href="#" class="total_goods">
+                        플로리스트 추천 상품 모두 보기
+                        <img alt="icon">
+                    </a>
+                </div>
+            </div>
+            <div class="catalog_content catalog_content_top_02">
+                <div class="catalog_content_top">
+                    <div class="eventday_pc" style="margin-bottom: 10px;">
+                        <img src="../../images/pages/flower_present_page/event_list_title_parecel_0725.png" alt="택배로 받으면, 최대 46% 할인 EVENT">
+                    </div>
+                        <div class="eventday_mobile" style="margin-bottom: 5px;">
+                            <img src="../../images/pages/flower_present_page/event_list_title_parecel_0725.png" alt="택배로 받으면, 최대 46% 할인 EVENT">
+                        </div>
+                </div>
+                <div class="catalog_content_subtitle_div_0">
+                    <ul class="catalog_content_subtitle">
+                        <li class="on">전체</li>
+                        <li>꽃다발</li>
+                        <li>꽃바구니</li>
+                    </ul>
+                </div>
+                <div class="catalog_content_middle">
+                    <div id="designDisplay" class="designDisplay">
+                        <div class="designDisplay display_responsible_class">
+                            <ul class="goods_list goods_list_2 goods_info_style_1">
+                                <!-- loop 영역 -->
+                                <!-- ------- //상품정보. ------- -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog_content_bottom">
+                    <a href="/goods/brand?code=00160001" onclick="" class="total_goods">
+                        택배특가 상품 모두 보기
+                        <img alt="icon">
+                    </a>
+                </div>
+            </div>
+            <div class="catalog_content catalog_content_top_03">
+                <div class="catalog_content_top">
+                    <div class="catalog_content_top_html">
+                        <div>DIY, 내가 만드는 꽃 </div>
+                    </div>
+                </div>
+                <div class="catalog_content_middle">
+                    <div id="designDisplay" class="designDisplay">
+                        <div class="display_slide_class">
+                            <div class="goods_display_slide_wrap swiper-container swiper-container-horizontal" style="cursor: grab;">
+                                <div class="swiper-wrapper swiper-wrapper_1" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                                    <!-- loop 영역 -->
+                                </div>
+                                <!-- scrollbar -->
+                                <div class="display-scrollbar swiper-scrollbardesignDisplay_658d072ee3059"></div>
+                                <!-- left, right button -->
+                                <div class="swiper-button-next swiper-button-disabled"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog_content_bottom">
+                    <a href="/goods/brand?code=00160001" onclick="" class="total_goods">
+                        내가 만드는 꽃 상품 모두 보기
+                        <img alt="icon">
+                    </a>
+                </div>
+            </div>
+            <div class="catalog_content catalog_content_top_04">
+                <div class="catalog_content_top">
+                    <div class="catalog_content_top_html">
+                        <div>명화(名畵)를 꽃으로 만나다.</div>
+                    </div>
+                </div>
+                <div class="catalog_content_middle">
+                    <div id="designDisplay" class="designDisplay">
+                        <div class="display_slide_class set_slide_clear">
+                            <div class="goods_display_slide_wrap swiper-container swiper-container-horizontal" style="cursor: grab;">
+                                <div class="swiper-wrapper swiper-wrapper_2" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                                    <!-- loop 영역 -->
+                                </div>
+                                <!-- scrollbar -->
+                                <div class="display-scrollbar swiper-scrollbardesignDisplay_658d072ee3059"></div>
+                                <!-- left, right button -->
+                                <div class="swiper-button-next swiper-button-disabled"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog_content_bottom">
+                    <a href="/goods/brand?code=00160001" onclick="" class="total_goods">
+                        명화컬렉션 스토리
+                        <img alt="icon">
+                    </a>
+                </div>
+            </div>
+            <div class="catalog_content_top catalog_content_top_05">
+                <div class="catalog_content_top_html">
+                    <div>지금 가장 아름다운, 이달의 꽃</div>
+                </div>
+            </div>
+            <div class="catalog_content_subtitle_div_0">
+                <ul class="catalog_content_subtitle">
+                    <li class="on">전체</li>
+                    <li>수국</li>
+                </ul>
+            </div>
+            <div class="catalog_content_middle">
+                <div id="designDisplay" class="designDisplay">
+                    <div class="designDisplay display_responsible_class ">
+                        <ul class="goods_list goods_list_3 goods_info_style_1">
+                            <!-- loop 영역 -->
+                            <!-- ------- //상품정보. ------- -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog_content_bottom">
+                <a href="#" class="total_goods">
+                    이달의 꽃 상품 모두 보기
+                    <img alt="icon">
+                </a>
+            </div>
+            <div class="catalog_content catalog_content_top_06">
+                <div class="catalog_content_top">
+                    <div class="catalog_content_top_html">
+                        <div>케이크와 함께하는 꽃선물</div>
+                    </div>
+                </div>
+                <div class="catalog_content_middle">
+                    <div id="designDisplay" class="designDisplay">
+                        <div class="display_slide_class set_slide_clear">
+                            <div class="goods_display_slide_wrap swiper-container swiper-container-horizontal" style="cursor: grab;">
+                                <div class="swiper-wrapper swiper-wrapper_3" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                                    <!-- loop 영역 -->
+                                </div>
+                                <!-- scrollbar -->
+                                <div class="display-scrollbar"></div>
+                                <!-- left, right button -->
+                                <div class="swiper-button-next swiper-button-disabled"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog_content_bottom">
+                    <a href="#" class="total_goods">
+                        케이크 상품 모두 보기
+                        <img alt="icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ++++ catalog_list_page 영역: 끝 ++++ -->
+    </div>
+    <!-- //catalog_list_page -->
+</div>
+{% endblock %}
+
+{% block indexScript %}
+<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="../js/page/flower_present_page.js"></script>
+<script>
+
+    //추천상품 슬라이드(swiper)
+    const slide = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        pagination: false,
+        autoplay: false,
+        navigation: {// 버튼          
+            nextEl: ".swiper-button-next",
+            prevEl:   ".swiper-button-prev",
+        },
+    });
+   
+
+    
+    //slide_intro 슬라이드(splide)
+    /*  var splide = new Splide('.splide', {
+        type: 'loop',
+        gap: '10px',
+        start: 1,
+        autoplay : true, 
+        perPage : 1, //한 페이지에 노출되는 이미지
+        perMove : 1, //슬라이드 이미지 개수
+        arrows : true,
+        drag : true, 
+        interval : 3000, 
+        pauseOnHover : true, 
+        pagination : true,
+        focus: 'center',
+    }).mount(); */
+
+</script>
+{% endblock %}

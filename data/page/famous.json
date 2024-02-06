@@ -1,0 +1,93 @@
+[
+    {
+        "flowerId": 1,
+        "flowerTitle": "별이빛나는밤",
+        "sales_price": 90000,
+        "orderEA": 9994,
+        "review_count": 312,
+        "flowerImg": "../../images/pages/flower_present_page/famous/143.jpg",
+        "data_src": "../../images/pages/flower_present_page/famous/143.jpg",
+        "alt": "별이빛나는밤",
+        "class": "goodsDisplayImage lazyload",
+        "onerror": "this.src='./images/404.jpg'",
+        "state": ""
+    },
+    {
+        "flowerId": 2,
+        "flowerTitle": "클림트키스",
+        "sales_price": 96900,
+        "orderEA": 428,
+        "review_count": 24,
+        "flowerImg": "../../images/pages/flower_present_page/famous/121.jpg",
+        "data_src": "../../images/pages/flower_present_page/famous/121.jpg",
+        "alt": "클림트키스",
+        "class": "goodsDisplayImage lazyload",
+        "onerror": "this.src='./images/404.jpg'",
+        "state": ""
+    },
+    {
+        "flowerId": 3,
+        "flowerTitle": "모네의수련",
+        "sales_price": 68000,
+        "orderEA": 343,
+        "review_count": 17,
+        "flowerImg": "../../images/pages/flower_present_page/famous/116.jpg",
+        "data_src": "../../images/pages/flower_present_page/famous/116.jpg",
+        "alt": "모네의수련",
+        "class": "goodsDisplayImage lazyload",
+        "onerror": "this.src='./images/404.jpg'",
+        "state": ""
+    },
+    {
+        "flowerId": 4,
+        "flowerTitle": "르누아르",
+        "sales_price": 99000,
+        "orderEA": 1627,
+        "review_count": 63,
+        "flowerImg": "../../images/pages/flower_present_page/famous/153.jpg",
+        "data_src": "../../images/pages/flower_present_page/famous/153.jpg",
+        "alt": "르누아르",
+        "class": "goodsDisplayImage lazyload",
+        "onerror": "this.src='./images/404.jpg'",
+        "state": ""
+    },
+    {
+        "flowerId": 5,
+        "flowerTitle": "양산을 든 여인",
+        "sales_price": 70000,
+        "orderEA": 482,
+        "review_count": 23,
+        "flowerImg": "../../images/pages/flower_present_page/famous/687.jpg",
+        "data_src": "../../images/pages/flower_present_page/famous/687.jpg",
+        "alt": "양산을 든 여인",
+        "class": "goodsDisplayImage lazyload",
+        "onerror": "this.src='./images/404.jpg'",
+        "state": ""
+    },
+    {
+        "flowerId": 6,
+        "flowerTitle": "프라고나르",
+        "sales_price": 89000,
+        "orderEA": 1392,
+        "review_count": 53,
+        "flowerImg": "../../images/pages/flower_present_page/famous/158.jpg",
+        "data_src": "../../images/pages/flower_present_page/famous/158.jpg",
+        "alt": "프라고나르",
+        "class": "goodsDisplayImage lazyload",
+        "onerror": "this.src='./images/404.jpg'",
+        "state": ""
+    },
+    {
+        "flowerId": 7,
+        "flowerTitle": "고흐의 해바라기",
+        "sales_price": 58900,
+        "orderEA": 686,
+        "review_count": 23,
+        "flowerImg": "../../images/pages/flower_present_page/famous/115.jpg",
+        "data_src": "../../images/pages/flower_present_page/famous/115.jpg",
+        "alt": "고흐의 해바라기",
+        "class": "goodsDisplayImage lazyload",
+        "onerror": "this.src='./images/404.jpg'",
+        "state": "SOLD OUT!"
+    }
+]

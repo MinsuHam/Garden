@@ -1,0 +1,340 @@
+/* ###################### 마이 페이지 영역: 시작 ###################### */
+header {
+    position: relative;
+}
+.subpage_container .btn_sub_all {
+    display: none;
+    position: absolute;
+    left: -10px;
+    top: 265px;
+    z-index: 20;
+    padding: 0 20px 0 10px;
+    height: 40px;
+    line-height: 41px;
+    font-weight: 300;
+    background: #9c9c9c;
+    color: #fff;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-image: url(../../images/user/mypage/icon_arr_next3.png);
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+}
+@media only screen and (max-width: 1023px) {
+    .subpage_container .btn_sub_all {
+            display: block;
+            transition: left 0.5s;
+        }
+    }
+.subpage_wrap {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+/* 상단 개인 정보 */
+.subpage_wrap .subpage_lnb {
+    display: table-cell;
+    vertical-align: top;
+    width: 200px;
+    padding: 0 20px 40px 0;
+    background: #fff;
+}
+.subpage_container {
+    display: block;
+    padding: 40px 0 40px;
+}
+.subpage_lnb .title1 {
+    padding: 60px 0 0 0;
+    height: 130px;
+}
+.subpage_lnb .title1 > a {
+    display: block;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+}
+.subpage_lnb .title1 + .title2 {
+    margin-top: 0;
+}
+.subpage_lnb .title2 + .lnb_sub {
+    padding-top: 8px;
+}
+.subpage_lnb .title2 {
+    margin-top: 20px;
+    border-bottom: 1px #eee solid;
+    border-radius: 2px;
+}
+.subpage_lnb .title2 > a {
+    display: block;
+    padding: 10px 0 6px 10px;
+    font-size: 19px;
+    line-height: 1.3;
+    font-weight: 300;
+    color: #333;
+}
+.subpage_lnb .lnb_sub > li > a {
+    display: block;
+    padding: 4px 0 4px 10px;
+    font-size: 14px;
+    line-height: 1.3;
+    font-weight: 400;
+    color: #767676;
+    transition: transform 0.2s;
+}
+.my_index_top {
+    display: table;
+    width: 100%;
+}
+.my_index_top > li {
+    display: table-cell;
+    vertical-align: top;
+}
+.mycs_fcont_margin {
+    margin-top: 30px;
+}
+.my_index_top .my_greeting {
+    font-size: 34px;
+    font-weight: 100;
+    line-height: 1.0;
+    color: #666;
+}
+.my_index_top img {
+    max-width: 100%;
+    vertical-align: middle;
+    border: none;
+    outline: none;
+}
+.my_index_top .my_greeting .name {
+    font-weight: 300;
+    color: #333;
+}
+.my_index_top .my_greeting {
+    font-size: 34px;
+    font-weight: 100;
+    line-height: 1.0;
+    color: #666;
+}
+.my_index_top .my_msub1 {
+    padding-top: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #767676;
+}
+.my_index_top .my_msub1 > li {
+    float: left;
+    padding-right: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #767676;
+}
+.my_index_top .my_msub1 span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #767676;
+}
+.my_index_top .my_msub1 > li:after {
+    display: inline-block;
+    content: '|';
+    font-weight: 100;
+    color: #ccc;
+    margin-left: 10px;
+}
+.my_index_top .my_msub1 > li:last-child {
+    padding-right: 0;
+}
+.my_index_top .my_msub1 a {
+    color: #767676;
+}
+.my_index_top .my_msub2 {
+    font-size: 0;
+    text-align: right;
+    margin-top: -10px;
+}
+.my_index_top .my_msub2 > li:first-child {
+    border-left: none;
+}
+.my_index_top .my_msub2 > li {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 15px;
+    border-left: 1px #ccc solid;
+}
+.my_index_top .my_msub2 > li >a {
+    min-width: 100px;
+}
+.my_index_top .my_msub2 > li > a {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0 10px;
+    min-width: 120px;
+}
+.my_index_top .my_msub2 .title {
+    display: block;
+}
+.my_index_top .my_msub2 .num {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.0;
+    color: #333;
+}
+/* 최근 주문 내역 */
+.Pb0 {
+    padding-bottom: 0 !important;
+}
+.Mt80 {
+    margin-top: 80px !important;
+}
+.Bbx {
+    border-bottom: none !important;
+}
+.title_container2 {
+    margin-top: 60px;
+    padding: 0 0 12px;
+    text-align: center;
+    position: relative;
+    border-bottom: 2px #333 solid;
+}
+.title_sub6 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #333;
+    text-align: left;
+}
+.title_container2 .btn_thebogi {
+    display: inline-block;
+    padding-right: 12px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    font-weight: 300;
+    background: url(../../images/user/mypage/ico_arw_direct.png) right 3px no-repeat;
+    background-size: 7px;
+}
+.title_container2 a {
+    color: #444;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+/* 최근 반품 정보 */
+.mt30 {
+    margin-top: 30px !important;
+}
+.gray_06 {
+    color: #999 !important;
+}
+.Dib {
+    display: inline-block;
+    color: #999 !important;
+}
+.hand, .pointer {
+    cursor: pointer;
+}
+.mypage_list_sec0 {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    box-sizing: border-box;
+    font-size: 13px;
+    color: #333;
+    border-top: 1px #ddd solid;
+    border-left: 1px #ddd solid;
+}
+.mypage_list_sec0 > ul {
+    display: table-row;
+    font-size: 14px;
+}
+.mypage_list_sec0 > ul > li {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px;
+    border-bottom: 1px #ddd solid;
+    border-right: 1px #eee solid;
+}
+.mypage_list_sec0 > ul > li.th {
+    width: 110px;
+    padding: 0;
+}
+.mypage_list_sec0 > ul > li.th > p {
+    padding: 10px;
+}
+.my_order_step {
+    height: 130px;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    max-width: 1000px;
+    text-align: center;
+}
+.my_order_step > li:first-child {
+    width: 16%;
+    background: none;
+    padding-left: 0;
+}
+.my_order_step > li {
+    float: left;
+    width: 21%;
+    box-sizing: border-box;
+    padding-left: 10px;
+    font-size: 13px;
+    background: url(../../images/user/mypage/my_order_arw2.png) 0 40% no-repeat;
+}
+.my_order_step > li > a {
+    display: block;
+    position: relative;
+    color: #333;
+}
+.my_order_step > li > a span {
+    display: inline-block;
+    font-size: 13px;
+    color: #333;
+}
+.my_order_step > li.step3 > a span {
+    margin-left: 3px;
+}
+.my_order_step > li.step5 > a span {
+    margin-left: 10px; 
+}
+.my_order_step > li.step1 > a:before {
+    background-image: url(../../images/user/mypage/my_order_p1.png);
+}
+.my_order_step > li.step2 > a:before {
+    background-image: url(../../images/user/mypage/my_order_p2.png);
+}
+.my_order_step > li.step3 > a:before {
+    background-image: url(../../images/user/mypage/my_order_p3.png);
+}
+.my_order_step > li.step4 > a:before {
+    background-image: url(../../images/user/mypage/my_order_p4.png);
+}
+.my_order_step > li.step5 > a:before {
+    background-image: url(../../images/user/mypage/my_order_p5.png);
+}
+.my_order_step > li > a:before {
+    display: block;
+    content: '';
+    height: 70px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    transition: opacity 0.2s;
+}
+.no_data_area2 {
+    padding: 130px 5px 32px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+    border: 1px #ddd solid;
+    background: url(../../images/user/mypage/nodata.png) 50% 40px no-repeat;
+    background-size: 68px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+/* 마이 페이지 영역: 끝 */

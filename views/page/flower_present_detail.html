@@ -1,0 +1,495 @@
+{% extends 'layout.html' %}
+
+{% block style %}
+    <link rel="stylesheet" href="../../css/pages/flower_present_detail.css">
+{% endblock %}
+
+{% block content %}
+    <div id="layout_body" class="layout_body">
+        <div class="detail-wrap-info">
+            <div class="ajaxLineMap search_nav">
+                <a class="home" href="/main">홈</a>
+                        <div class="navi_linemap2">
+                    <span class="selected_cate">꽃바구니</span>
+                    <ul class="navi_linemap_sub" style="display:none;"></ul>
+                </div>
+                    </div>
+        <!-- 타이틀 -->
+        <div class="detail_title_area">
+            <h3 class="name">계절마음</h3>
+            <p class="summary">
+                계절마음은 전국 해당지점에서 당일 가장 신선한 꽃으로 제작됩니다.
+            </p>
+        </div>
+        <!-- 상품 정보 -->
+        <div class="goods_thumbs_spec mb20">
+            <!-- ++++++++++++++++++++++++ 상품 이미지 ++++++++++++++++++++++++ -->
+            <div id="goods_thumbs">
+                <div class="slides_container hide" style="position: relative; display: block;">
+                        <div class="viewImgWrap">
+                                <img src="../../images/pages/flower_present_detail/140.jpg" 
+                                        onerror="this.src='./images/404.jpg'" 
+                                        title="" alt="꽃집청년들,계절마음"
+                                        class="flowerImg">
+                        </div>
+                    <a id="btn_zoom_view" href="javascript:popup()">확대 보기</a>
+                    </div>
+            </div>
+            <!-- ++++++++++++++++++++++++ //상품 이미지 ++++++++++++++++++++++++ -->
+            <!-- ++++++++++++++++++++++++ 상품 스펙 ++++++++++++++++++++++++ -->
+            <div id="goods_spec">
+                <form name="goodsForm" method="post" enctype="multipart/form-data" action="../order/add" target="actionFrame">
+                    <input type="hidden" name="goodsSeq" value="140">
+                    <input type="hidden" name="goodsViewVersion" value="2">
+                    <input type="hidden" class="brand_title" value="꽃선물">
+                    <div class="sns_wish">
+                        <!-- SNS 공유 -->
+                        <a href="javascript:void(0)" id="btnSnsShare" class="btn_sns_share" title="SNS 공유">
+                            <span>공유</span>
+                        </a>
+                        <!-- 찜 -->
+                        <a href="javascript:void(0)" id="wishimg" class="ico_wish" 
+                                title="찜하기(위시리스트에 추가)">
+                            <span>찜</span>
+                        </a>
+                    </div>
+                    <ul class="goods_spec_sections set_preload">
+                        <!-- ++++ 가격, 할인율, 할인내역 ++++ -->
+                        <li class="deatil_price_area">
+                            <p class="sale_price">
+                                    <span class="num">52,900</span>
+                                    <span class="price_won">원</span>
+                                <span style="color:#08B899; font-size:19px;"></span>
+                            </p>
+                        </li>
+                        <!-- ++++ //가격, 할인율, 할인내역 ++++ -->
+                        <li class="goods_spec_member_grade">
+                            <ul class="detail_spec_table">
+                                <!-- ++++ 회원등급 ++++ -->
+                                <li class="th">
+                                    <span>회원등급</span>
+                                </li>
+                                <li>최대 5%추가할인 </li>
+                                <li class="btn_area1">
+                                    <button type="button" 
+                                            class="btn_open_small btn_resp no_border">
+                                        <span>자세히</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- ++++ 할인코드 ++++ -->
+                        <li class="goods_spec_sales_code">
+                            <ul class="detail_spec_table">
+                                <li class="th">
+                                    <span>할인코드</span>
+                                </li>
+                                <li>
+                                    주문/결제페이지에서 "꽃집청년들"을 입력하시면 500원이 할인됩니다.
+                                </li>
+                                <li class="btn_area1">
+                                    <button type="button" 
+                                            id="codeSaleView" class="btn_resp no_border resStyle">
+                                        <span>자세히</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- ++++ //할인코드 ++++ -->
+                        <!-- ++++ 적립혜택 ++++ -->
+                        <li class="goods_spec_saving_benefit">
+                            <ul class="detail_spec_table">
+                                <li class="th">
+                                    <span>적립혜택</span></li>
+                                <li>
+                                    회원가입 시 3,703원 적립
+                                </li>
+                            </ul>
+                            <div id="reviewDetail" class="detail_option_list hide">
+                                <ul></ul>
+                            </div>
+                        </li>
+                        <!-- ++++ //적립혜택 ++++ -->
+                        <!-- ++++ 상품후기 ++++ -->
+                        <li class="goods_spec_customer_ev">
+                            <ul class="detail_spec_table">
+                                <li class="th">
+                                    <span>상품후기</span>
+                                </li>
+                                <li>
+                                    1,354
+                                    <span>명</span>&nbsp;
+                                    <span class="ev_active2"><b style="width:91.5%;"></b></span>
+                                    <span class="desc">(<span class="gray_01">4.6</span>/5)</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- ++++ //상품후기 ++++ -->
+                        <!-- ++++ 추가정보 ++++ -->
+                        <li class="goods_spec_brand">
+                            <ul class="detail_spec_table">
+                                <li class="th">원산지</li>
+                                <li>
+                                    하단 별도표기
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="goods_spec_brand">
+                            <ul class="detail_spec_table">
+                                <li class="th">상품코드</li>
+                                <li>
+                                    FB00001
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- ~~~~~ //추가정보 ~~~~~ -->
+                    </ul>
+                    <!-- 상품 옵션 영역: 시작 -->
+                    <div id="goodsOptionBuySection" class="goods_buy_sections">
+                        <div class="goods_option_select_area">
+                            <div id="select_option_lay">
+                                <div class="goods_option_area">
+                                    <table class="goods_option_table" width="100%">
+                                        <!-- 필수옵션 시작 -->
+                                        <tbody>
+                                            <tr>
+                                                <th colspan="2">
+                                                    <span>상품옵션</span>
+                                                    <button type="button" class="btn_open_small btn_resp no_border" 
+                                                            onclick="" style="float:right; background:none;">자세히</button>
+                                                </th>
+                                            </tr>
+                                            <tr class="optionTr product_option">
+                                                <td class="drop-down01" colspan="2">
+                                                    <select class="productname" name="nameoption" style="display: none;">
+                                                        <option value="">- 사이즈 선택 -</option>
+                                                        <option value="기본형" price="52900.00">기본형</option>
+                                                        <option value="고급형" price="72900.00">고급형(+20,000원)</option>
+                                                        <option value="특별형" price="92900.00">특별형(+40,000원)</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td id="drop-down02" class="drop-down02">
+                                                    <select class="productname" name="nameoption" style="display: none;">
+                                                        <option value="72900.00" price="72900.00">전국퀵배송(당일O, 도착일지정O, 희망시간O)</option>
+                                                        <option value="92900.00" price="92900.00">택배배송(당일X, 도착일지정O, 시간지정X)(-15,000)</option>
+                                                    </select>
+                                                    <a href="javascript:void(0);" class="select-list-link">- 배송방법 선택 -</a>
+                                                    <a id="sbToggle" href="javascript:void(0);" class="sbToggle"></a>
+                                                    <ul class="productprice" name="priceoption">
+                                                        <li>전국퀵배송(당일O, 도착일지정O, 희망시간O)</li>
+                                                        <li>택배배송(당일X, 도착일지정O, 시간지정X)(-15,000)</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    
+                                    <!-- 선택된 옵션 노출 영역 시작( 장바구니에 해당 ) -->
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 총 상품 금액 표기 시작-->
+                        <div class="goods_price_area">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                    <!-- 단일옵션일 경우 수량 -->
+                                    <td class="total_goods_price">
+                                        <span class="total_goods_tit">총 상품금액</span>
+                                        <span id="total_goods_price">52,900</span> 원
+                                    </td>
+                                    <input type="hidden" id="flowerId" name="flowerId">
+                                    <input type="hidden" id="price" name="price" value="52900">
+                                    <input type="hidden" id="option-price" value="15000">
+                                    <input type="hidden" id="total-price" name="total-price" value="52900">        
+                                    <input type="hidden" id="option" />
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- 총 상품 금액 표기 끝-->
+                        <div class="goods_buttons_area">
+                            <ul class="goods_buttons_section">
+                                <li>
+                                    <ul class="basic_btn_area">
+                                        <li>
+                                            <button
+                                                type="button"
+                                                name="addCart"
+                                                id="addCart"
+                                                class="btn_resp size_extra2 NpayNo">
+                                                <span onclick="disable_ribbon();">장바구니</span>
+                                            </button>
+                                        </li>
+                                        <li class="list_buy_now">
+                                            <button
+                                                type="button"
+                                                id="buy"
+                                                class="btn_resp size_extra2 color2 NpayNo"
+                                                onclick="disable_ribbon();">
+                                                <span>구매하기</span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="goods_npay">
+                                <div class="goods_npay_inner">
+                                    <div id="nhn_btn" style="margin-top:20px;text-align:center;">
+                                        <div id="NC_ID_1704820005936723" class="npay_storebtn_bx npay_type_A_2">	
+                                            <div id="NPAY_BUTTON_BOX_ID" class="npay_button_box ">		
+                                                <div class="npay_button">			
+                                                    <div class="npay_text">
+                                                        <span class="npay_blind">NAVER 네이버 ID로 간편구매 네이버페이</span>
+                                                    </div>				
+                                                    <table class="npay_btn_list" cellspacing="0" cellpadding="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="npay_btn_item">
+                                                                    <a
+                                                                        id="NPAY_BUY_LINK_IDNC_ID_1704820005936723"
+                                                                        href="#"
+                                                                        class="npay_btn_link npay_btn_pay btn_green"
+                                                                        style="box-sizing:content-box; "
+                                                                        title="새창">
+                                                                        <span class="npay_blind">네이버페이 구매하기</span>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="npay_btn_item btn_width">
+                                                                    <a
+                                                                        id="NPAY_WISH_LINK_IDNC_ID_1704820005936723"
+                                                                        href="#"
+                                                                        class="npay_btn_link npay_btn_zzim "
+                                                                        style="box-sizing:content-box; "
+                                                                        title="새창">
+                                                                        <span class="npay_blind">찜하기</span>
+                                                                    </a>
+                                                                </td>
+                                                                <td class="npay_btn_item btn_width">
+                                                                    <a
+                                                                        id="NPAY_TALK_LINK_IDNC_ID_1704820005936723"
+                                                                        href="#"
+                                                                        class="npay_btn_link npay_btn_talk "
+                                                                        style="box-sizing:content-box; "
+                                                                        title="새창">
+                                                                        <span class="npay_blind">톡톡</span>
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div id="NPAY_EVENT_ID" class="npay_event">
+                                                    <a
+                                                        id="NPAY_PROMOTION_PREV_IDNC_ID_1704820005936723"
+                                                        href="#"
+                                                        class="npay_more npay_more_prev">
+                                                        <span class="npay_blind">이전</span>
+                                                    </a>
+                                                    <p id="NPAY_PROMOTION_IDNC_ID_1704820005936723" class="npay_event_text">
+                                                        <strong class="event_title">이벤트</strong>
+                                                        <a
+                                                            href="https://new-m.pay.naver.com/pcpay/eventbenefit"
+                                                            class="event_link"
+                                                            target="_blank">네이버페이</a>
+                                                    </p>
+                                                    <a
+                                                        id="NPAY_PROMOTION_NEXT_IDNC_ID_1704820005936723"
+                                                        href="#"
+                                                        class="npay_more npay_more_next">
+                                                        <span class="npay_blind">다음</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- ++++++++++++++++++++++++ //상품 스펙 ++++++++++++++++++++++++ -->
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+
+{% block indexScript %}
+<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="../../js/page/flower_present_detail.js"></script>
+<script>
+
+var counter_plus = 0;
+var w_height = $('.wish-box').height();
+
+$(document).ready(function () {
+    $('.drop-down01').append('<div class="clone-slt"></div>');
+    $('.drop-down01').append('<ul class="select-list"></ul>');
+
+    /* 각 옵션들의 이미지들과 선택한 값과 텍스트를 정의 */
+    $('.drop-down01 select option').each(function () {
+        $('.select-list').append(
+            '<li class="clsAnchor">' + $(this).text() + '</li>'
+        );
+    });
+    /* 상품 선택 */
+    $('.drop-down01 .clone-slt').html(
+        '<span>' + $('.drop-down01 select').find(':selected').text() + '</span><a href="java' +
+        'script:void(0);" class="select-list-link">Arrow</a>'+
+        '<a id="sbToggle" href="javascript:void(0);" class="sbToggle"></a>'
+    );
+
+    $('.drop-down01 ul li').each(function () {
+        if ($(this).find('span').text() == $('.drop-down01 select').find(':selected').text()) {
+            $(this).addClass('active');
+        }
+    });
+
+    $('.drop-down01 .select-list li').on('click', function () {
+        counter_plus++;
+        w_height++;
+        var dd_text = $(this).text();
+        var dd_val = $(this).attr('value');
+        var price_text = $(this).text();
+        //var w_height = $('.wish-box').height();
+
+        $('.drop-down01 .clone-slt').html(
+            '<span>' + dd_text + '</span><a href="jav' +
+            'ascript:void(0);" class="select-list-link">Arrow</a>'+
+            '<a id="sbToggle" href="javascript:void(0);" class="sbToggle"></a>'
+        );
+        $('.drop-down01 .select-list li')
+            .parent()
+            .removeClass('active');
+        $(this)
+            .parent()
+            .addClass('active');
+
+        console.log(dd_text);
+
+        $('.drop-down01 select[name=nameoption]').val(dd_val);
+
+        /* 장바구니를 미리 만들어 놓음 안에 내용은 비어 있는 형태 */
+        $('.drop-down02').after(
+            '<div class="wish-box" id="wish-' + counter_plus + '"><div></div></div>'
+        );
+        /* 비어있는 장바구니에 선택한 텍스를 미리 입력 */
+        $('#wish-' + counter_plus + '>div').html('<span>' + dd_text + '</span>');
+
+        $('.product_option').css({
+            "height": 220 + w_height * 107 + "px"
+        });
+
+        $('.drop-down01 .select-list li').slideUp();
+        $('.productprice').slideDown();
+    });
+
+    $('.drop-down01 .clone-slt').on('click', 'a', function () {
+        $('.drop-down01 ul li').slideToggle();
+    });
+
+    //상품권 가격
+    $('.drop-down02 a').click(function () {
+        $('.productprice').slideToggle();
+        $('.drop-down01 ul li').slideUp();
+        $('.productprice').toggleClass('active');
+
+    });
+
+    $('.productprice li').click(function () {
+        var pp_text = $(this).text();
+        var dd_text = $('#wish-' + counter_plus + '>div').text();
+        var out_price = $('#total_goods_price').text();
+
+        $('#wish-' + counter_plus + '>div').html(
+            /* '<span class="name_txt">' + dd_text + '</span><span class="close_btn">X</span><' +
+            'div class="num_box"><span class="minus_btn">-</span><span class="number">1</sp' +
+            'an><span class="plus_btn">+</span></div><span class="price_txt">' +
+            pp_text + '</span>' */
+                '<div class="goods_quantity_table_container">' +
+                    '<table class="goods_quantity_table" style="width:100%;">' +
+                        '<tbody>'+
+                            '<tr class="quanity_row option_tr">'+
+                                '<td class="quantity_cell option_col_text" colspan="3">'+
+                                    '<div class="option_text"> 사이즈: ' + dd_text +
+                                        '<br>' +'배송방법: ' + pp_text +
+                                    '</div>'+
+                                    '<ul class="num_price">'+
+                                        '<li>' +
+                                            '<button type="button" class="btn_graybox eaMinus">-</button>'+
+                                            '<input type="text" name="optionEa[0]" value="1" class="number ea_change">'+
+                                            '<button type="button" class="btn_graybox eaPlus">+</button>'+
+                                        '</li>'+
+                                        '<li class="quantity_cell option_col_price">' +
+                                            '<span class="consumer_price hide">0</span>' +
+                                            '<span class="optionPrice hide">52900</span>' +
+                                            '<strong class="out_option_price">'+ out_price + ' </strong>' + "원" +
+                                            '<img src="../../images/pages/flower_present_detail/icon_close_gray.png" class="hand removeOption">' +
+                                        '</li>'+
+                                    '</ul>'+
+                                '</td>'+
+                            '</tr>'+
+                        '</tbody>'+
+                    '</table>'+
+                '</div>'+
+            '</div>'
+        );
+
+        $('.productprice').slideUp();
+    });
+});
+
+$(document).on('click', '.removeOption', function (e) {
+    w_height--;
+    $(this)
+        .parent()
+        .parent()
+        .parent()
+        .parent()
+        .parent()
+        .parent()
+        .parent()
+        .parent()
+        .parent()
+        .hide();
+    $('.product_option').css({
+        "height": 200 + w_height * 100 + "px"
+    });
+});
+
+$(function () {
+    $(document).on('click', '.eaMinus', function (e) {
+        e.preventDefault();
+        var stat = $('.number').val();
+        var num = parseInt(stat, 10);
+        num--;
+        if (num <= 0) {
+            alert('더이상 줄일수 없습니다.');
+            num = 1;
+        }
+        $('.number').val(num);
+    });
+    $(document).on('click', '.eaPlus', function (e) {
+        e.preventDefault();
+        var stat = $('.number').val();
+        var num = parseInt(stat, 10);
+        num++;
+
+        if (num > 30) {
+            alert('더이상 늘릴수 없습니다.');
+            num = 30;
+        }
+        $('.number').val(num);
+    });
+});
+</script>
+{% endblock %}
